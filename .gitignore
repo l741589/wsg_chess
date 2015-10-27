@@ -1,0 +1,10 @@
+cocos2d/
+proj.win32/Debug.win32/
+proj.win10/
+proj.ios_mac/
+proj.android/
+proj.win8.1-universal/
+proj.android-studio/
+*.sdf
+*.opensdf
+proj.linux/
