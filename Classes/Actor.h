@@ -1,11 +1,18 @@
 #pragma once
 #include "cocos2d.h"
 #include "spine/spine-cocos2dx.h"
+#include "Ship.h"
 
+class FightScene;
 
-class Actor : public spine::SkeletonAnimation {
+class Actor : public cocos2d::Node {
 private:
 	void bindEvent();
+	FightScene*fightScene;
+	int _id;
+	Ship*ship = nullptr;
+	spine::SkeletonAnimation*anim;
+	Vec2 fieldPosition;
 public:	
 	struct Anim{
 		static const char* Antiaircraft;
@@ -20,6 +27,10 @@ public:
 		static const char* Damage;
 		static const char* Normal;
 	};
-	static Actor* create(int id);
-	bool init(int id);
+	const Vec2& getFieldPosition() const{ return fieldPosition; }
+	void setFieldPositoin(Vec2 pos);
+	float direction = 0;
+	static Actor* create(FightScene*fightScene, int id);
+	bool init(FightScene*scene,int id);
+	Ship*getShip();
 };
