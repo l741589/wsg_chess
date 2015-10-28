@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="6">
+ <tileset firstgid="1" name="032-T_Ocean01" tilewidth="32" tileheight="32" tilecount="48">
+  <image source="tiles/032-T_Ocean01.png" width="384" height="128"/>
+ </tileset>
+ <tileset firstgid="49" name="048-Sewer01" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="tiles/048-Sewer01.png" width="256" height="768"/>
+ </tileset>
+ <layer name="layer1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKHL8f2DDpZDwVVTVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/AWo0984=
+  </data>
+ </layer>
+ <layer name="layer2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztzrENgDAQBEG3BkRAZNx/Lz59D+iTGWnzHQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/nekM13dI5Q7PentHqHM9KXVPULZaHgCmw==
+  </data>
+ </layer>
+</map>

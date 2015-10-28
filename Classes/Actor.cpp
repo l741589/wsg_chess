@@ -32,8 +32,12 @@ Actor* Actor::create(FightScene*fightScene, int id) {
 void Actor::bindEvent() {
 	EventListenerTouchOneByOne*e = EventListenerTouchOneByOne::create();
 	e->onTouchBegan = [this](Touch*t, Event*e) {
-		auto&& r = bound + this->getPosition();
-		if (!r.containsPoint(t->getLocation()))  return false;
+		auto node = e->getCurrentTarget();
+		auto p = node->convertTouchToNodeSpace(t);
+		if (!bound.containsPoint(p)) return false;
+		//if (!util::isPtInNode(t->getLocation(), e->getCurrentTarget())) return false;
+		//auto&& r = bound + this->getPosition();
+		//if (!r.containsPoint(t->getLocation()))  return false;
 		this->runAction(ScaleTo::create(0.1f, 1.2f));
 		return true;
 	};
@@ -43,18 +47,18 @@ void Actor::bindEvent() {
 		this->fightScene->fieldLayer->createMoveTiles(this, [this](Sprite*, const Vec2&pos) {
 			CCLOG("%f,%f",pos.x, pos.y);
 			anim->getSkeleton()->flipX = pos.x<fieldPosition.x;
-			direction = rand_0_1() * 2 * PI;
-			auto move = Sequence::create(
-				MoveTo::create(0.5f, FieldLayer::filedToLocal(pos)),CallFunc::
-				create([=]() {setFieldPositoin(pos); 
+			setDirection((pos-fieldPosition).getAngle());
 			fightScene->fieldLayer->clear();
-			}),
+			auto move = Sequence::create(
+				MoveTo::create(0.5f, FieldLayer::filedToLocal(pos)),
+				CallFunc::create([=]() {setFieldPositoin(pos); }),
 				nullptr);
 			move->setTag(0x307E);
 			stopActionByTag(0x307E);
 			runAction(move);
-			anim->setAnimation(0, Anim::Throw,false);
-			
+			if (abs(pos.x - fieldPosition.x)>2) {
+				anim->setAnimation(1, Anim::Throw, false);
+			}			
 		});
 	};
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(e, this);
@@ -71,8 +75,13 @@ bool Actor::init(FightScene*fightScene, int id) {
 	anim = spine::SkeletonAnimation::createWithFile(buf1, buf2, 0.5);
 	anim->setSkin(Skin::Normal);
 	anim->setAnimation(0, Anim::Normal, true);
-	addChild(anim);
+	addChild(anim, 5);
 	bindEvent();
+	directionArrow = Sprite::create("CloseSelected.png");
+	directionArrow->setColor({ 255,0,0 });
+	directionArrow->setAnchorPoint({ 0,0 });
+	addChild(directionArrow, 3);
+	setDirection(direction);
 	return true;
 }
 
@@ -86,3 +95,13 @@ void Actor::setFieldPositoin(Vec2 pos) {
 	setPosition(fightScene->fieldLayer->filedToLocal(pos));
 }
 
+void Actor::setDirection(float raduis)
+{	
+	this->direction = raduis;
+	auto trans = AffineTransform::IDENTITY;
+	trans = AffineTransformTranslate(trans, 0, -20);
+	trans = AffineTransformScale(trans, 3, 1);
+	trans = AffineTransformRotate(trans, raduis - PI / 2);
+	trans = AffineTransformTranslate(trans, -20, -20);
+	directionArrow->setAdditionalTransform(trans);
+}

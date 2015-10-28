@@ -17,19 +17,13 @@ namespace util {
 	}
 
 	bool isPtInNode(const Vec2&pt, Node*node) {
-		const Vec2&anchor = node->getAnchorPoint();
-		const Vec2&pos = node->getPosition();
-		const Size&size = node->getContentSize();
-		Vec2 start = {
-			pos.x - anchor.x*size.width,
-			pos.y - anchor.y*size.height
-		};
-		Rect r = { start, size };
+		const Rect&r = node->getBoundingBox();		
 		return r.containsPoint(pt);
 	}
 
 	bool isPtInNodeEventCallback(Touch*t, Event*e) {
-		return util::isPtInNode(t->getLocation(), e->getCurrentTarget());
+		auto node=e->getCurrentTarget();
+		return util::isPtInNode(node->getParent()->convertTouchToNodeSpaceAR(t), node);
 	}
 
 }

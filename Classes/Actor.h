@@ -13,6 +13,8 @@ private:
 	Ship*ship = nullptr;
 	spine::SkeletonAnimation*anim;
 	Vec2 fieldPosition;
+	Sprite*directionArrow;
+	float direction = 0;
 public:	
 	struct Anim{
 		static const char* Antiaircraft;
@@ -22,14 +24,15 @@ public:
 		static const char* Throw;
 		static const char* Wreck;
 	};
-	static struct Skin{
+	struct Skin{
 		static const char* Default;
 		static const char* Damage;
 		static const char* Normal;
 	};
 	const Vec2& getFieldPosition() const{ return fieldPosition; }
 	void setFieldPositoin(Vec2 pos);
-	float direction = 0;
+	float getDirection() { return direction; }
+	void setDirection(float degree);
 	static Actor* create(FightScene*fightScene, int id);
 	bool init(FightScene*scene,int id);
 	Ship*getShip();

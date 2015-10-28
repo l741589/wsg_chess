@@ -8,3 +8,4 @@ proj.android-studio/
 *.sdf
 *.opensdf
 proj.linux/
+proj.win32/.vs/wsg_chess/v14/
