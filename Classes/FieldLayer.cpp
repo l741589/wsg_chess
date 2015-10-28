@@ -110,5 +110,6 @@ void FieldLayer::clear() {
 bool FieldLayer::init()
 {
 	if (!Node::init()) return false;
+	return true;
 }
 

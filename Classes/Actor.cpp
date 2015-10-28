@@ -35,9 +35,6 @@ void Actor::bindEvent() {
 		auto node = e->getCurrentTarget();
 		auto p = node->convertTouchToNodeSpace(t);
 		if (!bound.containsPoint(p)) return false;
-		//if (!util::isPtInNode(t->getLocation(), e->getCurrentTarget())) return false;
-		//auto&& r = bound + this->getPosition();
-		//if (!r.containsPoint(t->getLocation()))  return false;
 		this->runAction(ScaleTo::create(0.1f, 1.2f));
 		return true;
 	};
@@ -77,8 +74,8 @@ bool Actor::init(FightScene*fightScene, int id) {
 	anim->setAnimation(0, Anim::Normal, true);
 	addChild(anim, 5);
 	bindEvent();
-	directionArrow = Sprite::create("CloseSelected.png");
-	directionArrow->setColor({ 255,0,0 });
+	directionArrow = Sprite::create("directionArrow.png");
+	directionArrow->setColor({ 0,0,255 });
 	directionArrow->setAnchorPoint({ 0,0 });
 	addChild(directionArrow, 3);
 	setDirection(direction);
@@ -100,8 +97,8 @@ void Actor::setDirection(float raduis)
 	this->direction = raduis;
 	auto trans = AffineTransform::IDENTITY;
 	trans = AffineTransformTranslate(trans, 0, -20);
-	trans = AffineTransformScale(trans, 3, 1);
-	trans = AffineTransformRotate(trans, raduis - PI / 2);
-	trans = AffineTransformTranslate(trans, -20, -20);
+	trans = AffineTransformScale(trans, 2, 0.7);
+	trans = AffineTransformRotate(trans, raduis);
+	trans = AffineTransformTranslate(trans, -32, -32);
 	directionArrow->setAdditionalTransform(trans);
 }
