@@ -1,6 +1,7 @@
 #include "FightScene.h"
 #include "Actor.h"
 #include "FieldLayer.h"
+#include "ActionMenu.h"
 
 using namespace cocos2d;
 
@@ -28,6 +29,11 @@ bool FightScene::init() {
 	auto lightWorm = Actor::create(this, 1082);
 	ships->addChild(lightWorm);
 	lightWorm->setFieldPositoin({ 5, 7 });
+
+	actionMenu = ActionMenu::create();
+	
+
+	addChild(actionMenu);
 	
 	auto x=cocos2d::TMXTiledMap::create("map/1.tmx");
 	x->setScale(3);

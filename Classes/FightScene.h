@@ -1,6 +1,7 @@
 #pragma once
 
 #include"util.h"
+#include "ActionMenu.h"
 
 class FieldLayer;
 
@@ -10,6 +11,7 @@ private:
 public:
 	cocos2d::Layer*gameLayer;
 	FieldLayer*fieldLayer;
+	ActionMenu*actionMenu;
 	CREATE_FUNC(FightScene);
 	bool init() override;
 	

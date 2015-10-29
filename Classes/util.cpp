@@ -26,4 +26,32 @@ namespace util {
 		return util::isPtInNode(node->getParent()->convertTouchToNodeSpaceAR(t), node);
 	}
 
+	void setScale9Background(Layout*layout, std::string file)
+	{
+		layout->setBackGroundImage(file);
+		Size size = layout->getBackGroundImageTextureSize();
+		layout->setBackGroundImageScale9Enabled(true);
+		Size sp = { size.width / 2 - 1,size.height / 2 - 1 };
+		layout->setBackGroundImageCapInsets({ sp,size - sp - sp });
+	}
+
+	void setLayoutParameter(Widget*ctrl,Margin margin,LinearLayoutParameter::LinearGravity gravity) {
+		if (gravity == LinearLayoutParameter::LinearGravity::NONE) {
+			auto lp = ctrl->getLayoutParameter();
+			if (!lp) lp = LayoutParameter::create();
+			lp->setMargin(margin);
+			ctrl->setLayoutParameter(lp);
+		}
+		else {
+			LinearLayoutParameter* lp =(LinearLayoutParameter*) ctrl->getLayoutParameter(LayoutParameter::Type::LINEAR);
+			if (!lp) lp = LinearLayoutParameter::create();
+			lp->setMargin(margin);
+			lp->setGravity(gravity);
+			ctrl->setLayoutParameter(lp);
+		}
+		
+	}
+
+
+
 }

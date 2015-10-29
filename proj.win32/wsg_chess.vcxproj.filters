@@ -13,6 +13,9 @@
     <Filter Include="src\data">
       <UniqueIdentifier>{49f2a704-f6a6-45cc-ab7e-a7585e70e00a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\gui">
+      <UniqueIdentifier>{e5d75908-45b3-45ab-9485-b87d7b292021}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="..\Classes\FieldLayer.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ActionMenu.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StringRes.cpp">
+      <Filter>src\data</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\FieldLayer.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ActionMenu.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StringRes.h">
+      <Filter>src\data</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

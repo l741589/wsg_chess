@@ -41,22 +41,31 @@ void Actor::bindEvent() {
 	e->onTouchEnded = e->onTouchCancelled = [this](Touch*t, Event*e) {
 		this->runAction(ScaleTo::create(0.1f, 1));
 		Ship*ship = getShip();
-		this->fightScene->fieldLayer->createMoveTiles(this, [this](Sprite*, const Vec2&pos) {
-			CCLOG("%f,%f",pos.x, pos.y);
-			anim->getSkeleton()->flipX = pos.x<fieldPosition.x;
-			setDirection((pos-fieldPosition).getAngle());
-			fightScene->fieldLayer->clear();
-			auto move = Sequence::create(
-				MoveTo::create(0.5f, FieldLayer::filedToLocal(pos)),
-				CallFunc::create([=]() {setFieldPositoin(pos); }),
-				nullptr);
-			move->setTag(0x307E);
-			stopActionByTag(0x307E);
-			runAction(move);
-			if (abs(pos.x - fieldPosition.x)>2) {
-				anim->setAnimation(1, Anim::Throw, false);
-			}			
+		this->fightScene->actionMenu->show(e->getCurrentTarget()->getPosition() + Vec2{144,32}, 
+			"battle.action.title", {
+				{ "battle.action.move",[=](Ref*) {
+					this->fightScene->fieldLayer->createMoveTiles(this, [this](Sprite*, const Vec2&pos) {
+						CCLOG("%f,%f",pos.x, pos.y);
+						anim->getSkeleton()->flipX = pos.x < fieldPosition.x;
+						setDirection((pos - fieldPosition).getAngle());
+						fightScene->fieldLayer->clear();
+						auto move = Sequence::create(
+							MoveTo::create(0.5f, FieldLayer::filedToLocal(pos)),
+							CallFunc::create([=]() {setFieldPositoin(pos); }),
+							nullptr);
+						move->setTag(0x307E);
+						stopActionByTag(0x307E);
+						runAction(move);
+						if (abs(pos.x - fieldPosition.x)>2) {
+							anim->setAnimation(1, Anim::Throw, false);
+						}
+					});
+				} 
+			},
+			{ "battle.action.direct",nullptr },
+			{ "battle.action.attack",nullptr },
 		});
+
 	};
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(e, this);
 
@@ -67,8 +76,8 @@ bool Actor::init(FightScene*fightScene, int id) {
 	this->_id = id;
 	this->fightScene = fightScene;
 	char buf1[32], buf2[32];
-	sprintf(buf1, "Ship_girl_%d.json", id);
-	sprintf(buf2, "Ship_girl_%d.atlas", id);
+	sprintf(buf1, "qver/Ship_girl_%d.json", id);
+	sprintf(buf2, "qver/Ship_girl_%d.atlas", id);
 	anim = spine::SkeletonAnimation::createWithFile(buf1, buf2, 0.5);
 	anim->setSkin(Skin::Normal);
 	anim->setAnimation(0, Anim::Normal, true);
@@ -97,7 +106,7 @@ void Actor::setDirection(float raduis)
 	this->direction = raduis;
 	auto trans = AffineTransform::IDENTITY;
 	trans = AffineTransformTranslate(trans, 0, -20);
-	trans = AffineTransformScale(trans, 2, 0.7);
+	trans = AffineTransformScale(trans, 2, 0.7f);
 	trans = AffineTransformRotate(trans, raduis);
 	trans = AffineTransformTranslate(trans, -32, -32);
 	directionArrow->setAdditionalTransform(trans);

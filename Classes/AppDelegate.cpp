@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "FightScene.h"
+#include "StringRes.h"
 
 USING_NS_CC;
 
@@ -25,6 +26,11 @@ void AppDelegate::initGLContextAttrs()
     GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
 
     GLView::setGLContextAttrs(glContextAttrs);
+}
+
+
+void initData() {
+	G::initStringRes();
 }
 
 // If you want to use packages manager to install more packages, 
@@ -74,6 +80,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
+	initData();
     // create a scene. it's an autorelease object
     auto scene = FightScene::create();
 
