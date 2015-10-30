@@ -150,6 +150,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\FieldLayer.cpp" />
     <ClCompile Include="..\Classes\FightScene.cpp" />
     <ClCompile Include="..\Classes\GameData.cpp" />
+    <ClCompile Include="..\Classes\layout\LayoutInflater.cpp" />
     <ClCompile Include="..\Classes\StringRes.cpp" />
     <ClCompile Include="..\Classes\util.cpp" />
     <ClCompile Include="main.cpp" />
@@ -161,6 +162,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\FieldLayer.h" />
     <ClInclude Include="..\Classes\FightScene.h" />
     <ClInclude Include="..\Classes\GameData.h" />
+    <ClInclude Include="..\Classes\layout\LayoutInflater.h" />
     <ClInclude Include="..\Classes\Ship.h" />
     <ClInclude Include="..\Classes\StringRes.h" />
     <ClInclude Include="..\Classes\util.h" />

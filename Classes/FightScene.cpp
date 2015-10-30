@@ -2,6 +2,7 @@
 #include "Actor.h"
 #include "FieldLayer.h"
 #include "ActionMenu.h"
+#include "layout/LayoutInflater.h"
 
 using namespace cocos2d;
 
@@ -32,6 +33,9 @@ bool FightScene::init() {
 
 	actionMenu = ActionMenu::create();
 	
+	auto layout = LayoutInflater::inflate("bar.json");
+	layout->setPosition({ 100,100 });
+	addChild(layout);
 
 	addChild(actionMenu);
 	

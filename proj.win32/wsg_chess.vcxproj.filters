@@ -16,6 +16,9 @@
     <Filter Include="src\gui">
       <UniqueIdentifier>{e5d75908-45b3-45ab-9485-b87d7b292021}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\layout">
+      <UniqueIdentifier>{a3c9f4f0-2502-4b41-94d6-bf49fd4d648b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\StringRes.cpp">
       <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\layout\LayoutInflater.cpp">
+      <Filter>src\layout</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\StringRes.h">
       <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\layout\LayoutInflater.h">
+      <Filter>src\layout</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

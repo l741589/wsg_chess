@@ -1,0 +1,36 @@
+{
+	"type":"HBox",
+	"background":"ui/panelBG2.png",
+	"scale9":"20,20,34,23",
+	"size":"450,80",
+	"content":[
+		{
+			"type":"Button",
+			"text":"移动",
+			"textSize":20.0,
+			"texNormal":"ui/newBtnBlue01.png",
+			"texPressed":"ui/newBtnBlue02.png",
+			"texDisable":"ui/newGray.png",
+			"margin":"8,0,0,0",
+			"gravity":"v"
+		},
+		{
+			"type":"Button",
+			"text":"攻击",
+			"textSize":20.0,
+			"texNormal":"ui/newBtnBlue01.png",
+			"texPressed":"ui/newBtnBlue02.png",
+			"texDisable":"ui/newGray.png",
+			"gravity":"v"
+		},
+		{
+			"type":"Button",
+			"text":"转向",
+			"textSize":20.0,
+			"texNormal":"ui/newBtnBlue01.png",
+			"texPressed":"ui/newBtnBlue02.png",
+			"texDisable":"ui/newGray.png",
+			"gravity":"v"	
+		}
+	]
+}
