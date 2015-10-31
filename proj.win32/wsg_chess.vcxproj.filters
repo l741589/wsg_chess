@@ -54,6 +54,9 @@
     <ClCompile Include="..\Classes\ControlSet.cpp">
       <Filter>src\gui</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\InfoBar.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -90,6 +93,9 @@
       <Filter>src\layout</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\ControlSet.h">
+      <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InfoBar.h">
       <Filter>src\gui</Filter>
     </ClInclude>
   </ItemGroup>

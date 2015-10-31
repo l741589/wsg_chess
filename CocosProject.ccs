@@ -3,21 +3,26 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="ActionMenuDirect.csd" Type="Node" />
         <Folder Name="img">
           <Image Name="newBtnBlue01.png" />
           <Image Name="newBtnBlue02.png" />
           <Image Name="newGray.png" />
           <Image Name="panelBG2.png" />
+          <Image Name="avatarBG6.png" />
+          <Image Name="avatarBox1.png" />
+          <Image Name="avatarBoxBorderF1.png" />
+          <Image Name="avatarFG6.png" />
+          <Image Name="S_BROKEN_1.png" />
+          <Image Name="st_6.png" />
+          <Image Name="hp1.png" />
+          <Image Name="hpBox.png" />
         </Folder>
         <Folder Name="font">
           <TTF Name="msyh.ttf" />
           <TTF Name="msyhbd.ttf" />
         </Folder>
-        <Project Name="ActionMenu.csd" Type="Node" />
-        <Project Name="Panel1.csd" Type="Node" />
-        <Project Name="ButtonBlue1.csd" Type="Node" />
-        <Project Name="ControlSet1.csd" Type="Node" />
+        <Project Name="Avatar.csd" Type="Node" />
+        <Project Name="HpBar.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

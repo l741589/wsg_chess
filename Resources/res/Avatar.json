@@ -1,0 +1,330 @@
+{
+  "ID": "9ea513f2-4e10-4713-b8b7-1dfb2f31f824",
+  "Version": "2.3.2.3",
+  "Name": "Avatar",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "ClipAble": true,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "RightMargin": -216.0,
+            "TopMargin": -72.0,
+            "Tag": 2,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "img/avatarBG6.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 192,
+                "Scale9Height": 62,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 19.0,
+                  "Y": 5.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.088,
+                  "Y": 0.0694
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 19.0,
+                "RightMargin": 5.0,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
+                "Tag": 7,
+                "ActionTag": 584184005,
+                "Size": {
+                  "X": 192.0,
+                  "Y": 62.0
+                },
+                "Name": "avatarBG",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "img/S_BROKEN_1.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 248,
+                "Scale9Height": 64,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 108.0,
+                  "Y": 36.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 1.24,
+                  "Y": 0.32
+                },
+                "LeftMargin": -16.0,
+                "RightMargin": -16.0,
+                "TopMargin": 4.0,
+                "BottomMargin": 4.0,
+                "Tag": 3,
+                "ActionTag": 1763254844,
+                "Size": {
+                  "X": 248.0,
+                  "Y": 64.0
+                },
+                "Name": "Avatar",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "img/avatarFG6.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 192,
+                "Scale9Height": 62,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 19.0,
+                  "Y": 5.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.088,
+                  "Y": 0.0694
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 19.0,
+                "RightMargin": 5.0,
+                "TopMargin": 5.0,
+                "BottomMargin": 5.0,
+                "Tag": 8,
+                "ActionTag": -630999613,
+                "Size": {
+                  "X": 192.0,
+                  "Y": 62.0
+                },
+                "Name": "avatarFG",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FlipX": true,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "img/avatarBox1.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 202,
+                "Scale9Height": 72,
+                "AnchorPoint": {
+                  "ScaleX": 1.0
+                },
+                "Position": {
+                  "X": 14.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.07,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -188.0,
+                "RightMargin": 186.0,
+                "Tag": 4,
+                "ActionTag": 1685199475,
+                "Size": {
+                  "X": 202.0,
+                  "Y": 72.0
+                },
+                "Name": "avatarBox",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FlipX": true,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "img/avatarBoxBorderF1.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 30,
+                "Scale9Height": 72,
+                "AnchorPoint": {
+                  "ScaleX": 1.0
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -30.0,
+                "RightMargin": 200.0,
+                "Tag": 5,
+                "ActionTag": 2114768187,
+                "Size": {
+                  "X": 30.0,
+                  "Y": 72.0
+                },
+                "Name": "Image_3",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "img/st_6.png",
+                  "Plist": ""
+                },
+                "Scale9Width": 50,
+                "Scale9Height": 50,
+                "AnchorPoint": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 216.0,
+                  "Y": 36.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 1.0,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 166.0,
+                "TopMargin": 11.0,
+                "BottomMargin": 11.0,
+                "Tag": 6,
+                "ActionTag": 1240087695,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 50.0
+                },
+                "Name": "Image_4",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -765602580,
+            "Size": {
+              "X": 216.0,
+              "Y": 72.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Root",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "img/avatarBG6.png",
+        "img/avatarBox1.png",
+        "img/avatarBoxBorderF1.png",
+        "img/avatarFG6.png",
+        "img/S_BROKEN_1.png",
+        "img/st_6.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Node"
+}

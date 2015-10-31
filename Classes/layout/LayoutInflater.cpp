@@ -2,7 +2,7 @@
 #include<string.h>
 #include <map>
 #include "ui/CocosGUI.h"
-
+#include "util.h"
 using namespace cocos2d;
 using namespace cocos2d::ui;
 typedef rapidjson::Value V;
@@ -28,16 +28,30 @@ namespace lf {
 	typedef const char* String;
 	typedef bool True;
 	typedef bool False;
+	typedef bool Bool;
 	typedef int Int;
 	typedef unsigned int Uint;
 	typedef int64_t Int64;
 	typedef uint64_t Uint64;
 	typedef nullptr_t Null;
 	typedef double Double;
+	typedef float Float;
+
+	template<class T> T defaltValue() { return (T)0; }
+	template<> const char* defaltValue<String>() { return nullptr; }
+	template<> Bool defaltValue<Bool>() { return false; }
+	template<> Int defaltValue<Int>() { return 0; }
+	template<> Uint defaltValue<Uint>() { return 0; }
+	template<> Int64 defaltValue<Int64>() { return 0; }
+	template<> Uint64 defaltValue<Uint64>() { return 0; }
+	template<> Null defaltValue<Null>() { return nullptr; }
+	template<> Float defaltValue<Float>() { return 0; }
+	template<> Double defaltValue<Double>() { return 0; }
+	
 }
 
 #define U2I(ch) (ch>='0'&&ch<='9'?ch-'0': ch>='A'&&ch<='Z'?ch-'A'+10 : ch>='a'&&ch<='z'?ch-'a'+10 : -1)
-#define ATTR(NAME,TYPE) lf::TYPE NAME;bool _has##NAME=false; if (v.HasMember(#NAME)) { V& _##NAME=v[#NAME]; if (_##NAME.Is##TYPE()) { NAME=_##NAME.Get##TYPE(); _has##NAME=true;}} if (_has##NAME)
+#define ATTR(NAME,TYPE) lf::TYPE NAME=lf::defaltValue<lf::TYPE>();bool _has##NAME=false; if (v.HasMember(#NAME)) { V& _##NAME=v[#NAME]; if (_##NAME.Is##TYPE()) { NAME=_##NAME.Get##TYPE(); _has##NAME=true;}} if (_has##NAME)
 #define OBJATTR(NAME,TYPE) V& NAME=v.HasMember(#NAME)?v[#NAME]:NullValue; if (NAME.Is##TYPE()) 
 #define FUNC(TYPE) bool create(TYPE*w, V&v)
 
@@ -56,6 +70,7 @@ Rect parseRect(const char*s) {
 }
 
 Vec2 parseVec2(const char*s) {
+	
 	float x, y;
 	int c = sscanf(s, "%f,%f", &x, &y);
 	return { x,y };
@@ -106,6 +121,7 @@ FUNC(Node) {
 			w->setContentSize(Size(parseVec2(size)));
 		}
 	}
+	ATTR(anchor, String) w->setAnchorPoint(parseVec2(anchor));
 	return true;
 }
 
@@ -165,7 +181,7 @@ FUNC(Text) {
 	ATTR(text, String) w->setString(text);
 	ATTR(font, String) w->setFontName(font);
 	ATTR(fontSize, Double) w->setFontSize((float)fontSize);
-	ATTR(textSize, Double) w->setFontSize((float)fontSize);
+	ATTR(textSize, Double) w->setFontSize((float)textSize);
 	ATTR(textColor, String) w->setTextColor(parseColor(textColor));
 	return true;
 }
@@ -190,9 +206,32 @@ T*create(V&v) {
 	return t;
 }
 
+Node*includeCreate(V&v) {
+	ATTR(format, String);
+	ATTR(file, String);
+	if (!file) return nullptr;
+	if (!format) format = "json";
+	Node*w = nullptr;
+	if (strcmp(format, "json") == 0) {
+		w=LayoutInflater::inflate(file);
+	} else if (strcmp(format, "csb") == 0) {
+		w=CSLoader::createNode(file);
+	}
+	if (w->getChildrenCount() == 1) w = w->getChildren().at(0);
+	if (w == nullptr) return nullptr;
+	if (dynamic_cast<Widget*>(w)!=nullptr) {
+		if (!create((Widget*)w, v)) return nullptr;
+	} else {
+		if (!create(w, v)) return nullptr;
+	}
+	if (w->getParent() != nullptr) w->removeFromParentAndCleanup(false);
+	return w;
+}
+
 #define CREATOR(TYPE) {#TYPE, create<TYPE> }
 std::map<std::string, std::function<Node*(V&)> > worker = {
-	CREATOR(Widget),CREATOR(HBox),CREATOR(VBox),CREATOR(Button),CREATOR(Node),CREATOR(Sprite)
+	CREATOR(Widget), CREATOR(HBox), CREATOR(VBox), CREATOR(Button), CREATOR(Node), CREATOR(Sprite), CREATOR(Text),
+	{ "include", includeCreate }
 };
 
 Node* inflate(V& v) {

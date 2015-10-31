@@ -1,0 +1,130 @@
+{
+  "ID": "24194418-9dcc-4263-aba8-1ffe8ff28ebb",
+  "Version": "2.3.2.3",
+  "Name": "HpBar",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 9,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "img/hpBox.png",
+              "Plist": ""
+            },
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Enable": true,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -79.5943,
+              "Y": -112.9109
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -79.5943,
+            "RightMargin": -136.4057,
+            "TopMargin": 102.9109,
+            "BottomMargin": -112.9109,
+            "Tag": 10,
+            "Children": [
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "img/hp1.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 3.0,
+                  "Y": 5.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0139,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.9722,
+                  "Y": 0.5
+                },
+                "LeftMargin": 3.0,
+                "RightMargin": 3.0,
+                "TopMargin": 2.5,
+                "BottomMargin": 2.5,
+                "Tag": 11,
+                "ActionTag": -229407190,
+                "Size": {
+                  "X": 210.0,
+                  "Y": 5.0
+                },
+                "Name": "LoadingBar_1",
+                "ctype": "LoadingBarObjectData"
+              }
+            ],
+            "ActionTag": 461579382,
+            "Size": {
+              "X": 216.0,
+              "Y": 10.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "img/hp1.png",
+        "img/hpBox.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Node"
+}

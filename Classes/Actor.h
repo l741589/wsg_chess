@@ -15,6 +15,7 @@ private:
 	Vec2 fieldPosition;
 	Sprite*directionArrow;
 	float direction = 0;
+	int hp;
 public:	
 	struct Anim{
 		static const char* Antiaircraft;
@@ -37,4 +38,8 @@ public:
 	bool init(FightScene*scene,int id);
 	spine::SkeletonAnimation*getAnim() { return anim; }
 	Ship*getShip();
+	int getHp() { return hp; }
+	void moveTo(const Vec2 &pos);
+	void turn(float radius);
+	~Actor();
 };

@@ -9,11 +9,11 @@ private:
 	Node*menu;
 	Node*directMenu;
 	Node*attackMenu;
-	FightScene*scene;
 	Actor*actor;
 public:
-	ActionMenu(FightScene* scene);
+	ActionMenu();
 	~ActionMenu();
 	Node*show(const char*title, std::initializer_list<std::pair<std::string, std::function<void(Button*button)> > > callback);
 	void hide();
+	Node*getMenu() { return menu; }
 };

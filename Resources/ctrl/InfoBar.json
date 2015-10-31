@@ -1,0 +1,36 @@
+{
+	"type":"VBox",
+	"anchor":"1,1",
+	"size":"216,300",
+	"content":[
+		{
+			"type":"include",
+			"format":"csb",
+			"file":"Avatar.csb",
+			"gravity":"h"
+		},
+		{
+			"type":"include",
+			"format":"csb",
+			"file":"HpBar.csb",
+			"gravity":"r"
+		},
+		{
+			"type":"VBox",
+			"background":"ui/panelBG8.png",
+			"scale9":"4,4,82,36",
+			"margin":"0,4,0,4",
+			"size":"200,40",
+			"gravity":"r",
+			"content":[
+				{
+					"type":"Text",
+					"name":"Name",
+					"gravity":"h",
+					"margin":"0,20,0,0",
+					"textSize":24.0
+				}
+			]
+		}
+	]
+}

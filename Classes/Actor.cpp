@@ -2,6 +2,7 @@
 #include "util.h"
 #include "FightScene.h"
 #include "FieldLayer.h"
+#include "ActionMenu.h"
 USING_NS_CC;
 using namespace util;
 
@@ -40,47 +41,6 @@ void Actor::bindEvent() {
 	};
 	e->onTouchEnded = e->onTouchCancelled = [this](Touch*t, Event*e) {
 		this->runAction(ScaleTo::create(0.1f, 1));
-		Ship*ship = getShip();
-		this->fightScene->actionMenu->show(
-			"battle.action.title", 
-			{
-				{ "battle.action.move", [=](Ref*) {
-						this->fightScene->fieldLayer->createMoveTiles(this, [this](Sprite*, const Vec2&pos) {
-							CCLOG("%f,%f", pos.x, pos.y);
-
-							if (pos!=fieldPosition) setDirection((pos - fieldPosition).getAngle());
-							fightScene->fieldLayer->clear();
-							auto move = Sequence::create(
-								MoveTo::create(0.5f, FieldLayer::fieldToLocal(pos)),
-								CallFunc::create([=]() {setFieldPositoin(pos); }),
-								nullptr);
-							move->setTag(0x307E);
-							stopActionByTag(0x307E);
-							runAction(move);
-							if (abs(pos.x - fieldPosition.x) > 2) {
-								anim->setAnimation(1, Anim::Throw, false);
-							}
-						});
-					}
-				},
-				{ "battle.action.direct", [=](Ref*) {
-						this->fightScene->actionMenu->show(
-							"",
-							{
-								{ "battle.action.direct.ml", [=](Ref*) { setDirection(getDirection() - PI / 4); } },
-								{ "battle.action.direct.mm", [=](Ref*) { setDirection(getDirection() - PI / 6); } },
-								{ "battle.action.direct.ms", [=](Ref*) { setDirection(getDirection() - PI / 12); } },
-								{ "battle.action.direct.pl", [=](Ref*) { setDirection(getDirection() + PI / 4); } },
-								{ "battle.action.direct.pm", [=](Ref*) { setDirection(getDirection() + PI / 6); } },
-								{ "battle.action.direct.ps", [=](Ref*) { setDirection(getDirection() + PI / 12); } },
-							}
-						);
-					} 
-				},
-				{ "battle.action.attack", nullptr },
-				{ "cancel", [](Ref*) {} },
-			}
-		);
 	};
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(e, this);
 
@@ -89,6 +49,8 @@ void Actor::bindEvent() {
 bool Actor::init(FightScene*fightScene, int id) {
 	this->_id = id;
 	this->fightScene = fightScene;
+	this->hp = getShip()->hpMax;
+	fightScene->actors.push_back(this);
 	char buf1[32], buf2[32];
 	sprintf(buf1, "qver/Ship_girl_%d.json", id);
 	sprintf(buf2, "qver/Ship_girl_%d.atlas", id);
@@ -127,4 +89,28 @@ void Actor::setDirection(float raduis)
 	trans = AffineTransformTranslate(trans, -32, -32);
 	directionArrow->setAdditionalTransform(trans);
 	anim->getSkeleton()->flipX = raduis >= PI / 2 || raduis < -PI / 2;
+}
+
+Actor::~Actor() {
+	if (!fightScene->actors.empty()) {
+		std::remove(fightScene->actors.begin(), fightScene->actors.end(), this);
+	}
+}
+
+void Actor::moveTo(const Vec2 &pos) {
+	if (pos != getFieldPosition()) setDirection((pos - getFieldPosition()).getAngle());
+	auto move = Sequence::create(
+		MoveTo::create(0.5f, FieldLayer::fieldToLocal(pos)),
+		CallFunc::create([=]() {setFieldPositoin(pos); }),
+		nullptr);
+	move->setTag(0x307E);
+	stopActionByTag(0x307E);
+	runAction(move);
+	if (abs(pos.x - getFieldPosition().x) > 2) {
+		getAnim()->setAnimation(1, Actor::Anim::Throw, false);
+	}
+}
+
+void Actor::turn(float radius) {
+	setDirection(getDirection() + radius);
 }
