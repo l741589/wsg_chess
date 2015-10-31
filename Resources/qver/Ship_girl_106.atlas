@@ -1,0 +1,125 @@
+
+Ship_girl_106.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rodney_armor_damage_light
+  rotate: false
+  xy: 2, 124
+  size: 134, 124
+  orig: 300, 300
+  offset: 103, 56
+  index: -1
+Rodney_armor_normal_light
+  rotate: false
+  xy: 665, 405
+  size: 124, 103
+  orig: 300, 300
+  offset: 103, 77
+  index: -1
+Rodney_body_normal
+  rotate: true
+  xy: 400, 367
+  size: 141, 263
+  orig: 300, 300
+  offset: 86, 25
+  index: -1
+Rodney_eyes_damage
+  rotate: false
+  xy: 292, 248
+  size: 58, 41
+  orig: 300, 300
+  offset: 140, 170
+  index: -1
+Rodney_eyes_normal
+  rotate: false
+  xy: 270, 205
+  size: 51, 41
+  orig: 300, 300
+  offset: 147, 170
+  index: -1
+Rodney_fornt_damage
+  rotate: true
+  xy: 613, 281
+  size: 84, 65
+  orig: 300, 300
+  offset: 160, 99
+  index: -1
+Rodney_fornt_damage_light
+  rotate: false
+  xy: 791, 408
+  size: 120, 100
+  orig: 300, 300
+  offset: 150, 86
+  index: -1
+Rodney_fornt_normal
+  rotate: false
+  xy: 183, 181
+  size: 85, 65
+  orig: 300, 300
+  offset: 160, 99
+  index: -1
+Rodney_fornt_normal_light
+  rotate: false
+  xy: 2, 21
+  size: 120, 101
+  orig: 300, 300
+  offset: 152, 85
+  index: -1
+Rodney_ship_armor_damage
+  rotate: false
+  xy: 186, 291
+  size: 212, 217
+  orig: 300, 300
+  offset: 51, 58
+  index: -1
+Rodney_ship_armor_normal
+  rotate: false
+  xy: 514, 279
+  size: 97, 86
+  orig: 300, 300
+  offset: 103, 92
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: false
+  xy: 2, 250
+  size: 182, 258
+  orig: 300, 300
+  offset: 83, 35
+  index: -1
+Rodney_top_damage
+  rotate: false
+  xy: 138, 146
+  size: 43, 102
+  orig: 300, 300
+  offset: 81, 65
+  index: -1
+Rodney_top_damage_light
+  rotate: true
+  xy: 913, 414
+  size: 94, 108
+  orig: 300, 300
+  offset: 58, 61
+  index: -1
+Rodney_top_normal
+  rotate: true
+  xy: 186, 248
+  size: 41, 104
+  orig: 300, 300
+  offset: 83, 63
+  index: -1
+Rodney_top_normal_light
+  rotate: true
+  xy: 400, 272
+  size: 93, 112
+  orig: 300, 300
+  offset: 59, 57
+  index: -1
+Shadow_Black
+  rotate: false
+  xy: 2, 2
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

@@ -54,4 +54,46 @@ namespace util {
 
 
 
+	void __jsonSet(const char*&s, rapidjson::Value&val) {
+		if (val.IsString()) {
+			s = val.GetString();
+		} else {
+			char *buf = new char[16];
+			if (val.IsDouble()) {
+				sprintf(buf, "%g", val.GetDouble());
+				s = buf;
+			} else  if (val.IsInt()){
+				sprintf(buf, "%d", val.GetDouble());
+				s = buf;
+			}
+		}		
+	}
+
+	void __jsonSet(int&s, rapidjson::Value&val) {
+		if (val.IsInt()) s = val.GetInt();
+		else if (val.IsString()) s = atoi(val.GetString());
+		else if(val.IsNumber()) s = (int)val.GetDouble();
+	}
+
+	void __jsonSet(float&s, rapidjson::Value&val) {
+		if (val.IsInt()) s = val.GetInt();
+		else if (val.IsString()) s = atof(val.GetString());
+		else s = (float)val.GetDouble();
+	}
+
+	void __jsonSet(double&s, rapidjson::Value&val) {
+		if (val.IsInt()) s = val.GetInt();
+		if (val.IsString()) s = atof(val.GetString());
+		else s = val.GetDouble();
+	}
+
+	void bindTouchEvent(Node*node, EventListenerTouchOneByOne::ccTouchBeganCallback onBegin, EventListenerTouchOneByOne::ccTouchCallback onMove, EventListenerTouchOneByOne::ccTouchCallback onEnd, EventListenerTouchOneByOne::ccTouchCallback onCancel /*= nullptr*/) {
+		auto e=EventListenerTouchOneByOne::create();
+		e->onTouchBegan = onBegin;
+		e->onTouchMoved = onMove;
+		e->onTouchEnded = onEnd;
+		e->onTouchCancelled = onCancel;
+		node->getEventDispatcher()->addEventListenerWithSceneGraphPriority(e, node);
+	}
+
 }

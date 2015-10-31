@@ -31,6 +31,7 @@ void AppDelegate::initGLContextAttrs()
 
 void initData() {
 	G::initStringRes();
+	FileUtils::getInstance()->addSearchPath("res");
 }
 
 // If you want to use packages manager to install more packages, 

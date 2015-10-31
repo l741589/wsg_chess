@@ -43,13 +43,13 @@ namespace lf {
 
 
 Rect parseRect(const char*s) {
-	float l, r, t, b;
-	int c=sscanf(s, "%f,%f,%f,%f", &l, &t, &r, &b);
+	float x, y, w, h;
+	int c=sscanf(s, "%f,%f,%f,%f", &x, &y, &w, &h);
 #ifdef CC_PLATFORM_WIN32
-	if (c == 1) return { l,l,l,l };
-	else if (c == 2) return { l,t,l,t };
-	else if (c == 4) return { l,t,r,b };
-	else return { 0,0,0,0 };
+	if (c == 1) return { x,x,x,x };
+	else if (c == 2) return { x,y,x,y };
+	else if (c == 4) return { x,y,w,h };
+	else return Rect::ZERO;
 #else
 	return Rect{ l,r,t,b };
 #endif // CC_PLATFORM_WIN32
@@ -70,23 +70,19 @@ Color4B parseColor(const char*s) {
 			int r = U2I(s[3]) * 16 + U2I(s[4]);
 			int g = U2I(s[5]) * 16 + U2I(s[6]);
 			int b = U2I(s[7]) * 16 + U2I(s[8]);
-			return Color4B(a,r, g, b);
-		}
-		else if (l == 7) {
+			return Color4B(a, r, g, b);
+		} else if (l == 7) {
 			int r = U2I(s[1]) * 16 + U2I(s[2]);
 			int g = U2I(s[3]) * 16 + U2I(s[4]);
 			int b = U2I(s[5]) * 16 + U2I(s[6]);
-			return Color4B(255,r, g, b);
-		}
-		else {
+			return Color4B(255, r, g, b);
+		} else {
 			return Color4B::BLACK;
 		}
-	}
-	else {
+	} else {
 		return Color4B::BLACK;
 	}
 }
-
 
 FUNC(Node) {
 	if (v.GetType() != rapidjson::Type::kObjectType) return false;

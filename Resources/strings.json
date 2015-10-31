@@ -1,6 +1,14 @@
 {
+	"cancel":"取消",
 	"battle.action.title":"选择操作",
 	"battle.action.move":"移动",
 	"battle.action.direct":"转向",
-	"battle.action.attack":"攻击"	
+	"battle.action.direct.pl":"逆时针45°",
+	"battle.action.direct.pm":"逆时针30°",
+	"battle.action.direct.ps":"逆时针15°",
+	"battle.action.direct.ml":"顺时针45°",
+	"battle.action.direct.mm":"顺时针30°",
+	"battle.action.direct.ms":"顺时针15°",
+	"battle.action.attack":"攻击"
+	
 }

@@ -1,0 +1,118 @@
+
+Ship_girl_25.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rodney_armor_normal_light
+  rotate: false
+  xy: 341, 129
+  size: 66, 105
+  orig: 300, 300
+  offset: 76, 66
+  index: -1
+Rodney_body_damage
+  rotate: true
+  xy: 2, 39
+  size: 195, 257
+  orig: 300, 300
+  offset: 54, 28
+  index: -1
+Rodney_body_normal
+  rotate: false
+  xy: 402, 247
+  size: 195, 257
+  orig: 300, 300
+  offset: 54, 28
+  index: -1
+Rodney_eyes_damage
+  rotate: true
+  xy: 261, 28
+  size: 59, 72
+  orig: 300, 300
+  offset: 138, 174
+  index: -1
+Rodney_eyes_normal
+  rotate: false
+  xy: 409, 189
+  size: 60, 56
+  orig: 300, 300
+  offset: 138, 175
+  index: -1
+Rodney_fornt_damage
+  rotate: false
+  xy: 134, 2
+  size: 84, 35
+  orig: 300, 300
+  offset: 117, 101
+  index: -1
+Rodney_fornt_damage_light
+  rotate: false
+  xy: 599, 247
+  size: 136, 77
+  orig: 300, 300
+  offset: 91, 79
+  index: -1
+Rodney_fornt_normal
+  rotate: false
+  xy: 2, 2
+  size: 130, 35
+  orig: 300, 300
+  offset: 71, 101
+  index: -1
+Rodney_fornt_normal_light
+  rotate: true
+  xy: 261, 89
+  size: 145, 78
+  orig: 300, 300
+  offset: 87, 78
+  index: -1
+Rodney_ship_armor_damage
+  rotate: false
+  xy: 599, 326
+  size: 181, 178
+  orig: 300, 300
+  offset: 39, 61
+  index: -1
+Rodney_ship_armor_normal
+  rotate: true
+  xy: 782, 323
+  size: 83, 120
+  orig: 300, 300
+  offset: 39, 61
+  index: -1
+Rodney_ship_body_damage_light
+  rotate: false
+  xy: 2, 236
+  size: 198, 268
+  orig: 300, 300
+  offset: 87, 27
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: false
+  xy: 202, 236
+  size: 198, 268
+  orig: 300, 300
+  offset: 87, 27
+  index: -1
+Rodney_top_normal
+  rotate: false
+  xy: 911, 414
+  size: 103, 90
+  orig: 300, 300
+  offset: 99, 72
+  index: -1
+Rodney_top_normal_light
+  rotate: false
+  xy: 782, 408
+  size: 127, 96
+  orig: 300, 300
+  offset: 97, 66
+  index: -1
+Shadow_Black
+  rotate: true
+  xy: 737, 265
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

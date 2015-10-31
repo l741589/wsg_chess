@@ -1,0 +1,118 @@
+
+Ship_girl_12.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rodney_armor_damage_light
+  rotate: false
+  xy: 719, 738
+  size: 201, 261
+  orig: 360, 360
+  offset: 98, 99
+  index: -1
+Rodney_armor_normal_light
+  rotate: false
+  xy: 508, 738
+  size: 209, 261
+  orig: 360, 360
+  offset: 90, 99
+  index: -1
+Rodney_body_damage
+  rotate: false
+  xy: 280, 682
+  size: 226, 317
+  orig: 360, 360
+  offset: 75, 7
+  index: -1
+Rodney_body_normal
+  rotate: false
+  xy: 2, 36
+  size: 226, 305
+  orig: 360, 360
+  offset: 75, 7
+  index: -1
+Rodney_eyes_damage
+  rotate: false
+  xy: 253, 376
+  size: 64, 44
+  orig: 360, 360
+  offset: 169, 145
+  index: -1
+Rodney_eyes_normal
+  rotate: false
+  xy: 380, 431
+  size: 57, 48
+  orig: 360, 360
+  offset: 176, 144
+  index: -1
+Rodney_fornt_damage
+  rotate: false
+  xy: 762, 649
+  size: 199, 87
+  orig: 360, 360
+  offset: 88, 99
+  index: -1
+Rodney_fornt_damage_light
+  rotate: true
+  xy: 922, 750
+  size: 249, 97
+  orig: 360, 360
+  offset: 69, 95
+  index: -1
+Rodney_fornt_normal
+  rotate: true
+  xy: 380, 481
+  size: 199, 92
+  orig: 360, 360
+  offset: 88, 99
+  index: -1
+Rodney_fornt_normal_light
+  rotate: false
+  xy: 508, 634
+  size: 252, 102
+  orig: 360, 360
+  offset: 69, 95
+  index: -1
+Rodney_hair
+  rotate: false
+  xy: 2, 2
+  size: 101, 32
+  orig: 360, 360
+  offset: 46, 145
+  index: -1
+Rodney_ship_armor_damage
+  rotate: false
+  xy: 253, 422
+  size: 125, 248
+  orig: 360, 360
+  offset: 134, 109
+  index: -1
+Rodney_ship_armor_normal
+  rotate: true
+  xy: 474, 484
+  size: 148, 245
+  orig: 360, 360
+  offset: 111, 109
+  index: -1
+Rodney_ship_body_damage_light
+  rotate: false
+  xy: 2, 672
+  size: 276, 327
+  orig: 360, 360
+  offset: 69, 0
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: false
+  xy: 2, 343
+  size: 249, 327
+  orig: 360, 360
+  offset: 96, 0
+  index: -1
+Shadow_Black
+  rotate: false
+  xy: 963, 731
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

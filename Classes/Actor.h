@@ -35,5 +35,6 @@ public:
 	void setDirection(float degree);
 	static Actor* create(FightScene*fightScene, int id);
 	bool init(FightScene*scene,int id);
+	spine::SkeletonAnimation*getAnim() { return anim; }
 	Ship*getShip();
 };

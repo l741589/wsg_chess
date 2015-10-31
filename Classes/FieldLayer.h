@@ -20,7 +20,8 @@ public:
 	CREATE_FUNC(FieldLayer);
 	bool init() override;
 	enum {TileSize=96,SrcTileSize=64};
-	static Vec2 filedToLocal(Vec2 in) { return{ in.x*TileSize + TileSize / 2,in.y*TileSize + TileSize / 2 }; }
+	static Vec2 fieldToLocal(Vec2 in) { return{ in.x*TileSize + TileSize / 2,in.y*TileSize + TileSize / 2 }; }
+	static Vec2 fixLocal(Vec2 in) {return fieldToLocal(Vec2{ floorf(in.x / TileSize), floorf(in.y / TileSize) });}
 	FieldTile* createTile(Vec2 position, int index, Color3B color, onSelectedListener listener);
 	void createMoveTiles(Actor*actor, onSelectedListener listener);
 	void createTiles(Vec2 start, int glen, VecFilter filter, Color3B color, onSelectedListener listener);

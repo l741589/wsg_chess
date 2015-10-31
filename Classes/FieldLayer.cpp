@@ -5,7 +5,7 @@ void FieldLayer::createMoveTiles(Actor*actor, onSelectedListener listener) {
 	auto direction = actor->getDirection();
 	//while (direction >= 360) direction -= 360;
 	//while (direction < 0) direction += 360;
-	int glen = (int)round(actor->getShip()->getSpeed() / 5);
+	int glen = (int)round(actor->getShip()->speed / 5);
 	const Vec2&v = actor->getFieldPosition();
 	int al = (int)(v.x + v.y);
 	createTiles(v, glen, [=](const Vec2&v) {
@@ -54,7 +54,7 @@ void FieldLayer::createTiles(Vec2 start, int glen, VecFilter filter, Color3B col
 FieldTile* FieldLayer::createTile(Vec2 position,int index, Color3B color, onSelectedListener listener) {
 	FieldTile*sp = FieldTile::create();
 	sp->setColor(color);
-	sp->setPosition(filedToLocal(position));
+	sp->setPosition(fieldToLocal(position));
 	sp->index = index;
 	addChild(sp);
 	if (listener) {
@@ -80,7 +80,6 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color3B color, onSele
 			RotateTo::create(0.5f, 0),
 			ScaleTo::create(0.5f, targetScale),
 			nullptr
-
 		),
 		nullptr
 	));

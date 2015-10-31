@@ -1,0 +1,55 @@
+
+Ship_girl_174.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rodney_body_damage
+  rotate: true
+  xy: 500, 13
+  size: 236, 249
+  orig: 300, 300
+  offset: 41, 27
+  index: -1
+Rodney_body_normal
+  rotate: true
+  xy: 751, 39
+  size: 210, 250
+  orig: 300, 300
+  offset: 46, 27
+  index: -1
+Rodney_eyes_damage
+  rotate: false
+  xy: 812, 8
+  size: 51, 29
+  orig: 300, 300
+  offset: 122, 145
+  index: -1
+Rodney_eyes_normal
+  rotate: false
+  xy: 865, 2
+  size: 44, 35
+  orig: 300, 300
+  offset: 126, 146
+  index: -1
+Rodney_ship_body_damage_light
+  rotate: false
+  xy: 2, 5
+  size: 247, 244
+  orig: 300, 300
+  offset: 32, 13
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: false
+  xy: 251, 5
+  size: 247, 244
+  orig: 300, 300
+  offset: 32, 13
+  index: -1
+Shadow_Black
+  rotate: false
+  xy: 751, 20
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

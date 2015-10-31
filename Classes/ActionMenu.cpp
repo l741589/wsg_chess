@@ -1,59 +1,49 @@
 #include "ActionMenu.h"
 #include "StringRes.h"
-Button* ActionMenu::addButton(std::string text, std::function<void(Ref*)>callback)
-{
-	Button*b = Button::create("ui/newBtnBlue01.png", "ui/newBtnBlue02.png", "ui/newGray.png");
-	b->setTitleText(G::getString(text));
-	b->addClickEventListener([=](Ref*ref) {
-		this->runAction(Sequence::create(ScaleTo::create(0.2f, 0),Hide::create(),nullptr));
-		if (callback)  callback(ref);
-	});
-	b->setTitleFontSize(20);
-	util::setLayoutParameter(b, { 0, 0, 0, -6 }, LinearGravity::CENTER_HORIZONTAL);
-	buttons.push_back(b);
-	addChild(b);
-	return b;
+#include "FightScene.h"
+#include "FieldLayer.h"
+#include "Actor.h"
+#include "ControlSet.h"
+#include "layout/LayoutInflater.h"
+#include "StringRes.h"
+
+ActionMenu::ActionMenu(FightScene* scene) {
+	this->scene = scene;
+	this->menu = nullptr;
 }
 
-
-bool ActionMenu::init()
-{
-	if (!VBox::init()) return false;
-	util::setScale9Background(this, "ui/panelBG2.png");
-	this->setAnchorPoint({ 0.5f,0.5f });
-	return true;
+ActionMenu::~ActionMenu() {
+	if (menu) menu->removeFromParent();
 }
 
-bool ActionMenu::show(Vec2 position,std::string title, std::list<std::pair<std::string, std::function<void(Ref*)> > > items)
-{
-	this->removeAllChildren();
-	buttons.clear();
-	this->setPosition(position);
-
-	Text*t = Text::create();
-	t->setString(G::getString(title));
-	t->setPosition({ 70,16 });
-
-	auto l = Layout::create();
-	addChild(l);
-	l->addChild(t);
-	util::setScale9Background(l, "ui/panelBG4.png");
-	l->setContentSize({ 140,32 });
-	util::setLayoutParameter(l, { 0,10,0,0 }, LinearGravity::CENTER_HORIZONTAL);
-
-	for (auto item : items) {
-		auto b=addButton(item.first, item.second);
-		if (!item.second) {
-			b->setEnabled(false);
-		}
+Node* ActionMenu::show(const char*title,std::initializer_list<std::pair<std::string,std::function<void(Button*button)> > > menuDef) {
+	hide();
+	menu = LayoutInflater::inflate("ctrl/Panel1.json");
+	for (auto p : menuDef) {
+		Button*b = (Button*)LayoutInflater::inflate("ctrl/ButtonBlue1.json");
+		b->setTitleText(G::getString(p.first));
+		menu->addChild(b);
+		if (!p.second) b->setEnabled(false);
+		b->addClickEventListener([=](Ref*ref) {
+			hide();
+			if (p.second) p.second((Button*)ref);
+		});
 	}
+	menu->setContentSize({ 160, 70.0f * menuDef.size() });
+	this->scene->addChild(menu);
+	menu->setPosition({ 200, 200 });
+	menu->setScale(0);
+	menu->runAction(ScaleTo::create(0.2f, 1));
 
-	
-	this->setContentSize({ 160,(float)(buttons.size() * 64 + 52) });
+	return menu;
+}
 
-	
-	this->setVisible(true);
-	this->setScale(0);
-	this->runAction(ScaleTo::create(0.2f,1));
-	return true;
+void ActionMenu::hide() {
+	if (!this->menu) return;
+	auto menu = this->menu;
+	this->menu->runAction(Sequence::createWithTwoActions(
+		ScaleTo::create(0.2f, 0),
+		CallFunc::create([menu]() {menu->removeFromParent(); })
+		));
+	this->menu = nullptr;
 }

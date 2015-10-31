@@ -1,0 +1,83 @@
+
+Ship_girl_26.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Rodney_body_normal
+  rotate: false
+  xy: 226, 197
+  size: 225, 297
+  orig: 360, 360
+  offset: 90, 21
+  index: -1
+Rodney_eyes_damage
+  rotate: false
+  xy: 749, 322
+  size: 49, 42
+  orig: 360, 360
+  offset: 210, 177
+  index: -1
+Rodney_eyes_normal
+  rotate: false
+  xy: 915, 450
+  size: 49, 44
+  orig: 360, 360
+  offset: 210, 175
+  index: -1
+Rodney_fornt_damage
+  rotate: false
+  xy: 453, 284
+  size: 294, 210
+  orig: 360, 360
+  offset: 22, 150
+  index: -1
+Rodney_fornt_damage_light
+  rotate: false
+  xy: 749, 366
+  size: 164, 128
+  orig: 360, 360
+  offset: 83, 230
+  index: -1
+Rodney_fornt_normal
+  rotate: false
+  xy: 2, 21
+  size: 158, 164
+  orig: 360, 360
+  offset: 57, 187
+  index: -1
+Rodney_fornt_normal_light
+  rotate: false
+  xy: 453, 160
+  size: 164, 122
+  orig: 360, 360
+  offset: 83, 236
+  index: -1
+Rodney_ship_armor_damage
+  rotate: false
+  xy: 619, 168
+  size: 153, 114
+  orig: 360, 360
+  offset: 62, 210
+  index: -1
+Rodney_ship_armor_normal
+  rotate: true
+  xy: 162, 35
+  size: 150, 111
+  orig: 360, 360
+  offset: 65, 210
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: false
+  xy: 2, 187
+  size: 222, 307
+  orig: 360, 360
+  offset: 123, 31
+  index: -1
+Shadow_Black
+  rotate: false
+  xy: 2, 2
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

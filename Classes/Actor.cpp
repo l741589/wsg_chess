@@ -41,34 +41,48 @@ void Actor::bindEvent() {
 	e->onTouchEnded = e->onTouchCancelled = [this](Touch*t, Event*e) {
 		this->runAction(ScaleTo::create(0.1f, 1));
 		Ship*ship = getShip();
-		this->fightScene->actionMenu->show(e->getCurrentTarget()->getPosition() + Vec2{144,32}, 
-			"battle.action.title", {
-				{ "battle.action.move",[=](Ref*) {
-					this->fightScene->fieldLayer->createMoveTiles(this, [this](Sprite*, const Vec2&pos) {
-						CCLOG("%f,%f",pos.x, pos.y);
-						anim->getSkeleton()->flipX = pos.x < fieldPosition.x;
-						setDirection((pos - fieldPosition).getAngle());
-						fightScene->fieldLayer->clear();
-						auto move = Sequence::create(
-							MoveTo::create(0.5f, FieldLayer::filedToLocal(pos)),
-							CallFunc::create([=]() {setFieldPositoin(pos); }),
-							nullptr);
-						move->setTag(0x307E);
-						stopActionByTag(0x307E);
-						runAction(move);
-						if (abs(pos.x - fieldPosition.x)>2) {
-							anim->setAnimation(1, Anim::Throw, false);
-						}
-					});
-				} 
-			},
-			{ "battle.action.direct",nullptr },
-			{ "battle.action.attack",nullptr },
-		});
+		this->fightScene->actionMenu->show(
+			"battle.action.title", 
+			{
+				{ "battle.action.move", [=](Ref*) {
+						this->fightScene->fieldLayer->createMoveTiles(this, [this](Sprite*, const Vec2&pos) {
+							CCLOG("%f,%f", pos.x, pos.y);
 
+							if (pos!=fieldPosition) setDirection((pos - fieldPosition).getAngle());
+							fightScene->fieldLayer->clear();
+							auto move = Sequence::create(
+								MoveTo::create(0.5f, FieldLayer::fieldToLocal(pos)),
+								CallFunc::create([=]() {setFieldPositoin(pos); }),
+								nullptr);
+							move->setTag(0x307E);
+							stopActionByTag(0x307E);
+							runAction(move);
+							if (abs(pos.x - fieldPosition.x) > 2) {
+								anim->setAnimation(1, Anim::Throw, false);
+							}
+						});
+					}
+				},
+				{ "battle.action.direct", [=](Ref*) {
+						this->fightScene->actionMenu->show(
+							"",
+							{
+								{ "battle.action.direct.ml", [=](Ref*) { setDirection(getDirection() - PI / 4); } },
+								{ "battle.action.direct.mm", [=](Ref*) { setDirection(getDirection() - PI / 6); } },
+								{ "battle.action.direct.ms", [=](Ref*) { setDirection(getDirection() - PI / 12); } },
+								{ "battle.action.direct.pl", [=](Ref*) { setDirection(getDirection() + PI / 4); } },
+								{ "battle.action.direct.pm", [=](Ref*) { setDirection(getDirection() + PI / 6); } },
+								{ "battle.action.direct.ps", [=](Ref*) { setDirection(getDirection() + PI / 12); } },
+							}
+						);
+					} 
+				},
+				{ "battle.action.attack", nullptr },
+				{ "cancel", [](Ref*) {} },
+			}
+		);
 	};
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(e, this);
-
 
 }
 
@@ -98,11 +112,13 @@ Ship* Actor::getShip() {
 
 void Actor::setFieldPositoin(Vec2 pos) {
 	fieldPosition = pos;
-	setPosition(fightScene->fieldLayer->filedToLocal(pos));
+	setPosition(fightScene->fieldLayer->fieldToLocal(pos));
 }
 
 void Actor::setDirection(float raduis)
 {	
+	while (raduis >= PI) raduis -= 2*PI;
+	while (raduis < -PI) raduis += 2*PI;
 	this->direction = raduis;
 	auto trans = AffineTransform::IDENTITY;
 	trans = AffineTransformTranslate(trans, 0, -20);
@@ -110,4 +126,5 @@ void Actor::setDirection(float raduis)
 	trans = AffineTransformRotate(trans, raduis);
 	trans = AffineTransformTranslate(trans, -32, -32);
 	directionArrow->setAdditionalTransform(trans);
+	anim->getSkeleton()->flipX = raduis >= PI / 2 || raduis < -PI / 2;
 }

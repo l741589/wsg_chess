@@ -27,17 +27,16 @@ bool FightScene::init() {
 	ships->addChild(hood);
 	hood->setFieldPositoin({ 0, 0 });
 
-	auto lightWorm = Actor::create(this, 1082);
-	ships->addChild(lightWorm);
-	lightWorm->setFieldPositoin({ 5, 7 });
+	auto glowWorm = Actor::create(this, 1082);
+	ships->addChild(glowWorm);
+	glowWorm->setFieldPositoin({ 5, 7 });
 
-	actionMenu = ActionMenu::create();
-	
-	auto layout = LayoutInflater::inflate("bar.json");
-	layout->setPosition({ 100,100 });
-	addChild(layout);
+	actionMenu = new ActionMenu(this);
 
-	addChild(actionMenu);
+	selector = Sprite::create("fieldRectSelector.png");
+	selector->setScale(1.5f);
+	selector->setColor({ 0xc0, 0xc0, 0xc0 });
+	gameLayer->addChild(selector, 1);
 	
 	auto x=cocos2d::TMXTiledMap::create("map/1.tmx");
 	x->setScale(3);
@@ -60,6 +59,13 @@ bool FightScene::init() {
 	}, x, 1.0f, false, "updateTile");
 	
 	gameLayer->addChild(x);	
+	util::bindTouchEvent(gameLayer, [=](Touch*t, Event*e) {
+		auto n = e->getCurrentTarget();
+		auto pos = n->convertTouchToNodeSpace(t);
+		Vec2 v = FieldLayer::fixLocal(pos);
+		selector->setPosition(v);
+		return true;
+	},nullptr,nullptr);
 	return true;
 }
 

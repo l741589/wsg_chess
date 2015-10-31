@@ -1,0 +1,69 @@
+
+Ship_girl_219.png
+size: 1024,256
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Rodney_armor_normal_light
+  rotate: true
+  xy: 775, 142
+  size: 106, 187
+  orig: 300, 300
+  offset: 74, 48
+  index: -1
+Rodney_body_damage
+  rotate: true
+  xy: 273, 98
+  size: 150, 249
+  orig: 300, 300
+  offset: 103, 19
+  index: -1
+Rodney_body_normal
+  rotate: true
+  xy: 524, 128
+  size: 120, 249
+  orig: 300, 300
+  offset: 103, 19
+  index: -1
+Rodney_eyes_damage
+  rotate: false
+  xy: 964, 209
+  size: 54, 39
+  orig: 300, 300
+  offset: 147, 167
+  index: -1
+Rodney_eyes_normal
+  rotate: false
+  xy: 693, 89
+  size: 46, 37
+  orig: 300, 300
+  offset: 154, 171
+  index: -1
+Rodney_ship_armor_damage
+  rotate: true
+  xy: 524, 15
+  size: 111, 167
+  orig: 300, 300
+  offset: 42, 49
+  index: -1
+Rodney_ship_armor_normal
+  rotate: true
+  xy: 2, 2
+  size: 66, 167
+  orig: 300, 300
+  offset: 87, 49
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: true
+  xy: 2, 70
+  size: 178, 269
+  orig: 300, 300
+  offset: 92, 13
+  index: -1
+Shadow_Black
+  rotate: false
+  xy: 273, 79
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

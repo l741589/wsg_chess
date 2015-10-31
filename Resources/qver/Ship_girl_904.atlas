@@ -1,0 +1,118 @@
+
+Ship_girl_904.png
+size: 1024,256
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Rodney_body_normal
+  rotate: true
+  xy: 262, 107
+  size: 138, 241
+  orig: 300, 300
+  offset: 77, 23
+  index: -1
+Rodney_body_normal_fluorescence
+  rotate: false
+  xy: 893, 213
+  size: 33, 32
+  orig: 300, 300
+  offset: 147, 182
+  index: -1
+Rodney_fornt_normal
+  rotate: true
+  xy: 829, 201
+  size: 44, 62
+  orig: 300, 300
+  offset: 92, 67
+  index: -1
+Rodney_fornt_normal_light
+  rotate: false
+  xy: 505, 147
+  size: 102, 98
+  orig: 300, 300
+  offset: 72, 48
+  index: -1
+Rodney_head_L
+  rotate: false
+  xy: 207, 49
+  size: 53, 38
+  orig: 300, 300
+  offset: 177, 226
+  index: -1
+Rodney_head_L_light
+  rotate: false
+  xy: 609, 189
+  size: 73, 56
+  orig: 300, 300
+  offset: 176, 216
+  index: -1
+Rodney_head_R
+  rotate: false
+  xy: 758, 193
+  size: 69, 52
+  orig: 300, 300
+  offset: 91, 236
+  index: -1
+Rodney_ship_armor_down
+  rotate: false
+  xy: 262, 67
+  size: 45, 38
+  orig: 300, 300
+  offset: 177, 69
+  index: -1
+Rodney_ship_armor_down_light
+  rotate: false
+  xy: 684, 190
+  size: 72, 55
+  orig: 300, 300
+  offset: 176, 57
+  index: -1
+Rodney_ship_armor_gun
+  rotate: false
+  xy: 505, 120
+  size: 82, 25
+  orig: 300, 300
+  offset: 146, 93
+  index: -1
+Rodney_ship_armor_gun_light
+  rotate: false
+  xy: 309, 84
+  size: 23, 21
+  orig: 300, 300
+  offset: 211, 92
+  index: -1
+Rodney_ship_armor_normal
+  rotate: false
+  xy: 128, 29
+  size: 77, 58
+  orig: 300, 300
+  offset: 156, 99
+  index: -1
+Rodney_ship_armor_normal_light
+  rotate: false
+  xy: 2, 2
+  size: 124, 85
+  orig: 300, 300
+  offset: 143, 84
+  index: -1
+Rodney_ship_body_normal_light
+  rotate: true
+  xy: 2, 89
+  size: 156, 258
+  orig: 300, 300
+  offset: 102, 21
+  index: -1
+Rodney_tail_path_1
+  rotate: false
+  xy: 128, 9
+  size: 74, 18
+  orig: 74, 18
+  offset: 0, 0
+  index: -1
+Shadow_Black
+  rotate: false
+  xy: 609, 170
+  size: 59, 17
+  orig: 150, 150
+  offset: 46, 63
+  index: -1

@@ -2,28 +2,30 @@
 
 #include "Ship.h"
 
+USING_NS_CC;
 
 GameData*G::gameData = new GameData();
 
-GameData::GameData() {
-	Ship*ship = new Ship();
-	ship->_Id = 1;
-	ship->_Speed = 30;
-	ship->_TurningRaduis = 700;
-	ship->_Name = "Hood";
-	ships.push_back(ship);
-	shipMapById[ship->_Id] = ship;
 
-	ship = new Ship();
-	ship->_Id = 1082;
-	ship->_Speed = 39;
-	ship->_TurningRaduis = 700;
-	ship->_Name = "LightWorm";
-	ships.push_back(ship);
-	shipMapById[ship->_Id] = ship;
+
+GameData::GameData() {
+	std::string&& s=FileUtils::getInstance()->getStringFromFile("GameData.json");
+	doc.Parse(s.c_str());
+	auto&shipcards = doc["shipCard"];
+	for (auto i = shipcards.Begin(); i != shipcards.End(); ++i) {
+		Ship*ship = new Ship(*i);
+		if (ship->cid >= 20000000) {
+			delete ship;
+			continue;
+		}
+		ships.push_back(ship);
+		shipMapById[ship->shipIndex] = ship;
+	}
+	
+	
 
 }
 
 GameData::~GameData() {
-	for (Ship*ship : ships) delete ship;
+	for (const Ship*ship : ships) delete ship;
 }

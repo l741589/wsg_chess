@@ -12,7 +12,10 @@ public:
 	cocos2d::Layer*gameLayer;
 	FieldLayer*fieldLayer;
 	ActionMenu*actionMenu;
+	Node*selector;
 	CREATE_FUNC(FightScene);
 	bool init() override;
-	
+	~FightScene() {
+		delete actionMenu;
+	}
 };
