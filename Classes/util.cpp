@@ -87,6 +87,12 @@ namespace util {
 		else s = val.GetDouble();
 	}
 
+	void __jsonSet(std::set<int>&s, rapidjson::Value&val) {
+		for (auto i = val.Begin(); i != val.End(); ++i) {
+			s.insert(i->GetInt());
+		}
+	}
+
 	void bindTouchEvent(Node*node, EventListenerTouchOneByOne::ccTouchBeganCallback onBegin, EventListenerTouchOneByOne::ccTouchCallback onMove, EventListenerTouchOneByOne::ccTouchCallback onEnd, EventListenerTouchOneByOne::ccTouchCallback onCancel /*= nullptr*/) {
 		auto e=EventListenerTouchOneByOne::create();
 		e->onTouchBegan = onBegin;

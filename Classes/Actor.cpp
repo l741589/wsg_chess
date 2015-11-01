@@ -67,7 +67,7 @@ bool Actor::init(FightScene*fightScene, int id) {
 	return true;
 }
 
-Ship* Actor::getShip() {
+const Ship* Actor::getShip() {
 	if (!ship) ship = G::gameData->shipMapById[_id];
 	return ship;
 }
@@ -95,6 +95,7 @@ Actor::~Actor() {
 	if (!fightScene->actors.empty()) {
 		std::remove(fightScene->actors.begin(), fightScene->actors.end(), this);
 	}
+	for (auto e : equips) delete e;
 }
 
 void Actor::moveTo(const Vec2 &pos) {
@@ -113,4 +114,9 @@ void Actor::moveTo(const Vec2 &pos) {
 
 void Actor::turn(float radius) {
 	setDirection(getDirection() + radius);
+}
+
+void Actor::addEquip(int id) {
+	auto e = new Equip(id);
+	if (e) equips.push_back(e);
 }

@@ -18,12 +18,10 @@ ActionMenu::~ActionMenu() {
 		menu->removeFromParent();
 		menu->release();
 	}
-	
 }
 
 Node* ActionMenu::show(const char*title,std::initializer_list<std::pair<std::string,std::function<void(Button*button)> > > menuDef) {
 	hide();
-	
 	for (auto p : menuDef) {
 		Button*b = (Button*)LayoutInflater::inflate("ctrl/ButtonBlue1.json");
 		b->setTitleText(G::getString(p.first));

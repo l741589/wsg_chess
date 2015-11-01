@@ -74,9 +74,6 @@
     <ClInclude Include="..\Classes\util.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Ship.h">
-      <Filter>src\data</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\GameData.h">
       <Filter>src\data</Filter>
     </ClInclude>
@@ -97,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\InfoBar.h">
       <Filter>src\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\stdafx.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

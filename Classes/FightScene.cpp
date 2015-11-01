@@ -36,6 +36,7 @@ bool FightScene::init() {
 	auto glowWorm = Actor::create(this, 1082);
 	ships->addChild(glowWorm);
 	glowWorm->setFieldPositoin({ 5, 7 });
+	
 
 	selector = Sprite::create("fieldRectSelector.png");
 	selector->setScale(1.5f);

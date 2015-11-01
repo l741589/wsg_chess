@@ -12,16 +12,13 @@ private:
 	ImageView* shipClass;
 	ImageView* flag;
 	ActionMenu* actionMenu; 
-	Text*hp;
-	LoadingBar*hpBar;
-	Text*name;
-	FightScene*scene;
+	Text* hp;
+	LoadingBar* hpBar;
+	Text* name;
+	FightScene* scene;
 public:
 	InfoBar(FightScene*scene);
 	~InfoBar();
 	void update(Actor*actor);
 	void showActionMenu(Actor*actor);
-
-	
-
 };

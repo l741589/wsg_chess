@@ -18,7 +18,6 @@ InfoBar::InfoBar(FightScene*scene) {
 	name = util::find<Text>(node, "Name");
 	hp = util::find<Text>(node, "Hp");
 	hpBar = util::find<LoadingBar>(node, "HpBar");
-
 }
 
 InfoBar::~InfoBar() {
@@ -74,6 +73,7 @@ void InfoBar::showActionMenu(Actor*actor) {
 						{ "battle.action.direct.pl", [=](Ref*) { actor->turn(PI / 4); } },
 						{ "battle.action.direct.pm", [=](Ref*) { actor->turn(PI / 6); } },
 						{ "battle.action.direct.ps", [=](Ref*) { actor->turn(PI / 12); } },
+						{ "cancel", [=](Ref*) {showActionMenu(actor); } },
 					}
 				);
 			}
