@@ -16,6 +16,12 @@
           <Image Name="st_6.png" />
           <Image Name="hp1.png" />
           <Image Name="hpBox.png" />
+          <Image Name="equip_L_4.png" />
+          <Image Name="equipBG1.png" />
+          <Image Name="equipBox1.png" />
+          <Image Name="equipBox2.png" />
+          <Image Name="filterBtn_1.png" />
+          <Image Name="filterBtn_2.png" />
         </Folder>
         <Folder Name="font">
           <TTF Name="msyh.ttf" />
@@ -23,6 +29,7 @@
         </Folder>
         <Project Name="Avatar.csd" Type="Node" />
         <Project Name="HpBar.csd" Type="Node" />
+        <Project Name="EquipmentItem.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
