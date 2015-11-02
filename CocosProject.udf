@@ -28,5 +28,15 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="Avatar.csd" />
+          <FilePathData Path="HpBar.csd" />
+          <FilePathData Path="EquipmentItem.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="Avatar.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
