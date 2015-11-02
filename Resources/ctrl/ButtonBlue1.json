@@ -1,8 +1,8 @@
 {
 	"type":"Button",
 	"textSize":20.0,
-	"texNormal":"newBtnBlue01.png",
-	"texPressed":"newBtnBlue02.png",
-	"texDisable":"newGray.png",
+	"texNormal":"ui/newBtnBlue01.png",
+	"texPressed":"ui/newBtnBlue02.png",
+	"texDisable":"ui/newGray.png",
 	"gravity":"h"
 }

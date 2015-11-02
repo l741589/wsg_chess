@@ -63,7 +63,7 @@ namespace util {
 				sprintf(buf, "%g", val.GetDouble());
 				s = buf;
 			} else  if (val.IsInt()){
-				sprintf(buf, "%d", val.GetDouble());
+				sprintf(buf, "%d", val.GetInt());
 				s = buf;
 			}
 		}		
