@@ -4,6 +4,7 @@
 #include "GameData.h"
 
 class FightScene;
+class Actor;
 
 class Equip {
 private:
@@ -13,6 +14,8 @@ public:
 	Equip(int id) {this->id = id;}
 	int getId() { return id; }
 	const Equipment*getEquipment() { if (!equipment)equipment = G::gameData->equipmentsMapById[id]; return equipment; }
+
+	void createTiles(Actor*actor);
 };
 
 class Actor : public cocos2d::Node {
@@ -26,7 +29,7 @@ private:
 	Sprite*directionArrow;
 	float direction = 0;
 	int hp;
-	std::vector<const Equip*> equips;
+	std::vector<Equip*> equips;
 public:	
 	struct Anim{
 		static const char* Antiaircraft;
@@ -53,6 +56,7 @@ public:
 	void moveTo(const Vec2 &pos);
 	void turn(float radius);
 	void addEquip(int id);
-	const std::vector<const Equip*>& getEquips() const { return equips; };
+	const std::vector<Equip*>& getEquips() const { return equips; };
+	FightScene*getFightScene() { return fightScene; }
 	~Actor();
 };

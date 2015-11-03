@@ -9,6 +9,26 @@
 	"battle.action.direct.ml":"顺时针45°",
 	"battle.action.direct.mm":"顺时针30°",
 	"battle.action.direct.ms":"顺时针15°",
-	"battle.action.attack":"攻击"
-	
+	"battle.action.attack":"攻击",
+	"equipment.type":[
+		"???",
+		"主炮",
+		"副炮",
+		"鱼雷",
+		"攻击机",
+		"战斗机",
+		"轰炸机",
+		"侦察机",
+		"雷达",
+		"强化配件",
+		"弹药",
+		"防空炮"				
+	],
+	"equipment.range":[
+		"",
+		"射程：短",
+		"射程：中",
+		"射程：长",
+		"射程：超长"
+	]
 }

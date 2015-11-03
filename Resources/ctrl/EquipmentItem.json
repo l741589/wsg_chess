@@ -1,0 +1,5 @@
+{
+	"type":"include",
+	"format":"csb",
+	"file":"res/EquipmentItem.csb"
+}

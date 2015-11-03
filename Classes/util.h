@@ -2,6 +2,7 @@
 #include "stdafx.h"
 
 #define READONLY_PROP(type,name) private: type _##name;public: type get##name(){return _##name;}
+#define MENU_WIDTH 200
 
 namespace util {
 	USING_NS_CC;
@@ -29,7 +30,7 @@ namespace util {
 		}
 		return nullptr;
 	}
-
+	const char*format(const char*fmt, ...);
 	void bindTouchEvent(Node*node, EventListenerTouchOneByOne::ccTouchBeganCallback onBegin, EventListenerTouchOneByOne::ccTouchCallback onMove, EventListenerTouchOneByOne::ccTouchCallback onEnd, EventListenerTouchOneByOne::ccTouchCallback onCancel = nullptr);
 }
 

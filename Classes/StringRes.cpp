@@ -15,6 +15,11 @@ namespace G {
 	std::string getString(const std::string& key) {
 		return StringRes[key.c_str()].GetString();
 	}
+
+	std::string getString(const char* key, int index)
+	{
+		return StringRes[key][index].GetString();
+	}
 }
 
 

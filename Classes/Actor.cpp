@@ -120,3 +120,21 @@ void Actor::addEquip(int id) {
 	auto e = new Equip(id);
 	if (e) equips.push_back(e);
 }
+//////////////////////////////////////////////////////////////////////////
+void Equip::createTiles(Actor*actor)
+{
+	auto e = getEquipment();
+	auto scene = actor->getFightScene();
+	auto field = scene->fieldLayer;
+	auto attackColor = 0xff0000;
+	switch (e->type)
+	{
+	case 1:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
+		int min = (e->range - 1) * 5;
+		int max = e->range  * 5;
+		float dis = sv.distanceSquared(v);
+		return dis > max*max? 0:dis >= min*min?attackColor:FieldLayer::DISABLE_BUT_ALLOW;
+	},nullptr);
+		
+	}
+}

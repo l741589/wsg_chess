@@ -15,8 +15,9 @@ public:
 
 class FieldLayer : public cocos2d::Node{
 public:
+	enum{DISABLE=0,DISABLE_BUT_ALLOW=0x01000000};
 	typedef std::function<void(Sprite*tile, const Vec2&pos)> onSelectedListener;
-	typedef std::function<bool(const Vec2&)> VecFilter;
+	typedef std::function<int(const Vec2&,const Vec2&)> VecFilter;
 	CREATE_FUNC(FieldLayer);
 	bool init() override;
 	enum {TileSize=96,SrcTileSize=64};
@@ -24,7 +25,9 @@ public:
 	static Vec2 localToField(Vec2 in) { return Vec2{ floorf(in.x / TileSize), floorf(in.y / TileSize) }; }
 	static Vec2 fixLocal(Vec2 in) {return fieldToLocal(localToField(in));}
 	FieldTile* createTile(Vec2 position, int index, Color3B color, onSelectedListener listener);
-	void createMoveTiles(Actor*actor, onSelectedListener listener);
-	void createTiles(Vec2 start, int glen, VecFilter filter, Color3B color, onSelectedListener listener);
+	void createTiles(Actor* actor, VecFilter filter, onSelectedListener listener);
 	void clear();
+
+public:
+	void createMoveTiles(Actor*actor, onSelectedListener listener);
 };

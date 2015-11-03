@@ -11,6 +11,8 @@ InfoBar::InfoBar(FightScene*scene) {
 	scene->addChild(node);
 	actionMenu = new ActionMenu();
 	node->addChild(actionMenu->getMenu());
+	attackMenu = new AttackMenu();
+	node->addChild(attackMenu->getMenu());
 	node->setPosition(Vec2(Director::getInstance()->getWinSize()));
 	avatarImage=util::find<ImageView>(node, "AvatarImage");
 	shipClass = util::find<ImageView>(node, "Class");
@@ -22,26 +24,23 @@ InfoBar::InfoBar(FightScene*scene) {
 
 InfoBar::~InfoBar() {
 	delete actionMenu;
+	delete attackMenu;
 }
 
 void InfoBar::update(Actor*actor) {
 	if (actor) {
 		avatarImage->setVisible(true);
-		char buf[64];
-		sprintf(buf,"model/S_NORMAL_%d.png", actor->getShip()->picId);
-		avatarImage->loadTexture(buf);
-		sprintf(buf, "ui/st_%d.png", actor->getShip()->type);
+		avatarImage->loadTexture(util::format("model/S_NORMAL_%d.png", actor->getShip()->picId));
 		shipClass->setVisible(true);
-		shipClass->loadTexture(buf);
+		shipClass->loadTexture(util::format("ui/st_%d.png", actor->getShip()->type));
 		showActionMenu(actor);
 		name->setString(actor->getShip()->title);
-		
-		sprintf(buf, "%d/%d", actor->getHp(), actor->getShip()->hpMax);
-		hp->setString(buf);
+		hp->setString(util::format("%d/%d", actor->getHp(), actor->getShip()->hpMax));
 		hpBar->setVisible(true);
 		hpBar->setPercent(actor->getHp()*100.0f / actor->getShip()->hpMax);
 	} else {
 		actionMenu->hide();
+		attackMenu->hide();
 		avatarImage->setVisible(false);
 		shipClass->setVisible(false);
 		name->setString("");
@@ -52,6 +51,7 @@ void InfoBar::update(Actor*actor) {
 
 
 void InfoBar::showActionMenu(Actor*actor) {
+	attackMenu->hide();
 	actionMenu->show(
 		"battle.action.title",
 		{
@@ -64,6 +64,7 @@ void InfoBar::showActionMenu(Actor*actor) {
 			}
 			},
 			{ "battle.action.direct", [=](Ref*) {
+				attackMenu->hide();
 				actionMenu->show(
 					"",
 					{
@@ -78,7 +79,10 @@ void InfoBar::showActionMenu(Actor*actor) {
 				);
 			}
 			},
-			{ "battle.action.attack", nullptr }
+			{ "battle.action.attack", [=](Ref*) {
+				actionMenu->hide();
+				attackMenu->show(actor);
+			} }
 		}
 	);
 }

@@ -5,6 +5,7 @@
 class FightScene;
 class Actor;
 class ActionMenu;
+class AttackMenu;
 
 class InfoBar {
 private:
@@ -12,6 +13,7 @@ private:
 	ImageView* shipClass;
 	ImageView* flag;
 	ActionMenu* actionMenu; 
+	AttackMenu*attackMenu;
 	Text* hp;
 	LoadingBar* hpBar;
 	Text* name;

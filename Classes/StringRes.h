@@ -7,4 +7,5 @@ namespace G {
 	void initStringRes();
 	std::string getString(const char* key);
 	std::string getString(const std::string& key);
+	std::string getString(const char* key,int index);
 }

@@ -2,19 +2,16 @@
 #include "Actor.h"
 
 void FieldLayer::createMoveTiles(Actor*actor, onSelectedListener listener) {
-	auto direction = actor->getDirection();
-	//while (direction >= 360) direction -= 360;
-	//while (direction < 0) direction += 360;
-	int glen = (int)round(actor->getShip()->speed / 5);
-	const Vec2&v = actor->getFieldPosition();
-	int al = (int)(v.x + v.y);
-	createTiles(v, glen, [=](const Vec2&v) {
+	createTiles(actor, [=](const Vec2&sv,const Vec2&v) {
+		int color = 0x80ffff;
+		auto direction = actor->getDirection();
+		int glen = (int)round(actor->getShip()->speed / 5);
 		auto v2 = v - actor->getFieldPosition();
-		if (v2 == Vec2::ZERO) return true;
+		if (v2 == Vec2::ZERO) return color;
 		auto v1= Vec2::forAngle(direction);		
 		auto angle = Vec2::angle(v1, v2);
-		return angle <= PI *0.26;
-	}, { 128, 255, 255 }, listener);
+		return sv.distanceSquared(v) <= glen*glen&&angle <= PI *0.26 ? 0x80ffff : 0;
+	}, listener);
 }
 
 struct VecLess {
@@ -31,7 +28,9 @@ void addVec(std::set<Vec2, VecLess>& flags, std::list<Vec2>& queue,Vec2 p) {
 	flags.insert(p);
 }
 
-void FieldLayer::createTiles(Vec2 start, int glen, VecFilter filter, Color3B color, onSelectedListener listener) {
+void FieldLayer::createTiles(Actor* actor, VecFilter filter, onSelectedListener listener)
+{
+	const Vec2&start = actor->getFieldPosition();
 	if (this->getChildrenCount()) this->removeAllChildren();
 	std::set<Vec2, VecLess> flags;
 	std::list<Vec2> queue;
@@ -41,12 +40,16 @@ void FieldLayer::createTiles(Vec2 start, int glen, VecFilter filter, Color3B col
 		Vec2 v = queue.front();
 		queue.pop_front();
 		if (v.x < 0 || v.y<0) continue;
-		if (abs(v.x - start.x) + abs(v.y - start.y) > glen) continue;
-		if (filter(v)) createTile(v,cnt++,color,listener);
-		addVec(flags, queue, v + Vec2{ 1, 0 });
-		addVec(flags, queue, v + Vec2{ 0, 1 });
-		addVec(flags, queue, v + Vec2{ -1, 0 });
-		addVec(flags, queue, v + Vec2{ 0, -1 });
+		auto color = filter(start,v);
+		if (color==DISABLE) continue;
+		if (color<DISABLE_BUT_ALLOW) 
+			createTile(v, cnt++, Color3B((color >> 16) & 0xff, (color >> 8) & 0xff, color & 0xff), listener);
+		if (color <= DISABLE_BUT_ALLOW) {
+			addVec(flags, queue, v + Vec2{ 1, 0 });
+			addVec(flags, queue, v + Vec2{ 0, 1 });
+			addVec(flags, queue, v + Vec2{ -1, 0 });
+			addVec(flags, queue, v + Vec2{ 0, -1 });
+		}
 
 	}
 }
@@ -74,9 +77,9 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color3B color, onSele
 	sp->setScale(0);
 	auto targetScale=TileSize / (float)SrcTileSize;
 	sp->runAction(Sequence::create(
-		DelayTime::create(0.01f*sp->index),
+		DelayTime::create(0.002f*sp->index),
 		Spawn::create(
-			FadeIn::create(0.5f),
+			FadeTo::create(0.5f,128),
 			RotateTo::create(0.5f, 0),
 			ScaleTo::create(0.5f, targetScale),
 			nullptr
@@ -111,4 +114,5 @@ bool FieldLayer::init()
 	if (!Node::init()) return false;
 	return true;
 }
+
 

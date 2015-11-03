@@ -10,7 +10,9 @@ bool FightScene::init() {
 
 	gameLayer = Layer::create();
 	gameLayer->setScale(0.5f);
+	gameLayer->setAnchorPoint({ 0,0 });
 	gameLayer->setPosition(0, 0);
+	
 	addChild(gameLayer);
 
 	util::bindTouchEvent(gameLayer, [](Touch*, Event*) {return true; }, CC_CALLBACK_2(FightScene::moveGameLayer, this), nullptr);
@@ -18,7 +20,11 @@ bool FightScene::init() {
 	e->onMouseScroll = [=](Event*e) {
 		auto em = (EventMouse*)e;
 		auto y=em->getScrollY();
-		gameLayer->setScale(gameLayer->getScale()*pow(0.9f, y));
+		auto pos=em->getLocationInView();
+		auto nodePos = gameLayer->convertToNodeSpace(pos);
+		float scale = gameLayer->getScale()*pow(0.9f, y);
+		gameLayer->setScale(scale);
+		gameLayer->setPosition(pos - nodePos*scale);
 	};
 	gameLayer->getEventDispatcher()->addEventListenerWithSceneGraphPriority(e, gameLayer);
 
@@ -31,12 +37,20 @@ bool FightScene::init() {
 	auto hood = Actor::create(this,1);
 	ships->addChild(hood);
 	hood->setFieldPositoin({ 0, 0 });
-
+	hood->addEquip(1);
+	hood->addEquip(2);
+	hood->addEquip(3);
+	hood->addEquip(4);
 	
 	auto glowWorm = Actor::create(this, 1082);
 	ships->addChild(glowWorm);
 	glowWorm->setFieldPositoin({ 5, 7 });
-	
+	glowWorm->addEquip(110);
+	glowWorm->addEquip(120);
+	glowWorm->addEquip(130);
+	glowWorm->addEquip(140);
+	glowWorm->addEquip(150);
+
 
 	selector = Sprite::create("fieldRectSelector.png");
 	selector->setScale(1.5f);

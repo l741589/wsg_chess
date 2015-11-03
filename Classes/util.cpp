@@ -93,6 +93,16 @@ namespace util {
 		}
 	}
 
+	char global_buf[65536];
+	const char* format(const char*fmt, ...)
+	{
+		va_list args;
+		va_start(args, fmt);
+		vsprintf(global_buf, fmt, args);
+		va_end(args);
+		return global_buf;
+	}
+
 	void bindTouchEvent(Node*node, EventListenerTouchOneByOne::ccTouchBeganCallback onBegin, EventListenerTouchOneByOne::ccTouchCallback onMove, EventListenerTouchOneByOne::ccTouchCallback onEnd, EventListenerTouchOneByOne::ccTouchCallback onCancel /*= nullptr*/) {
 		auto e=EventListenerTouchOneByOne::create();
 		e->onTouchBegan = onBegin;
