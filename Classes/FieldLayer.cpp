@@ -42,21 +42,20 @@ void FieldLayer::createTiles(Actor* actor, VecFilter filter, onSelectedListener 
 		if (v.x < 0 || v.y<0) continue;
 		auto color = filter(start,v);
 		if (color==DISABLE) continue;
-		if (color<DISABLE_BUT_ALLOW) 
-			createTile(v, cnt++, Color3B((color >> 16) & 0xff, (color >> 8) & 0xff, color & 0xff), listener);
-		if (color <= DISABLE_BUT_ALLOW) {
+		if (color!=DISABLE_BUT_ALLOW&&color!=DISABLE) 
+			createTile(v, cnt++, Color4B((color >> 16) & 0xff, (color >> 8) & 0xff, color & 0xff, (color >> 24) & 0xff), listener);
+		if (color != DISABLE) {
 			addVec(flags, queue, v + Vec2{ 1, 0 });
 			addVec(flags, queue, v + Vec2{ 0, 1 });
 			addVec(flags, queue, v + Vec2{ -1, 0 });
 			addVec(flags, queue, v + Vec2{ 0, -1 });
 		}
-
 	}
 }
 
-FieldTile* FieldLayer::createTile(Vec2 position,int index, Color3B color, onSelectedListener listener) {
+FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSelectedListener listener) {
 	FieldTile*sp = FieldTile::create();
-	sp->setColor(color);
+	sp->setColor(Color3B(color));
 	sp->setPosition(fieldToLocal(position));
 	sp->index = index;
 	addChild(sp);
@@ -77,9 +76,9 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color3B color, onSele
 	sp->setScale(0);
 	auto targetScale=TileSize / (float)SrcTileSize;
 	sp->runAction(Sequence::create(
-		DelayTime::create(0.002f*sp->index),
+		
 		Spawn::create(
-			FadeTo::create(0.5f,128),
+			FadeTo::create(0.5f,color.a==0?128:color.a),
 			RotateTo::create(0.5f, 0),
 			ScaleTo::create(0.5f, targetScale),
 			nullptr

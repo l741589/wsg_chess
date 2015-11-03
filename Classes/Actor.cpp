@@ -130,11 +130,27 @@ void Equip::createTiles(Actor*actor)
 	switch (e->type)
 	{
 	case 1:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
+		if (sv == v) return (int)FieldLayer::DISABLE_BUT_ALLOW;
 		int min = (e->range - 1) * 5;
-		int max = e->range  * 5;
+		int max = e->range * 5;
 		float dis = sv.distanceSquared(v);
-		return dis > max*max? 0:dis >= min*min?attackColor:FieldLayer::DISABLE_BUT_ALLOW;
-	},nullptr);
-		
+		return dis > max*max ? 0 : dis >= min*min ? attackColor : FieldLayer::DISABLE_BUT_ALLOW;
+	}, nullptr); break;
+	case 2:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
+		if (sv == v) return (int)FieldLayer::DISABLE_BUT_ALLOW;
+		int min = 0;
+		int max = 5;
+		float dis = sv.distanceSquared(v);
+		return dis > max*max ? 0 : dis >= min*min ? attackColor : FieldLayer::DISABLE_BUT_ALLOW;
+	}, nullptr);
+	case 3:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
+		if (sv == v) return (int)FieldLayer::DISABLE_BUT_ALLOW;
+		int min = 0;
+		int max = 20;
+		float dis = sv.distance(v);
+		auto c=128-(int)(5 * dis);
+		return dis > max ? 0 : c << 24| attackColor;
+	}, nullptr);
+
 	}
 }
