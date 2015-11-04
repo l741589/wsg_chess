@@ -1,0 +1,943 @@
+{
+"skeleton": { "hash": "6B81NyWX1DH6ccJkc1Cc0V4eS0g", "spine": "2.1.27", "width": 1547.32, "height": 960, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "BG_black_mask", "parent": "root" },
+	{ "name": "Fighter_02", "parent": "root", "x": 94.4, "y": 493.71, "scaleX": 0.9, "scaleY": 0.9 },
+	{ "name": "Picture_move", "parent": "root", "y": -75, "rotation": -15 },
+	{ "name": "Diamond", "parent": "Picture_move" },
+	{ "name": "Fighter_02_picture", "parent": "Fighter_02", "x": -84.99, "y": -294.63, "scaleX": 1.4, "scaleY": 1.4 },
+	{ "name": "Fighter_02_picture_shadow", "parent": "Fighter_02", "x": -84.99, "y": -294.63, "scaleX": 1.4, "scaleY": 1.4 },
+	{ "name": "Line_all", "parent": "Picture_move" },
+	{ "name": "Square", "parent": "Picture_move", "x": -112 },
+	{ "name": "Diamond_00", "parent": "Diamond", "y": -28 },
+	{ "name": "Diamond_01", "parent": "Diamond", "x": 56, "y": -28 },
+	{ "name": "Diamond_02", "parent": "Diamond", "x": 112, "y": -28 },
+	{ "name": "Diamond_03", "parent": "Diamond", "x": 168, "y": -28 },
+	{ "name": "Diamond_04", "parent": "Diamond", "x": 224, "y": -28 },
+	{ "name": "Diamond_05", "parent": "Diamond", "x": 280, "y": -28 },
+	{ "name": "Diamond_06", "parent": "Diamond", "x": 336, "y": -28 },
+	{ "name": "Diamond_07", "parent": "Diamond", "x": 392, "y": -28 },
+	{ "name": "Diamond_08", "parent": "Diamond", "x": 448, "y": -28 },
+	{ "name": "Diamond_09", "parent": "Diamond", "x": 504, "y": -28 },
+	{ "name": "Diamond_10", "parent": "Diamond", "x": 560, "y": -28 },
+	{ "name": "Diamond_11", "parent": "Diamond", "x": 616, "y": -28 },
+	{ "name": "Diamond_12", "parent": "Diamond", "x": 672, "y": -28 },
+	{ "name": "Diamond_13", "parent": "Diamond", "x": 728, "y": -28 },
+	{ "name": "Diamond_14", "parent": "Diamond", "x": -56, "y": -28 },
+	{ "name": "Diamond_15", "parent": "Diamond", "x": -112, "y": -28 },
+	{ "name": "Diamond_16", "parent": "Diamond", "x": -168, "y": -28 },
+	{ "name": "Diamond_17", "parent": "Diamond", "x": -224, "y": -28 },
+	{ "name": "Diamond_18", "parent": "Diamond", "x": -280, "y": -28 },
+	{ "name": "Diamond_19", "parent": "Diamond", "x": -336, "y": -28 },
+	{ "name": "Diamond_20", "parent": "Diamond", "x": -392, "y": -28 },
+	{ "name": "Diamond_21", "parent": "Diamond", "x": -448, "y": -28 },
+	{ "name": "Diamond_22", "parent": "Diamond", "x": -504, "y": -28 },
+	{ "name": "Diamond_23", "parent": "Diamond", "x": -560, "y": -28 },
+	{ "name": "Diamond_24", "parent": "Diamond", "x": -616, "y": -28 },
+	{ "name": "Diamond_25", "parent": "Diamond", "x": -672, "y": -28 },
+	{ "name": "Diamond_26", "parent": "Diamond", "x": -728, "y": -28 }
+],
+"slots": [
+	{ "name": "BG_mask", "bone": "BG_black_mask", "attachment": "mask" },
+	{ "name": "Template_01", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_17", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_18", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_19", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_20", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_21", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_22", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_23", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_24", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_25", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_26", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_27", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_02", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_03", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_04", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_05", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_06", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_07", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_08", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_09", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_11", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_13", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_14", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_15", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_16", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_12", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_10", "bone": "Square", "attachment": "Template_01" },
+	{ "name": "Template_00_00", "bone": "Diamond_00", "attachment": "Template_00" },
+	{ "name": "Template_00_78", "bone": "Diamond_14", "attachment": "Template_00" },
+	{ "name": "Template_00_84", "bone": "Diamond_15", "attachment": "Template_00" },
+	{ "name": "Template_00_90", "bone": "Diamond_16", "attachment": "Template_00" },
+	{ "name": "Template_00_96", "bone": "Diamond_17", "attachment": "Template_00" },
+	{ "name": "Template_00_102", "bone": "Diamond_18", "attachment": "Template_00" },
+	{ "name": "Template_00_108", "bone": "Diamond_19", "attachment": "Template_00" },
+	{ "name": "Template_00_114", "bone": "Diamond_20", "attachment": "Template_00" },
+	{ "name": "Template_00_120", "bone": "Diamond_21", "attachment": "Template_00" },
+	{ "name": "Template_00_126", "bone": "Diamond_22", "attachment": "Template_00" },
+	{ "name": "Template_00_132", "bone": "Diamond_23", "attachment": "Template_00" },
+	{ "name": "Template_00_138", "bone": "Diamond_24", "attachment": "Template_00" },
+	{ "name": "Template_00_144", "bone": "Diamond_25", "attachment": "Template_00" },
+	{ "name": "Template_00_150", "bone": "Diamond_26", "attachment": "Template_00" },
+	{ "name": "Template_00_0", "bone": "Diamond_01", "attachment": "Template_00" },
+	{ "name": "Template_00_6", "bone": "Diamond_02", "attachment": "Template_00" },
+	{ "name": "Template_00_12", "bone": "Diamond_03", "attachment": "Template_00" },
+	{ "name": "Template_00_18", "bone": "Diamond_04", "attachment": "Template_00" },
+	{ "name": "Template_00_24", "bone": "Diamond_05", "attachment": "Template_00" },
+	{ "name": "Template_00_30", "bone": "Diamond_06", "attachment": "Template_00" },
+	{ "name": "Template_00_36", "bone": "Diamond_07", "attachment": "Template_00" },
+	{ "name": "Template_00_42", "bone": "Diamond_08", "attachment": "Template_00" },
+	{ "name": "Template_00_48", "bone": "Diamond_09", "attachment": "Template_00" },
+	{ "name": "Template_00_54", "bone": "Diamond_10", "attachment": "Template_00" },
+	{ "name": "Template_00_60", "bone": "Diamond_11", "attachment": "Template_00" },
+	{ "name": "Template_00_66", "bone": "Diamond_12", "attachment": "Template_00" },
+	{ "name": "Template_00_72", "bone": "Diamond_13", "attachment": "Template_00" },
+	{ "name": "Template_00_05", "bone": "Diamond_00", "attachment": "Template_00" },
+	{ "name": "Template_00_79", "bone": "Diamond_14", "attachment": "Template_00" },
+	{ "name": "Template_00_85", "bone": "Diamond_15", "attachment": "Template_00" },
+	{ "name": "Template_00_91", "bone": "Diamond_16", "attachment": "Template_00" },
+	{ "name": "Template_00_97", "bone": "Diamond_17", "attachment": "Template_00" },
+	{ "name": "Template_00_103", "bone": "Diamond_18", "attachment": "Template_00" },
+	{ "name": "Template_00_109", "bone": "Diamond_19", "attachment": "Template_00" },
+	{ "name": "Template_00_115", "bone": "Diamond_20", "attachment": "Template_00" },
+	{ "name": "Template_00_121", "bone": "Diamond_21", "attachment": "Template_00" },
+	{ "name": "Template_00_127", "bone": "Diamond_22", "attachment": "Template_00" },
+	{ "name": "Template_00_133", "bone": "Diamond_23", "attachment": "Template_00" },
+	{ "name": "Template_00_139", "bone": "Diamond_24", "attachment": "Template_00" },
+	{ "name": "Template_00_145", "bone": "Diamond_25", "attachment": "Template_00" },
+	{ "name": "Template_00_151", "bone": "Diamond_26", "attachment": "Template_00" },
+	{ "name": "Template_00_5", "bone": "Diamond_01", "attachment": "Template_00" },
+	{ "name": "Template_00_7", "bone": "Diamond_02", "attachment": "Template_00" },
+	{ "name": "Template_00_13", "bone": "Diamond_03", "attachment": "Template_00" },
+	{ "name": "Template_00_19", "bone": "Diamond_04", "attachment": "Template_00" },
+	{ "name": "Template_00_25", "bone": "Diamond_05", "attachment": "Template_00" },
+	{ "name": "Template_00_31", "bone": "Diamond_06", "attachment": "Template_00" },
+	{ "name": "Template_00_37", "bone": "Diamond_07", "attachment": "Template_00" },
+	{ "name": "Template_00_43", "bone": "Diamond_08", "attachment": "Template_00" },
+	{ "name": "Template_00_49", "bone": "Diamond_09", "attachment": "Template_00" },
+	{ "name": "Template_00_55", "bone": "Diamond_10", "attachment": "Template_00" },
+	{ "name": "Template_00_61", "bone": "Diamond_11", "attachment": "Template_00" },
+	{ "name": "Template_00_67", "bone": "Diamond_12", "attachment": "Template_00" },
+	{ "name": "Template_00_73", "bone": "Diamond_13", "attachment": "Template_00" },
+	{ "name": "Template_00_04", "bone": "Diamond_00", "attachment": "Template_00" },
+	{ "name": "Template_00_80", "bone": "Diamond_14", "attachment": "Template_00" },
+	{ "name": "Template_00_86", "bone": "Diamond_15", "attachment": "Template_00" },
+	{ "name": "Template_00_92", "bone": "Diamond_16", "attachment": "Template_00" },
+	{ "name": "Template_00_98", "bone": "Diamond_17", "attachment": "Template_00" },
+	{ "name": "Template_00_104", "bone": "Diamond_18", "attachment": "Template_00" },
+	{ "name": "Template_00_110", "bone": "Diamond_19", "attachment": "Template_00" },
+	{ "name": "Template_00_116", "bone": "Diamond_20", "attachment": "Template_00" },
+	{ "name": "Template_00_122", "bone": "Diamond_21", "attachment": "Template_00" },
+	{ "name": "Template_00_128", "bone": "Diamond_22", "attachment": "Template_00" },
+	{ "name": "Template_00_134", "bone": "Diamond_23", "attachment": "Template_00" },
+	{ "name": "Template_00_140", "bone": "Diamond_24", "attachment": "Template_00" },
+	{ "name": "Template_00_146", "bone": "Diamond_25", "attachment": "Template_00" },
+	{ "name": "Template_00_152", "bone": "Diamond_26", "attachment": "Template_00" },
+	{ "name": "Template_00_4", "bone": "Diamond_01", "attachment": "Template_00" },
+	{ "name": "Template_00_8", "bone": "Diamond_02", "attachment": "Template_00" },
+	{ "name": "Template_00_14", "bone": "Diamond_03", "attachment": "Template_00" },
+	{ "name": "Template_00_20", "bone": "Diamond_04", "attachment": "Template_00" },
+	{ "name": "Template_00_26", "bone": "Diamond_05", "attachment": "Template_00" },
+	{ "name": "Template_00_32", "bone": "Diamond_06", "attachment": "Template_00" },
+	{ "name": "Template_00_38", "bone": "Diamond_07", "attachment": "Template_00" },
+	{ "name": "Template_00_44", "bone": "Diamond_08", "attachment": "Template_00" },
+	{ "name": "Template_00_50", "bone": "Diamond_09", "attachment": "Template_00" },
+	{ "name": "Template_00_56", "bone": "Diamond_10", "attachment": "Template_00" },
+	{ "name": "Template_00_62", "bone": "Diamond_11", "attachment": "Template_00" },
+	{ "name": "Template_00_68", "bone": "Diamond_12", "attachment": "Template_00" },
+	{ "name": "Template_00_74", "bone": "Diamond_13", "attachment": "Template_00" },
+	{ "name": "Template_00_01", "bone": "Diamond_00", "attachment": "Template_00" },
+	{ "name": "Template_00_81", "bone": "Diamond_14", "attachment": "Template_00" },
+	{ "name": "Template_00_87", "bone": "Diamond_15", "attachment": "Template_00" },
+	{ "name": "Template_00_93", "bone": "Diamond_16", "attachment": "Template_00" },
+	{ "name": "Template_00_99", "bone": "Diamond_17", "attachment": "Template_00" },
+	{ "name": "Template_00_105", "bone": "Diamond_18", "attachment": "Template_00" },
+	{ "name": "Template_00_111", "bone": "Diamond_19", "attachment": "Template_00" },
+	{ "name": "Template_00_117", "bone": "Diamond_20", "attachment": "Template_00" },
+	{ "name": "Template_00_123", "bone": "Diamond_21", "attachment": "Template_00" },
+	{ "name": "Template_00_129", "bone": "Diamond_22", "attachment": "Template_00" },
+	{ "name": "Template_00_135", "bone": "Diamond_23", "attachment": "Template_00" },
+	{ "name": "Template_00_141", "bone": "Diamond_24", "attachment": "Template_00" },
+	{ "name": "Template_00_147", "bone": "Diamond_25", "attachment": "Template_00" },
+	{ "name": "Template_00_153", "bone": "Diamond_26", "attachment": "Template_00" },
+	{ "name": "Template_00_1", "bone": "Diamond_01", "attachment": "Template_00" },
+	{ "name": "Template_00_9", "bone": "Diamond_02", "attachment": "Template_00" },
+	{ "name": "Template_00_15", "bone": "Diamond_03", "attachment": "Template_00" },
+	{ "name": "Template_00_21", "bone": "Diamond_04", "attachment": "Template_00" },
+	{ "name": "Template_00_27", "bone": "Diamond_05", "attachment": "Template_00" },
+	{ "name": "Template_00_33", "bone": "Diamond_06", "attachment": "Template_00" },
+	{ "name": "Template_00_39", "bone": "Diamond_07", "attachment": "Template_00" },
+	{ "name": "Template_00_45", "bone": "Diamond_08", "attachment": "Template_00" },
+	{ "name": "Template_00_51", "bone": "Diamond_09", "attachment": "Template_00" },
+	{ "name": "Template_00_57", "bone": "Diamond_10", "attachment": "Template_00" },
+	{ "name": "Template_00_63", "bone": "Diamond_11", "attachment": "Template_00" },
+	{ "name": "Template_00_69", "bone": "Diamond_12", "attachment": "Template_00" },
+	{ "name": "Template_00_75", "bone": "Diamond_13", "attachment": "Template_00" },
+	{ "name": "Template_00_02", "bone": "Diamond_00", "attachment": "Template_00" },
+	{ "name": "Template_00_82", "bone": "Diamond_14", "attachment": "Template_00" },
+	{ "name": "Template_00_88", "bone": "Diamond_15", "attachment": "Template_00" },
+	{ "name": "Template_00_94", "bone": "Diamond_16", "attachment": "Template_00" },
+	{ "name": "Template_00_100", "bone": "Diamond_17", "attachment": "Template_00" },
+	{ "name": "Template_00_106", "bone": "Diamond_18", "attachment": "Template_00" },
+	{ "name": "Template_00_112", "bone": "Diamond_19", "attachment": "Template_00" },
+	{ "name": "Template_00_118", "bone": "Diamond_20", "attachment": "Template_00" },
+	{ "name": "Template_00_124", "bone": "Diamond_21", "attachment": "Template_00" },
+	{ "name": "Template_00_130", "bone": "Diamond_22", "attachment": "Template_00" },
+	{ "name": "Template_00_136", "bone": "Diamond_23", "attachment": "Template_00" },
+	{ "name": "Template_00_142", "bone": "Diamond_24", "attachment": "Template_00" },
+	{ "name": "Template_00_148", "bone": "Diamond_25", "attachment": "Template_00" },
+	{ "name": "Template_00_154", "bone": "Diamond_26", "attachment": "Template_00" },
+	{ "name": "Template_00_2", "bone": "Diamond_01", "attachment": "Template_00" },
+	{ "name": "Template_00_10", "bone": "Diamond_02", "attachment": "Template_00" },
+	{ "name": "Template_00_16", "bone": "Diamond_03", "attachment": "Template_00" },
+	{ "name": "Template_00_22", "bone": "Diamond_04", "attachment": "Template_00" },
+	{ "name": "Template_00_28", "bone": "Diamond_05", "attachment": "Template_00" },
+	{ "name": "Template_00_34", "bone": "Diamond_06", "attachment": "Template_00" },
+	{ "name": "Template_00_40", "bone": "Diamond_07", "attachment": "Template_00" },
+	{ "name": "Template_00_46", "bone": "Diamond_08", "attachment": "Template_00" },
+	{ "name": "Template_00_52", "bone": "Diamond_09", "attachment": "Template_00" },
+	{ "name": "Template_00_58", "bone": "Diamond_10", "attachment": "Template_00" },
+	{ "name": "Template_00_64", "bone": "Diamond_11", "attachment": "Template_00" },
+	{ "name": "Template_00_70", "bone": "Diamond_12", "attachment": "Template_00" },
+	{ "name": "Template_00_76", "bone": "Diamond_13", "attachment": "Template_00" },
+	{ "name": "Template_00_03", "bone": "Diamond_00", "attachment": "Template_00" },
+	{ "name": "Template_00_83", "bone": "Diamond_14", "attachment": "Template_00" },
+	{ "name": "Template_00_89", "bone": "Diamond_15", "attachment": "Template_00" },
+	{ "name": "Template_00_95", "bone": "Diamond_16", "attachment": "Template_00" },
+	{ "name": "Template_00_101", "bone": "Diamond_17", "attachment": "Template_00" },
+	{ "name": "Template_00_107", "bone": "Diamond_18", "attachment": "Template_00" },
+	{ "name": "Template_00_113", "bone": "Diamond_19", "attachment": "Template_00" },
+	{ "name": "Template_00_119", "bone": "Diamond_20", "attachment": "Template_00" },
+	{ "name": "Template_00_125", "bone": "Diamond_21", "attachment": "Template_00" },
+	{ "name": "Template_00_131", "bone": "Diamond_22", "attachment": "Template_00" },
+	{ "name": "Template_00_137", "bone": "Diamond_23", "attachment": "Template_00" },
+	{ "name": "Template_00_143", "bone": "Diamond_24", "attachment": "Template_00" },
+	{ "name": "Template_00_149", "bone": "Diamond_25", "attachment": "Template_00" },
+	{ "name": "Template_00_155", "bone": "Diamond_26", "attachment": "Template_00" },
+	{ "name": "Template_00_3", "bone": "Diamond_01", "attachment": "Template_00" },
+	{ "name": "Template_00_11", "bone": "Diamond_02", "attachment": "Template_00" },
+	{ "name": "Template_00_17", "bone": "Diamond_03", "attachment": "Template_00" },
+	{ "name": "Template_00_23", "bone": "Diamond_04", "attachment": "Template_00" },
+	{ "name": "Template_00_29", "bone": "Diamond_05", "attachment": "Template_00" },
+	{ "name": "Template_00_35", "bone": "Diamond_06", "attachment": "Template_00" },
+	{ "name": "Template_00_41", "bone": "Diamond_07", "attachment": "Template_00" },
+	{ "name": "Template_00_47", "bone": "Diamond_08", "attachment": "Template_00" },
+	{ "name": "Template_00_53", "bone": "Diamond_09", "attachment": "Template_00" },
+	{ "name": "Template_00_59", "bone": "Diamond_10", "attachment": "Template_00" },
+	{ "name": "Template_00_65", "bone": "Diamond_11", "attachment": "Template_00" },
+	{ "name": "Template_00_71", "bone": "Diamond_12", "attachment": "Template_00" },
+	{ "name": "Template_00_77", "bone": "Diamond_13", "attachment": "Template_00" },
+	{ "name": "Blue_00", "bone": "Picture_move", "attachment": "Blue_00" },
+	{ "name": "Line_00", "bone": "Line_all", "attachment": "Line_00" },
+	{ "name": "Line_03", "bone": "Line_all", "attachment": "Line_02" },
+	{ "name": "Fighter_picture_shadow_02", "bone": "Fighter_02_picture_shadow", "color": "0000008e", "attachment": "Fighters" },
+	{ "name": "Fighter_picture_02", "bone": "Fighter_02_picture", "attachment": "Fighters" },
+	{ "name": "Line_01", "bone": "Line_all", "attachment": "Line_01" },
+	{ "name": "Line_04", "bone": "Line_all", "attachment": "Line_03" }
+],
+"skins": {
+	"default": {
+		"BG_mask": {
+			"mask": { "scaleX": 36, "scaleY": 30, "width": 32, "height": 32 }
+		},
+		"Blue_00": {
+			"Blue_00": { "y": -56, "scaleX": 30, "width": 50, "height": 225 }
+		},
+		"Fighter_picture_02": {
+			"Fighters": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 159.24, -122.2, -159.24, -122.2, -159.24, 122.19, 159.24, 122.19 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 245,
+				"height": 188
+			}
+		},
+		"Fighter_picture_shadow_02": {
+			"Fighters": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 159.24, -122.2, -159.24, -122.2, -159.24, 122.19, 159.24, 122.19 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 245,
+				"height": 188
+			}
+		},
+		"Line_00": {
+			"Line_00": { "x": 460, "y": 169, "width": 360, "height": 7 }
+		},
+		"Line_01": {
+			"Line_01": { "x": -460, "y": -169, "width": 360, "height": 7 }
+		},
+		"Line_03": {
+			"Line_02": { "x": -170, "y": 169, "scaleX": 90, "width": 10, "height": 7 }
+		},
+		"Line_04": {
+			"Line_03": { "x": 170, "y": -169, "scaleX": 90, "width": 10, "height": 7 }
+		},
+		"Template_00_0": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_00": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_01": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_02": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_03": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_04": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_05": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_1": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_10": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_100": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_101": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_102": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_103": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_104": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_105": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_106": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_107": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_108": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_109": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_11": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_110": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_111": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_112": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_113": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_114": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_115": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_116": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_117": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_118": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_119": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_12": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_120": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_121": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_122": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_123": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_124": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_125": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_126": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_127": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_128": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_129": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_13": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_130": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_131": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_132": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_133": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_134": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_135": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_136": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_137": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_138": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_139": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_14": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_140": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_141": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_142": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_143": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_144": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_145": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_146": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_147": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_148": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_149": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_15": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_150": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_151": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_152": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_153": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_154": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_155": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_16": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_17": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_18": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_19": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_2": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_20": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_21": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_22": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_23": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_24": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_25": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_26": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_27": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_28": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_29": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_3": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_30": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_31": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_32": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_33": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_34": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_35": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_36": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_37": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_38": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_39": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_4": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_40": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_41": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_42": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_43": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_44": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_45": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_46": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_47": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_48": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_49": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_5": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_50": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_51": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_52": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_53": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_54": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_55": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_56": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_57": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_58": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_59": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_6": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_60": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_61": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_62": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_63": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_64": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_65": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_66": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_67": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_68": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_69": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_7": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_70": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_71": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_72": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_73": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_74": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_75": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_76": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_77": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_78": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_79": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_8": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_80": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_81": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_82": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_83": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_84": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_85": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_86": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_87": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_88": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_89": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_9": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_90": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_91": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_92": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_93": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_00_94": {
+			"Template_00": { "y": -112, "width": 56, "height": 56 }
+		},
+		"Template_00_95": {
+			"Template_00": { "y": -56, "width": 56, "height": 56 }
+		},
+		"Template_00_96": {
+			"Template_00": { "width": 56, "height": 56 }
+		},
+		"Template_00_97": {
+			"Template_00": { "y": 168, "width": 56, "height": 56 }
+		},
+		"Template_00_98": {
+			"Template_00": { "y": 112, "width": 56, "height": 56 }
+		},
+		"Template_00_99": {
+			"Template_00": { "y": 56, "width": 56, "height": 56 }
+		},
+		"Template_01": {
+			"Template_01": { "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_02": {
+			"Template_01": { "x": 56, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_03": {
+			"Template_01": { "x": 112, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_04": {
+			"Template_01": { "x": 168, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_05": {
+			"Template_01": { "x": 224, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_06": {
+			"Template_01": { "x": 280, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_07": {
+			"Template_01": { "x": 336, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_08": {
+			"Template_01": { "x": 392, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_09": {
+			"Template_01": { "x": 448, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_10": {
+			"Template_01": { "x": 504, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_11": {
+			"Template_01": { "x": 560, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_12": {
+			"Template_01": { "x": 616, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_13": {
+			"Template_01": { "x": 672, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_14": {
+			"Template_01": { "x": 728, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_15": {
+			"Template_01": { "x": 784, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_16": {
+			"Template_01": { "x": 840, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_17": {
+			"Template_01": { "x": -168, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_18": {
+			"Template_01": { "x": -112, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_19": {
+			"Template_01": { "x": -280, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_20": {
+			"Template_01": { "x": -224, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_21": {
+			"Template_01": { "x": -56, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_22": {
+			"Template_01": { "x": -448, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_23": {
+			"Template_01": { "x": -392, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_24": {
+			"Template_01": { "x": -560, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_25": {
+			"Template_01": { "x": -504, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_26": {
+			"Template_01": { "x": -616, "scaleY": 6, "width": 56, "height": 56 }
+		},
+		"Template_27": {
+			"Template_01": { "x": -336, "scaleY": 6, "width": 56, "height": 56 }
+		}
+	}
+},
+"animations": {
+	"appear": {
+		"slots": {
+			"BG_mask": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffff8f", "curve": "stepped" },
+					{
+						"time": 1.3333,
+						"color": "ffffff8f",
+						"curve": [ 0.721, 0.07, 0.944, 0.47 ]
+					},
+					{ "time": 2, "color": "ffffff00" }
+				]
+			},
+			"Fighter_picture_02": {
+				"attachment": [
+					{ "time": 1.2, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.0666, "color": "ffffffff" }
+				]
+			},
+			"Fighter_picture_shadow_02": {
+				"color": [
+					{ "time": 0, "color": "00000000", "curve": "stepped" },
+					{ "time": 0.0333, "color": "00000000" },
+					{ "time": 0.1, "color": "00000073" },
+					{ "time": 0.8, "color": "00000079" },
+					{ "time": 1.1666, "color": "00000000" }
+				]
+			}
+		},
+		"bones": {
+			"Diamond": {
+				"translate": [
+					{ "time": 0, "x": -112, "y": 0 },
+					{ "time": 0.4, "x": -56, "y": 0 },
+					{ "time": 1.2, "x": 56, "y": 0 },
+					{ "time": 1.6, "x": 112, "y": 0 },
+					{ "time": 2, "x": 168, "y": 0 }
+				]
+			},
+			"Square": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1, "x": 56, "y": 0 },
+					{ "time": 2, "x": 112, "y": 0 }
+				]
+			},
+			"Fighter_02_picture": {
+				"rotate": [
+					{ "time": 0, "angle": 3, "curve": "stepped" },
+					{ "time": 0.3333, "angle": 3 },
+					{ "time": 0.8, "angle": 4 },
+					{ "time": 1.1666, "angle": 5 }
+				],
+				"translate": [
+					{ "time": 0, "x": -479.11, "y": -58.3 },
+					{ "time": 0.3333, "x": -268.46, "y": -38.63 },
+					{ "time": 0.8, "x": -57.19, "y": -51.9 },
+					{ "time": 1.1666, "x": 841.41, "y": 81.66 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.714, "y": 0.714 },
+					{ "time": 0.3333, "x": 0.857, "y": 0.857 }
+				]
+			},
+			"Fighter_02_picture_shadow": {
+				"rotate": [
+					{ "time": 0, "angle": 4 },
+					{ "time": 0.3333, "angle": 5, "curve": "stepped" },
+					{ "time": 0.8, "angle": 5 },
+					{ "time": 1.1666, "angle": 6 }
+				],
+				"translate": [
+					{ "time": 0, "x": -505.09, "y": -202.11 },
+					{ "time": 0.3333, "x": -274.85, "y": -188.6 },
+					{ "time": 0.8, "x": -55.59, "y": -216.93 },
+					{ "time": 1.1666, "x": 837.35, "y": -120.89 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.571, "y": 0.571 },
+					{ "time": 0.3333, "x": 0.714, "y": 0.714 }
+				]
+			}
+		}
+	}
+}
+}

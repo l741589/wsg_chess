@@ -1,0 +1,97 @@
+{
+"skeleton": { "hash": "WKzwZnRJT31NVf+bwhiSGel0Hd4", "spine": "2.1.27", "width": 326, "height": 326, "images": "" },
+"bones": [
+	{ "name": "Radar_picture" }
+],
+"slots": [
+	{ "name": "Radar_Picture", "bone": "Radar_picture", "attachment": "Radar_0004" }
+],
+"skins": {
+	"default": {
+		"Radar_Picture": {
+			"Radar_0004": { "width": 326, "height": 326 },
+			"Radar_0005": { "width": 326, "height": 326 },
+			"Radar_0006": { "width": 326, "height": 326 },
+			"Radar_0007": { "width": 326, "height": 326 },
+			"Radar_0008": { "width": 326, "height": 326 },
+			"Radar_0009": { "width": 326, "height": 326 },
+			"Radar_0010": { "width": 326, "height": 326 },
+			"Radar_0011": { "width": 326, "height": 326 },
+			"Radar_0012": { "width": 326, "height": 326 },
+			"Radar_0013": { "width": 326, "height": 326 },
+			"Radar_0014": { "width": 326, "height": 326 },
+			"Radar_0015": { "width": 326, "height": 326 },
+			"Radar_0016": { "width": 326, "height": 326 },
+			"Radar_0017": { "width": 326, "height": 326 },
+			"Radar_0018": { "width": 326, "height": 326 },
+			"Radar_0019": { "width": 326, "height": 326 },
+			"Radar_0020": { "width": 326, "height": 326 },
+			"Radar_0021": { "width": 326, "height": 326 },
+			"Radar_0022": { "width": 326, "height": 326 },
+			"Radar_0023": { "width": 326, "height": 326 },
+			"Radar_0024": { "width": 326, "height": 326 },
+			"Radar_0025": { "width": 326, "height": 326 },
+			"Radar_0026": { "width": 326, "height": 326 },
+			"Radar_0027": { "width": 326, "height": 326 },
+			"Radar_0028": { "width": 326, "height": 326 },
+			"Radar_0029": { "width": 326, "height": 326 },
+			"Radar_0030": { "width": 326, "height": 326 },
+			"Radar_0031": { "width": 326, "height": 326 },
+			"Radar_0032": { "width": 326, "height": 326 },
+			"Radar_0033": { "width": 326, "height": 326 },
+			"Radar_0034": { "width": 326, "height": 326 }
+		}
+	}
+},
+"animations": {
+	"Radar": {
+		"slots": {
+			"Radar_Picture": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.0333, "name": "Radar_0004" },
+					{ "time": 0.0666, "name": "Radar_0005" },
+					{ "time": 0.1, "name": "Radar_0006" },
+					{ "time": 0.1333, "name": "Radar_0007" },
+					{ "time": 0.1666, "name": "Radar_0008" },
+					{ "time": 0.2, "name": "Radar_0009" },
+					{ "time": 0.2333, "name": "Radar_0010" },
+					{ "time": 0.2666, "name": "Radar_0011" },
+					{ "time": 0.3, "name": "Radar_0012" },
+					{ "time": 0.3333, "name": "Radar_0013" },
+					{ "time": 0.3666, "name": "Radar_0014" },
+					{ "time": 0.4, "name": "Radar_0015" },
+					{ "time": 0.4333, "name": "Radar_0016" },
+					{ "time": 0.4666, "name": "Radar_0017" },
+					{ "time": 0.5, "name": "Radar_0018" },
+					{ "time": 0.5333, "name": "Radar_0019" },
+					{ "time": 0.5666, "name": "Radar_0020" },
+					{ "time": 0.6, "name": "Radar_0021" },
+					{ "time": 0.6333, "name": "Radar_0022" },
+					{ "time": 0.6666, "name": "Radar_0023" },
+					{ "time": 0.7, "name": "Radar_0024" },
+					{ "time": 0.7333, "name": "Radar_0025" },
+					{ "time": 0.7666, "name": "Radar_0026" },
+					{ "time": 0.8, "name": "Radar_0027" },
+					{ "time": 0.8333, "name": "Radar_0028" },
+					{ "time": 0.8666, "name": "Radar_0029" },
+					{ "time": 0.9, "name": "Radar_0030" },
+					{ "time": 0.9333, "name": "Radar_0031" },
+					{ "time": 0.9666, "name": "Radar_0032" },
+					{ "time": 1, "name": "Radar_0033" },
+					{ "time": 1.0333, "name": "Radar_0034" },
+					{ "time": 1.0666, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Radar_picture": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.3333, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,13 @@
+
+airfight_actor_mirror.png
+size: 1028,1028
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Actor_picture
+  rotate: false
+  xy: 2, 2
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1

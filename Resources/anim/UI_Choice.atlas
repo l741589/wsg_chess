@@ -1,0 +1,160 @@
+
+UI_Choice.png
+size: 1024,512
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Belt_in
+  rotate: false
+  xy: 343, 207
+  size: 92, 82
+  orig: 94, 84
+  offset: 1, 1
+  index: -1
+Belt_in_light/Belt_in_light_1
+  rotate: true
+  xy: 437, 212
+  size: 77, 67
+  orig: 79, 69
+  offset: 1, 1
+  index: -1
+Belt_in_light/Belt_in_light_2
+  rotate: false
+  xy: 585, 217
+  size: 76, 67
+  orig: 78, 69
+  offset: 1, 1
+  index: -1
+Belt_in_light/Belt_in_light_3
+  rotate: false
+  xy: 506, 217
+  size: 77, 67
+  orig: 79, 69
+  offset: 1, 1
+  index: -1
+Belt_out
+  rotate: true
+  xy: 509, 389
+  size: 117, 172
+  orig: 119, 174
+  offset: 1, 1
+  index: -1
+Belt_out_light/Belt_out_light_1
+  rotate: true
+  xy: 683, 404
+  size: 102, 157
+  orig: 104, 159
+  offset: 1, 1
+  index: -1
+Belt_out_light/Belt_out_light_2
+  rotate: true
+  xy: 842, 405
+  size: 101, 157
+  orig: 103, 159
+  offset: 1, 1
+  index: -1
+Belt_out_light/Belt_out_light_3
+  rotate: true
+  xy: 509, 286
+  size: 101, 157
+  orig: 103, 159
+  offset: 1, 1
+  index: -1
+Frame
+  rotate: false
+  xy: 2, 48
+  size: 175, 458
+  orig: 177, 460
+  offset: 1, 1
+  index: -1
+Gear_in
+  rotate: false
+  xy: 343, 149
+  size: 56, 56
+  orig: 58, 58
+  offset: 1, 1
+  index: -1
+Gear_in_second
+  rotate: false
+  xy: 343, 149
+  size: 56, 56
+  orig: 58, 58
+  offset: 1, 1
+  index: -1
+Gear_in_second_shadow
+  rotate: false
+  xy: 85, 2
+  size: 44, 44
+  orig: 46, 46
+  offset: 1, 1
+  index: -1
+Gear_in_shadow
+  rotate: false
+  xy: 85, 2
+  size: 44, 44
+  orig: 46, 46
+  offset: 1, 1
+  index: -1
+Gear_out
+  rotate: false
+  xy: 355, 352
+  size: 152, 154
+  orig: 154, 156
+  offset: 1, 1
+  index: -1
+Gear_out_big
+  rotate: false
+  xy: 179, 332
+  size: 174, 174
+  orig: 176, 176
+  offset: 1, 1
+  index: -1
+Gear_out_big_shadow
+  rotate: false
+  xy: 179, 168
+  size: 162, 162
+  orig: 164, 164
+  offset: 1, 1
+  index: -1
+Gear_out_shadow
+  rotate: false
+  xy: 179, 24
+  size: 142, 142
+  orig: 144, 144
+  offset: 1, 1
+  index: -1
+Nut_D
+  rotate: false
+  xy: 131, 4
+  size: 42, 42
+  orig: 44, 44
+  offset: 1, 1
+  index: -1
+Nut_M
+  rotate: false
+  xy: 1001, 490
+  size: 16, 16
+  orig: 18, 18
+  offset: 1, 1
+  index: -1
+Nut_U
+  rotate: false
+  xy: 401, 179
+  size: 26, 26
+  orig: 28, 28
+  offset: 1, 1
+  index: -1
+Piston
+  rotate: true
+  xy: 2, 8
+  size: 38, 81
+  orig: 40, 83
+  offset: 1, 1
+  index: -1
+Title
+  rotate: false
+  xy: 355, 291
+  size: 149, 59
+  orig: 151, 61
+  offset: 1, 1
+  index: -1

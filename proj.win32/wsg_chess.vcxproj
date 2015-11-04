@@ -155,6 +155,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\layout\LayoutInflater.cpp" />
     <ClCompile Include="..\Classes\StringRes.cpp" />
     <ClCompile Include="..\Classes\util.cpp" />
+    <ClCompile Include="..\Classes\Weapon.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\stdafx.h" />
     <ClInclude Include="..\Classes\StringRes.h" />
     <ClInclude Include="..\Classes\util.h" />
+    <ClInclude Include="..\Classes\Weapon.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>

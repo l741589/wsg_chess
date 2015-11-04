@@ -3,7 +3,8 @@
 #include "FightScene.h"
 #include "FieldLayer.h"
 #include "ActionMenu.h"
-USING_NS_CC;
+#include "Weapon.h"
+
 using namespace util;
 
 const char* Actor::Anim::Antiaircraft = "Antiaircraft";
@@ -126,31 +127,40 @@ void Equip::createTiles(Actor*actor)
 	auto e = getEquipment();
 	auto scene = actor->getFightScene();
 	auto field = scene->fieldLayer;
-	auto attackColor = 0xff0000;
+	ColorF4B attackColor(255,0,0,128);
 	switch (e->type)
 	{
-	case 1:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
-		if (sv == v) return (int)FieldLayer::DISABLE_BUT_ALLOW;
+	case 1:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v)-> ColorF4B {
+		if (sv == v) return ColorF4B::ALLOW;
 		int min = (e->range - 1) * 5;
 		int max = e->range * 5;
 		float dis = sv.distanceSquared(v);
-		return dis > max*max ? 0 : dis >= min*min ? attackColor : FieldLayer::DISABLE_BUT_ALLOW;
-	}, nullptr); break;
-	case 2:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
-		if (sv == v) return (int)FieldLayer::DISABLE_BUT_ALLOW;
+		if (dis > max*max) return ColorF4B::DISABLE;
+		if (dis < min*min) return ColorF4B::ALLOW;
+		auto dirAngle = Vec2::forAngle(actor->getDirection());
+		auto tileAngle = v - sv;
+		auto alpha = 128 - 64 * abs(cos(Vec2::angle(dirAngle, tileAngle)));
+		return attackColor.withAlpha(alpha);
+	}, [=](Sprite*,const Vec2&pos) {
+		Weapon::create(scene, actor->getFieldPosition(), pos,Weapon::GunFire);
+	}); break;
+	case 2:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) -> ColorF4B {
+		if (sv == v) return ColorF4B::ALLOW;;
 		int min = 0;
 		int max = 5;
 		float dis = sv.distanceSquared(v);
-		return dis > max*max ? 0 : dis >= min*min ? attackColor : FieldLayer::DISABLE_BUT_ALLOW;
-	}, nullptr);
-	case 3:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) {
-		if (sv == v) return (int)FieldLayer::DISABLE_BUT_ALLOW;
+		return dis > max*max ? ColorF4B::DISABLE : dis >= min*min ? attackColor : ColorF4B::ALLOW;
+	},nullptr);
+	case 3:field->createTiles(actor, [=](const Vec2&sv, const Vec2&v) -> ColorF4B {
+		if (sv == v) return ColorF4B::ALLOW;;
 		int min = 0;
 		int max = 20;
 		float dis = sv.distance(v);
-		auto c=128-(int)(5 * dis);
-		return dis > max ? 0 : c << 24| attackColor;
-	}, nullptr);
+		GLubyte c=128-(int)(5 * dis);
+		return dis > max ? ColorF4B::DISABLE : attackColor.withAlpha(c);
+	}, [=](Sprite*, const Vec2&pos) {
+		Weapon::create(scene, actor->getFieldPosition(), pos, Weapon::Torpedo);
+	});
 
 	}
 }

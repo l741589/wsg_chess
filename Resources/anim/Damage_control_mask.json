@@ -1,0 +1,159 @@
+{
+"skeleton": { "hash": "yhgQofB5VrufRz+9yQNaaJYWBT8", "spine": "2.1.27", "width": 1026, "height": 770, "images": "" },
+"bones": [
+	{ "name": "Control" },
+	{ "name": "All", "parent": "Control" },
+	{ "name": "L_Move", "parent": "All" },
+	{ "name": "R_Move", "parent": "All" }
+],
+"slots": [
+	{ "name": "Black_R", "bone": "R_Move", "attachment": "Black_R" },
+	{ "name": "Black_L", "bone": "L_Move", "attachment": "Black_L" }
+],
+"skins": {
+	"default": {
+		"Black_L": {
+			"Black_L": { "x": -46.5, "y": 1, "width": 931, "height": 770 }
+		},
+		"Black_R": {
+			"Black_R": { "x": 316.5, "y": 1, "width": 395, "height": 770 }
+		}
+	}
+},
+"animations": {
+	"Mask_animation": {
+		"bones": {
+			"Control": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0 }
+				]
+			},
+			"All": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0 }
+				]
+			},
+			"L_Move": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": -946.21,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 4.86,
+						"y": 0,
+						"curve": [ 0.219, 0.46, 0.575, 0.84 ]
+					},
+					{ "time": 0.6666, "x": 0, "y": 0 }
+				]
+			},
+			"R_Move": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 428.9,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": -5.47,
+						"y": 0,
+						"curve": [ 0.173, 0.45, 0.591, 0.86 ]
+					},
+					{ "time": 0.6666, "x": 0, "y": 0 }
+				]
+			}
+		}
+	},
+	"Mask_animation_out": {
+		"slots": {
+			"Black_L": {
+				"color": [
+					{ "time": 1.6666, "color": "ffffffff" },
+					{ "time": 2.3333, "color": "ffffff00" }
+				]
+			},
+			"Black_R": {
+				"color": [
+					{ "time": 1.6666, "color": "ffffffff" },
+					{ "time": 2.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"L_Move": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0, "curve": "stepped" },
+					{ "time": 2.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 },
+					{ "time": 1.6666, "x": -10.1, "y": 0 },
+					{ "time": 2.3333, "x": 429.02, "y": 0 }
+				]
+			},
+			"All": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				]
+			},
+			"R_Move": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0, "curve": "stepped" },
+					{ "time": 2.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0 },
+					{ "time": 1.6666, "x": -8.41, "y": 0 },
+					{ "time": 2.3333, "x": 428.9, "y": 0 }
+				]
+			},
+			"Control": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 1.5, "angle": 0, "curve": "stepped" },
+					{ "time": 2, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.5, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 2, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

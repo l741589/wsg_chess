@@ -47,7 +47,7 @@ public:
 	const Vec2& getFieldPosition() const{ return fieldPosition; }
 	void setFieldPositoin(Vec2 pos);
 	float getDirection() { return direction; }
-	void setDirection(float degree);
+	void setDirection(float raduis);
 	static Actor* create(FightScene*fightScene, int id);
 	bool init(FightScene*scene,int id);
 	spine::SkeletonAnimation*getAnim() { return anim; }

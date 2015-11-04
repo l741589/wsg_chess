@@ -1,0 +1,4782 @@
+{
+"skeleton": { "hash": "fhXcParo8Yj/uJS0Dd4ola2FxBE", "spine": "2.1.27", "width": 1130, "height": 858.39, "images": "" },
+"bones": [
+	{ "name": "Effect" },
+	{ "name": "Effect_All", "parent": "Effect", "x": 0.5 },
+	{ "name": "Aircraft_explosion", "parent": "Effect_All", "length": 74, "x": -0.99 },
+	{ "name": "Anti_aircraft_fire", "parent": "Effect_All", "length": 74, "x": -0.99, "y": 1, "rotation": -0.45 },
+	{ "name": "Base_Blue", "parent": "Effect_All", "length": 101.29, "x": -50.25, "y": -0.72, "rotation": -0.9 },
+	{ "name": "Big_bang_at_sea", "parent": "Effect_All", "length": 75, "x": -0.99, "scaleX": 1.3, "scaleY": 1.3, "rotation": 0.45 },
+	{ "name": "Big_bang_ubder_sea", "parent": "Effect_All", "length": 76, "x": -1.99, "y": 1, "rotation": -0.45 },
+	{ "name": "Bomb_at_sea", "parent": "Effect_All", "length": 79.02, "x": -0.6, "y": 60.03, "rotation": -1.35 },
+	{ "name": "Bomb_under_sea", "parent": "Effect_All", "length": 77, "x": -3.47, "y": 59.97, "rotation": 0.45 },
+	{ "name": "Bubble", "parent": "Effect_All", "length": 89.05, "x": -15.99, "y": 1, "rotation": -1.81 },
+	{ "name": "Buff", "parent": "Effect_All", "length": 107.15, "x": -49.62, "y": 9.29, "rotation": -1.35 },
+	{ "name": "Light_Effect", "parent": "Effect_All", "length": 70.35, "x": -32.33, "y": 0.92 },
+	{ "name": "Lock_On", "parent": "Effect_All", "length": 77.02, "x": -3, "y": 1, "rotation": -1.35 },
+	{ "name": "Shield", "parent": "Effect_All", "length": 76, "x": -3, "y": -1, "rotation": 0.45 },
+	{ "name": "Ship_fire", "parent": "Effect_All", "length": 83, "x": -16.32, "scaleX": 1.5, "scaleY": 1.5, "rotation": 359.55 },
+	{ "name": "Small_bang_at_sea", "parent": "Effect_All", "length": 83.02, "x": -7, "rotation": -1.35 },
+	{ "name": "Small_bang_under_sea", "parent": "Effect_All", "length": 83.99, "x": -8.99 },
+	{ "name": "Smoke_L", "parent": "Effect_All", "length": 87.02, "x": -12.99, "y": -2, "rotation": -0.9 },
+	{ "name": "Smoke_R", "parent": "Effect_All", "length": 91.04, "x": -12.99, "rotation": -1.8 },
+	{ "name": "Splash", "parent": "Effect_All", "length": 86, "x": -14, "y": -1, "rotation": 0.45 },
+	{ "name": "Spray", "parent": "Effect_All", "length": 37.08, "x": -4.78, "y": 8.84, "rotation": 0.9 },
+	{ "name": "Torpedo_wave_at_sea", "parent": "Effect_All", "length": 82.71, "x": -206.59, "y": 0.67, "rotation": -2.25 },
+	{ "name": "Waterlines", "parent": "Effect_All", "length": 37.14, "x": -4.38, "y": 5.88, "rotation": 0.45 }
+],
+"slots": [
+	{ "name": "Aircraft_explosion", "bone": "Aircraft_explosion", "attachment": "Aircraft_explosion_0001" },
+	{ "name": "Anti_aircraft_fire", "bone": "Anti_aircraft_fire", "attachment": "Anti_aircraft_fire_0058" },
+	{ "name": "Big_bang_at_sea", "bone": "Big_bang_at_sea", "attachment": "Big_bang_at_sea0001" },
+	{ "name": "Big_bang_ubder_sea", "bone": "Big_bang_ubder_sea", "attachment": "Big_bang_ubder_sea_0001" },
+	{ "name": "Bomb_at_sea", "bone": "Bomb_at_sea", "attachment": "Bomb_at_sea_0001" },
+	{ "name": "Bomb_under_sea", "bone": "Bomb_under_sea", "attachment": "Bomb_under_sea_0001" },
+	{ "name": "Lock_On", "bone": "Lock_On", "attachment": "Lock_On_0001" },
+	{ "name": "Shield", "bone": "Shield", "attachment": "Shield_0043", "blend": "additive" },
+	{ "name": "Ship_fire", "bone": "Ship_fire", "attachment": "Ship_fire_0001" },
+	{ "name": "Small_bang_at_sea", "bone": "Small_bang_at_sea", "attachment": "Small_bang_at_sea0001" },
+	{ "name": "Small_bang_under_sea", "bone": "Small_bang_under_sea", "attachment": "Small_bang_under_sea_0001" },
+	{ "name": "Smoke_L", "bone": "Smoke_L", "attachment": "Smoke_L_0001" },
+	{ "name": "Smoke_R", "bone": "Smoke_R", "attachment": "Smoke_R_0001" },
+	{ "name": "Splash", "bone": "Splash", "attachment": "Splash_0001" },
+	{ "name": "Torpedo_wave_at_sea", "bone": "Torpedo_wave_at_sea", "attachment": "Torpedo_wave_at_sea_0039" },
+	{ "name": "Effect_All", "bone": "Light_Effect", "attachment": "Light_picture", "blend": "additive" },
+	{ "name": "Wave_Round", "bone": "Spray", "attachment": "Round_0060" },
+	{ "name": "Wave_Back", "bone": "Waterlines", "attachment": "Wave_Back_0004", "blend": "screen" },
+	{ "name": "Bubble", "bone": "Bubble", "attachment": "Bubble_0001" },
+	{ "name": "Base_Blue", "bone": "Base_Blue", "attachment": "Base_Blue", "blend": "additive" },
+	{ "name": "Effect_Light_0001", "bone": "Buff", "attachment": "Effect_Light_0001", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"Aircraft_explosion": {
+			"Aircraft_explosion_0001": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0002": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0003": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0004": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0005": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0006": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0007": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0008": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0009": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0010": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0011": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0012": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0013": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0014": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0015": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0016": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0017": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0018": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0019": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0020": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0021": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0022": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0023": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0024": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0025": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0026": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0027": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0028": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0029": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0030": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0031": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0032": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0033": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0034": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0035": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0036": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0037": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0038": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 },
+			"Aircraft_explosion_0039": { "x": 0.99, "scaleX": 2, "scaleY": 2, "width": 194, "height": 188 }
+		},
+		"Anti_aircraft_fire": {
+			"Anti_aircraft_fire_0001": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0002": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0003": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0004": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0005": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0006": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0007": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0008": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0009": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0010": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0011": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0012": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0013": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0014": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0015": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0016": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0017": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0018": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0019": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0020": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0021": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0022": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0023": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0024": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0025": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0026": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0027": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0028": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0029": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0030": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0031": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0032": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0033": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0034": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0035": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0036": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0037": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0038": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0039": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0040": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0041": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0042": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0043": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0044": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0045": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0046": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0047": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0048": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0049": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0050": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0051": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0052": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0053": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0054": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0055": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0056": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0057": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 },
+			"Anti_aircraft_fire_0058": { "x": 1, "y": -0.99, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 188, "height": 218 }
+		},
+		"Base_Blue": {
+			"Base_Blue": { "x": 50.23, "y": 1.5, "rotation": 0.9, "width": 96, "height": 27 },
+			"Base_Yellow": { "x": 50.23, "y": 1.5, "rotation": 0.9, "width": 96, "height": 27 }
+		},
+		"Big_bang_at_sea": {
+			"Big_bang_at_sea0001": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0002": { "x": 0.38, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0003": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0004": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0005": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0006": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0007": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0008": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0009": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0010": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0011": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0012": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0013": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0014": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0015": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0016": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0017": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0018": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0019": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0020": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0021": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0022": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0023": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0024": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0025": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0026": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0027": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0028": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0029": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0030": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0031": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0032": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0033": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0034": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0035": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0036": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0037": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0038": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0039": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0040": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0041": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0042": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0043": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 },
+			"Big_bang_at_sea0044": { "x": 0.99, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 400, "height": 330 }
+		},
+		"Big_bang_ubder_sea": {
+			"Big_bang_ubder_sea_0001": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0002": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0003": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0004": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0005": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0006": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0007": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0008": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0009": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0010": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0011": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0012": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0013": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0014": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0015": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0016": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0017": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0018": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0019": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0020": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0021": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0022": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0023": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0024": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0025": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0026": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0027": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0028": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0029": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0030": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0031": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0032": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0033": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0034": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0035": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0036": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0037": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0038": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0039": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0040": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0041": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0042": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0043": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 },
+			"Big_bang_ubder_sea_0044": { "x": 2, "y": -0.98, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 427, "height": 368 }
+		},
+		"Bomb_at_sea": {
+			"Bomb_at_sea_0001": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0002": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0003": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0004": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0005": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0006": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0007": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0008": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0009": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0010": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0011": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0012": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0013": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0014": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0015": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0016": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0017": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0018": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0019": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0020": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0021": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0022": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0023": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0024": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0025": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0026": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0027": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0028": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0029": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0030": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0031": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0032": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0033": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0034": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0035": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0036": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0037": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0038": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0039": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0040": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0041": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0042": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0043": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0044": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0045": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0046": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0047": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0048": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0049": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 },
+			"Bomb_at_sea_0050": { "x": 2.02, "y": -0.95, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 445, "height": 300 }
+		},
+		"Bomb_under_sea": {
+			"Bomb_under_sea_0001": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0002": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0003": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0004": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0005": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0006": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0007": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0008": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0009": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0010": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0011": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0012": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0013": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0014": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0015": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0016": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0017": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0018": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0019": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0020": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0021": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0022": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0023": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0024": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0025": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0026": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0027": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0028": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0029": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0030": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0031": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0032": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0033": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0034": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0035": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0036": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0037": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0038": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0039": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0040": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0041": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0042": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0043": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0044": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0045": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0046": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0047": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0048": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0049": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 },
+			"Bomb_under_sea_0050": { "x": 2.99, "y": -0.02, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 445, "height": 300 }
+		},
+		"Bubble": {
+			"Bubble_0001": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0002": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0003": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0004": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0005": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0006": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0007": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0008": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0009": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0010": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0011": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0012": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0013": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0014": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0015": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0016": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0017": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0018": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0019": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0020": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0021": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0022": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0023": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0024": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0025": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0026": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0027": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0028": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0029": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0030": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0031": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0032": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0033": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0034": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0035": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0036": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0037": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0038": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0039": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0040": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0041": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0042": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0043": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0044": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0045": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0046": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0047": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0048": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0049": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0050": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0051": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0052": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0053": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0054": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0055": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0056": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0057": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0058": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0059": { "rotation": 1.81, "width": 77, "height": 140 },
+			"Bubble_0060": { "rotation": 1.81, "width": 77, "height": 140 }
+		},
+		"Effect_All": {
+			"Light_blue_picture": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 150, -150, -150, -150, -150, 150, 150, 150 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 300,
+				"height": 300
+			},
+			"Light_picture": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 182.33, -150.92, -117.66, -150.92, -117.66, 149.07, 182.33, 149.07 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 300,
+				"height": 300
+			}
+		},
+		"Effect_Light_0001": {
+			"Effect_Light_0001": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0002": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0003": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0004": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0005": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0006": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0007": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0008": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0009": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0010": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0011": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0012": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0013": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0014": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0015": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0016": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0017": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0018": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0019": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0020": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0021": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0022": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0023": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0024": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0025": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0026": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0027": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0028": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0029": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0030": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0031": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0032": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0033": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0034": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0035": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0036": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0037": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0038": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0039": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0040": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0041": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0042": { "rotation": 1.35, "width": 200, "height": 340 },
+			"Effect_Light_0043": { "rotation": 1.35, "width": 200, "height": 340 }
+		},
+		"Lock_On": {
+			"Lock_On_0001": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0002": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0003": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0004": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0005": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0006": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0007": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0008": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0009": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0010": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0011": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0012": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0013": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0014": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0015": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0016": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0017": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0018": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0019": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0020": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0021": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0022": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0023": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0024": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0025": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0026": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0027": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0028": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0029": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 },
+			"Lock_On_0030": { "x": 3.02, "y": -0.93, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 359, "height": 115 }
+		},
+		"Shield": {
+			"Shield_0002": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0003": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0004": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0005": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0006": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0007": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0008": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0009": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0010": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0011": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0012": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0013": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0014": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0015": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0016": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0017": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0018": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0019": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0020": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0021": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0022": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0023": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0024": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0025": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0026": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0027": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0028": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0029": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0030": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0031": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0032": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0033": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0034": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0035": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0036": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0037": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0038": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0039": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0040": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0041": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0042": { "rotation": -0.45, "width": 240, "height": 320 },
+			"Shield_0043": { "rotation": -0.45, "width": 240, "height": 320 }
+		},
+		"Ship_fire": {
+			"Ship_fire_0001": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0002": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0003": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0004": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0005": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0006": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0007": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0008": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0009": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0010": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0011": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0012": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0013": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0014": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0015": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0016": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0017": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0018": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0019": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0020": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0021": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0022": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0023": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0024": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0025": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0026": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0027": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0028": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0029": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0030": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0031": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0032": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0033": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0034": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0035": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0036": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0037": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0038": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0039": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0040": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0041": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0042": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0043": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0044": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 },
+			"Ship_fire_0045": { "x": 5.99, "y": 0.04, "scaleX": 2, "scaleY": 2, "rotation": 0.45, "width": 287, "height": 210 }
+		},
+		"Small_bang_at_sea": {
+			"Small_bang_at_sea0001": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0002": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0003": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0004": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0005": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0006": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0007": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0008": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0009": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0010": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0011": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0012": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0013": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0014": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0015": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0016": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0017": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0018": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0019": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0020": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0021": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0022": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0023": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0024": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0025": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0026": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0027": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0028": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0029": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0030": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0031": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0032": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0033": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0034": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0035": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0036": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0037": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0038": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0039": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0040": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0041": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0042": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0043": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 },
+			"Small_bang_at_sea0044": { "x": 6.99, "y": 0.16, "scaleX": 2, "scaleY": 2, "rotation": 1.35, "width": 285, "height": 238 }
+		},
+		"Small_bang_under_sea": {
+			"Small_bang_under_sea_0001": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0002": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0003": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0004": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0005": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0006": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0007": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0008": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0009": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0010": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0011": { "x": 8.49, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0012": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0013": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0014": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0015": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0016": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0017": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0018": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0019": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0020": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0021": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0022": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0023": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0024": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0025": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0026": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0027": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0028": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0029": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0030": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0031": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0032": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0033": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0034": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0035": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0036": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0037": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0038": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0039": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0040": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0041": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0042": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0043": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 },
+			"Small_bang_under_sea_0044": { "x": 8.99, "scaleX": 2, "scaleY": 2, "width": 285, "height": 238 }
+		},
+		"Smoke_L": {
+			"Smoke_L_0001": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0002": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0003": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0004": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0005": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0006": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0007": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0008": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0009": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0010": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0011": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0012": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0013": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0014": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0015": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0016": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0017": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0018": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0019": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0020": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0021": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0022": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0023": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0024": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0025": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0026": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0027": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0028": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0029": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0030": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0031": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0032": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0033": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0034": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0035": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 },
+			"Smoke_L_0036": { "x": 12.96, "y": 2.2, "scaleX": 2, "scaleY": 2, "rotation": 0.9, "width": 60, "height": 80 }
+		},
+		"Smoke_R": {
+			"Smoke_R_0001": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0002": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0003": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0004": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0005": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0006": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0007": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0008": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0009": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0010": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0011": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0012": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0013": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0014": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0015": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0016": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0017": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0018": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0019": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0020": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0021": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0022": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0023": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0024": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0025": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0026": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0027": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0028": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0029": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0030": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0031": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0032": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0033": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0034": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0035": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 },
+			"Smoke_R_0036": { "x": 12.99, "y": 0.4, "scaleX": 2, "scaleY": 2, "rotation": 1.8, "width": 60, "height": 80 }
+		},
+		"Splash": {
+			"Splash_0001": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0002": { "x": 13.5, "y": 0.89, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0003": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0004": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0005": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0006": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0007": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0008": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0009": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0010": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0011": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0012": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0013": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0014": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0015": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0016": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0017": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0018": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0019": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0020": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0021": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0022": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0023": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 },
+			"Splash_0024": { "x": 14, "y": 0.88, "scaleX": 2, "scaleY": 2, "rotation": -0.45, "width": 210, "height": 248 }
+		},
+		"Torpedo_wave_at_sea": {
+			"Torpedo_wave_at_sea_0001": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0002": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0003": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0004": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0005": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0006": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0007": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0008": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0009": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0010": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0011": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0012": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0013": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0014": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0015": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0016": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0017": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0018": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0019": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0020": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0021": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0022": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0023": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0024": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0025": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0026": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0027": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0028": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0029": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0030": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0031": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0032": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0033": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0034": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0035": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0036": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0037": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0038": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0039": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0040": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0041": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 3, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0042": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0043": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 },
+			"Torpedo_wave_at_sea_0044": { "x": -97.76, "y": 1.15, "scaleX": 2, "scaleY": 2, "rotation": 2.7, "width": 305, "height": 38 }
+		},
+		"Wave_Back": {
+			"Wave_Back_0001": { "rotation": -0.45, "width": 150, "height": 150 },
+			"Wave_Back_0002": { "rotation": -0.45, "width": 150, "height": 150 },
+			"Wave_Back_0003": { "x": -3.28, "rotation": -0.45, "width": 150, "height": 150 },
+			"Wave_Back_0004": { "x": -10.77, "rotation": -0.45, "width": 150, "height": 150 }
+		},
+		"Wave_Round": {
+			"Round_0001": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0002": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0003": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0004": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0005": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0006": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0007": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0008": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0009": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0010": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0011": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0012": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0013": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0014": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0015": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0016": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0017": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0018": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0019": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0020": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0021": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0022": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0023": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0024": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0025": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0026": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0027": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0028": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0029": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0030": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0031": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0032": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0033": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0034": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0035": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0036": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0037": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0038": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0039": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0040": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0041": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0042": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0043": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0044": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0045": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0046": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0047": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0048": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0049": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0050": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0051": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0052": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0053": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0054": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0055": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0056": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0057": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0058": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0059": { "rotation": -0.9, "width": 260, "height": 140 },
+			"Round_0060": { "rotation": -0.9, "width": 260, "height": 140 }
+		}
+	}
+},
+"events": {
+	"Shield_broken": {}
+},
+"animations": {
+	"Aircraft_explosion": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": "Aircraft_explosion_0001" },
+					{ "time": 0.0333, "name": "Aircraft_explosion_0002" },
+					{ "time": 0.0666, "name": "Aircraft_explosion_0003" },
+					{ "time": 0.1, "name": "Aircraft_explosion_0004" },
+					{ "time": 0.1333, "name": "Aircraft_explosion_0005" },
+					{ "time": 0.1666, "name": "Aircraft_explosion_0006" },
+					{ "time": 0.2, "name": "Aircraft_explosion_0007" },
+					{ "time": 0.2333, "name": "Aircraft_explosion_0008" },
+					{ "time": 0.2666, "name": "Aircraft_explosion_0009" },
+					{ "time": 0.3, "name": "Aircraft_explosion_0010" },
+					{ "time": 0.3333, "name": "Aircraft_explosion_0011" },
+					{ "time": 0.3666, "name": "Aircraft_explosion_0012" },
+					{ "time": 0.4, "name": "Aircraft_explosion_0013" },
+					{ "time": 0.4333, "name": "Aircraft_explosion_0014" },
+					{ "time": 0.4666, "name": "Aircraft_explosion_0015" },
+					{ "time": 0.5, "name": "Aircraft_explosion_0016" },
+					{ "time": 0.5333, "name": "Aircraft_explosion_0017" },
+					{ "time": 0.5666, "name": "Aircraft_explosion_0018" },
+					{ "time": 0.6, "name": "Aircraft_explosion_0019" },
+					{ "time": 0.6333, "name": "Aircraft_explosion_0020" },
+					{ "time": 0.6666, "name": "Aircraft_explosion_0021" },
+					{ "time": 0.7, "name": "Aircraft_explosion_0022" },
+					{ "time": 0.7333, "name": "Aircraft_explosion_0023" },
+					{ "time": 0.7666, "name": "Aircraft_explosion_0024" },
+					{ "time": 0.8, "name": "Aircraft_explosion_0025" },
+					{ "time": 0.8333, "name": "Aircraft_explosion_0026" },
+					{ "time": 0.8666, "name": "Aircraft_explosion_0027" },
+					{ "time": 0.9, "name": "Aircraft_explosion_0028" },
+					{ "time": 0.9333, "name": "Aircraft_explosion_0029" },
+					{ "time": 0.9666, "name": "Aircraft_explosion_0030" },
+					{ "time": 1, "name": "Aircraft_explosion_0031" },
+					{ "time": 1.0333, "name": "Aircraft_explosion_0032" },
+					{ "time": 1.0666, "name": "Aircraft_explosion_0033" },
+					{ "time": 1.1, "name": "Aircraft_explosion_0034" },
+					{ "time": 1.1333, "name": "Aircraft_explosion_0035" },
+					{ "time": 1.1666, "name": "Aircraft_explosion_0036" },
+					{ "time": 1.2, "name": "Aircraft_explosion_0037" },
+					{ "time": 1.2333, "name": "Aircraft_explosion_0038" },
+					{ "time": 1.2666, "name": "Aircraft_explosion_0039" }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0.3666, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Aircraft_explosion": {
+				"translate": [
+					{ "time": 0, "x": 5.99, "y": 6 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{
+							"time": 0,
+							"vertices": [ -54.09333, 58.78074, 60.42417, 58.78074, 60.42417, -56.75377, -54.09333, -56.75377 ]
+						},
+						{
+							"time": 0.3333,
+							"vertices": [ 24.2512, -22.17114, -21.03355, -22.17114, -21.03355, 22.87354, 24.2512, 22.87354 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"Anti_aircraft_fire": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": "Anti_aircraft_fire_0001" },
+					{ "time": 0.0333, "name": "Anti_aircraft_fire_0002" },
+					{ "time": 0.0666, "name": "Anti_aircraft_fire_0003" },
+					{ "time": 0.1, "name": "Anti_aircraft_fire_0004" },
+					{ "time": 0.1333, "name": "Anti_aircraft_fire_0005" },
+					{ "time": 0.1666, "name": "Anti_aircraft_fire_0006" },
+					{ "time": 0.2, "name": "Anti_aircraft_fire_0007" },
+					{ "time": 0.2333, "name": "Anti_aircraft_fire_0008" },
+					{ "time": 0.2666, "name": "Anti_aircraft_fire_0009" },
+					{ "time": 0.3, "name": "Anti_aircraft_fire_0010" },
+					{ "time": 0.3333, "name": "Anti_aircraft_fire_0011" },
+					{ "time": 0.3666, "name": "Anti_aircraft_fire_0012" },
+					{ "time": 0.4, "name": "Anti_aircraft_fire_0013" },
+					{ "time": 0.4333, "name": "Anti_aircraft_fire_0014" },
+					{ "time": 0.4666, "name": "Anti_aircraft_fire_0015" },
+					{ "time": 0.5, "name": "Anti_aircraft_fire_0016" },
+					{ "time": 0.5333, "name": "Anti_aircraft_fire_0017" },
+					{ "time": 0.5666, "name": "Anti_aircraft_fire_0018" },
+					{ "time": 0.6, "name": "Anti_aircraft_fire_0019" },
+					{ "time": 0.6333, "name": "Anti_aircraft_fire_0020" },
+					{ "time": 0.6666, "name": "Anti_aircraft_fire_0021" },
+					{ "time": 0.7, "name": "Anti_aircraft_fire_0022" },
+					{ "time": 0.7333, "name": "Anti_aircraft_fire_0023" },
+					{ "time": 0.7666, "name": "Anti_aircraft_fire_0024" },
+					{ "time": 0.8, "name": "Anti_aircraft_fire_0025" },
+					{ "time": 0.8333, "name": "Anti_aircraft_fire_0026" },
+					{ "time": 0.8666, "name": "Anti_aircraft_fire_0027" },
+					{ "time": 0.9, "name": "Anti_aircraft_fire_0028" },
+					{ "time": 0.9333, "name": "Anti_aircraft_fire_0029" },
+					{ "time": 0.9666, "name": "Anti_aircraft_fire_0030" },
+					{ "time": 1, "name": "Anti_aircraft_fire_0031" },
+					{ "time": 1.0333, "name": "Anti_aircraft_fire_0032" },
+					{ "time": 1.0666, "name": "Anti_aircraft_fire_0033" },
+					{ "time": 1.1, "name": "Anti_aircraft_fire_0034" },
+					{ "time": 1.1333, "name": "Anti_aircraft_fire_0035" },
+					{ "time": 1.1666, "name": "Anti_aircraft_fire_0036" },
+					{ "time": 1.2, "name": "Anti_aircraft_fire_0037" },
+					{ "time": 1.2333, "name": "Anti_aircraft_fire_0038" },
+					{ "time": 1.2666, "name": "Anti_aircraft_fire_0039" },
+					{ "time": 1.3, "name": "Anti_aircraft_fire_0040" },
+					{ "time": 1.3333, "name": "Anti_aircraft_fire_0041" },
+					{ "time": 1.3666, "name": "Anti_aircraft_fire_0042" },
+					{ "time": 1.4, "name": "Anti_aircraft_fire_0043" },
+					{ "time": 1.4333, "name": "Anti_aircraft_fire_0044" },
+					{ "time": 1.4666, "name": "Anti_aircraft_fire_0045" },
+					{ "time": 1.5, "name": "Anti_aircraft_fire_0046" },
+					{ "time": 1.5333, "name": "Anti_aircraft_fire_0047" },
+					{ "time": 1.5666, "name": "Anti_aircraft_fire_0048" },
+					{ "time": 1.6, "name": "Anti_aircraft_fire_0049" },
+					{ "time": 1.6333, "name": "Anti_aircraft_fire_0050" },
+					{ "time": 1.6666, "name": "Anti_aircraft_fire_0051" },
+					{ "time": 1.7, "name": "Anti_aircraft_fire_0052" },
+					{ "time": 1.7333, "name": "Anti_aircraft_fire_0053" },
+					{ "time": 1.7666, "name": "Anti_aircraft_fire_0054" },
+					{ "time": 1.8, "name": "Anti_aircraft_fire_0055" },
+					{ "time": 1.8333, "name": "Anti_aircraft_fire_0056" },
+					{ "time": 1.8666, "name": "Anti_aircraft_fire_0057" },
+					{ "time": 1.9, "name": "Anti_aircraft_fire_0058" }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.8666, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Anti_aircraft_fire": {
+				"translate": [
+					{ "time": 0, "x": 146.24, "y": 19.06 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.8, "y": 0.8 }
+				]
+			},
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": -42.61, "y": 0 }
+				]
+			}
+		}
+	},
+	"Base_blue": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": "Base_Blue" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6666, "color": "ffffff6d" },
+					{ "time": 1.3333, "color": "ffffffff" }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Aircraft_explosion": {
+				"translate": [
+					{ "time": 0, "x": 5.99, "y": 6 }
+				]
+			},
+			"Base_Blue": {
+				"translate": [
+					{ "time": 0, "x": -58.96, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{
+							"time": 0,
+							"vertices": [ -54.09333, 58.78074, 60.42417, 58.78074, 60.42417, -56.75377, -54.09333, -56.75377 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"Base_yellow": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": "Base_Yellow" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.6666, "color": "ffffff6d" },
+					{ "time": 1.3333, "color": "ffffffff" }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Aircraft_explosion": {
+				"translate": [
+					{ "time": 0, "x": 5.99, "y": 6 }
+				]
+			},
+			"Base_Blue": {
+				"translate": [
+					{ "time": 0, "x": -58.96, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{
+							"time": 0,
+							"vertices": [ -54.09333, 58.78074, 60.42417, 58.78074, 60.42417, -56.75377, -54.09333, -56.75377 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"Big_bang_at_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Big_bang_at_sea0001" },
+					{ "time": 0.0333, "name": "Big_bang_at_sea0002" },
+					{ "time": 0.0666, "name": "Big_bang_at_sea0003" },
+					{ "time": 0.1, "name": "Big_bang_at_sea0004" },
+					{ "time": 0.1333, "name": "Big_bang_at_sea0005" },
+					{ "time": 0.1666, "name": "Big_bang_at_sea0006" },
+					{ "time": 0.2, "name": "Big_bang_at_sea0007" },
+					{ "time": 0.2333, "name": "Big_bang_at_sea0008" },
+					{ "time": 0.2666, "name": "Big_bang_at_sea0009" },
+					{ "time": 0.3, "name": "Big_bang_at_sea0010" },
+					{ "time": 0.3333, "name": "Big_bang_at_sea0011" },
+					{ "time": 0.3666, "name": "Big_bang_at_sea0012" },
+					{ "time": 0.4, "name": "Big_bang_at_sea0013" },
+					{ "time": 0.4333, "name": "Big_bang_at_sea0014" },
+					{ "time": 0.4666, "name": "Big_bang_at_sea0015" },
+					{ "time": 0.5, "name": "Big_bang_at_sea0016" },
+					{ "time": 0.5333, "name": "Big_bang_at_sea0017" },
+					{ "time": 0.5666, "name": "Big_bang_at_sea0018" },
+					{ "time": 0.6, "name": "Big_bang_at_sea0019" },
+					{ "time": 0.6333, "name": "Big_bang_at_sea0020" },
+					{ "time": 0.6666, "name": "Big_bang_at_sea0021" },
+					{ "time": 0.7, "name": "Big_bang_at_sea0022" },
+					{ "time": 0.7333, "name": "Big_bang_at_sea0023" },
+					{ "time": 0.7666, "name": "Big_bang_at_sea0024" },
+					{ "time": 0.8, "name": "Big_bang_at_sea0025" },
+					{ "time": 0.8333, "name": "Big_bang_at_sea0026" },
+					{ "time": 0.8666, "name": "Big_bang_at_sea0027" },
+					{ "time": 0.9, "name": "Big_bang_at_sea0028" },
+					{ "time": 0.9333, "name": "Big_bang_at_sea0029" },
+					{ "time": 0.9666, "name": "Big_bang_at_sea0030" },
+					{ "time": 1, "name": "Big_bang_at_sea0031" },
+					{ "time": 1.0333, "name": "Big_bang_at_sea0032" },
+					{ "time": 1.0666, "name": "Big_bang_at_sea0033" },
+					{ "time": 1.1, "name": "Big_bang_at_sea0034" },
+					{ "time": 1.1333, "name": "Big_bang_at_sea0035" },
+					{ "time": 1.1666, "name": "Big_bang_at_sea0036" },
+					{ "time": 1.2, "name": "Big_bang_at_sea0037" },
+					{ "time": 1.2333, "name": "Big_bang_at_sea0038" },
+					{ "time": 1.2666, "name": "Big_bang_at_sea0039" },
+					{ "time": 1.3, "name": "Big_bang_at_sea0040" },
+					{ "time": 1.3333, "name": "Big_bang_at_sea0041" },
+					{ "time": 1.3666, "name": "Big_bang_at_sea0042" },
+					{ "time": 1.4, "name": "Big_bang_at_sea0043" },
+					{ "time": 1.4333, "name": "Big_bang_at_sea0044" }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0.8666, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Big_bang_at_sea": {
+				"translate": [
+					{ "time": 0, "x": -3, "y": 41 }
+				]
+			},
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 29.72, "y": 0 },
+					{ "time": 0.8333, "x": 6.52, "y": 25.34 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.7, "y": 0.647 },
+					{ "time": 0.8333, "x": 1.803, "y": 2.3 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{ "time": 0, "curve": "stepped" },
+						{ "time": 0.8333 }
+					]
+				}
+			}
+		}
+	},
+	"Big_bang_ubder_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Big_bang_ubder_sea_0001" },
+					{ "time": 0.0333, "name": "Big_bang_ubder_sea_0002" },
+					{ "time": 0.0666, "name": "Big_bang_ubder_sea_0003" },
+					{ "time": 0.1, "name": "Big_bang_ubder_sea_0004" },
+					{ "time": 0.1333, "name": "Big_bang_ubder_sea_0005" },
+					{ "time": 0.1666, "name": "Big_bang_ubder_sea_0006" },
+					{ "time": 0.2, "name": "Big_bang_ubder_sea_0007" },
+					{ "time": 0.2333, "name": "Big_bang_ubder_sea_0008" },
+					{ "time": 0.2666, "name": "Big_bang_ubder_sea_0009" },
+					{ "time": 0.3, "name": "Big_bang_ubder_sea_0010" },
+					{ "time": 0.3333, "name": "Big_bang_ubder_sea_0011" },
+					{ "time": 0.3666, "name": "Big_bang_ubder_sea_0012" },
+					{ "time": 0.4, "name": "Big_bang_ubder_sea_0013" },
+					{ "time": 0.4333, "name": "Big_bang_ubder_sea_0014" },
+					{ "time": 0.4666, "name": "Big_bang_ubder_sea_0015" },
+					{ "time": 0.5, "name": "Big_bang_ubder_sea_0016" },
+					{ "time": 0.5333, "name": "Big_bang_ubder_sea_0017" },
+					{ "time": 0.6, "name": "Big_bang_ubder_sea_0019" },
+					{ "time": 0.6333, "name": "Big_bang_ubder_sea_0020" },
+					{ "time": 0.6666, "name": "Big_bang_ubder_sea_0021" },
+					{ "time": 0.7, "name": "Big_bang_ubder_sea_0022" },
+					{ "time": 0.7333, "name": "Big_bang_ubder_sea_0023" },
+					{ "time": 0.7666, "name": "Big_bang_ubder_sea_0024" },
+					{ "time": 0.8, "name": "Big_bang_ubder_sea_0025" },
+					{ "time": 0.8333, "name": "Big_bang_ubder_sea_0026" },
+					{ "time": 0.8666, "name": "Big_bang_ubder_sea_0027" },
+					{ "time": 0.9, "name": "Big_bang_ubder_sea_0028" },
+					{ "time": 0.9333, "name": "Big_bang_ubder_sea_0029" },
+					{ "time": 0.9666, "name": "Big_bang_ubder_sea_0030" },
+					{ "time": 1, "name": "Big_bang_ubder_sea_0031" },
+					{ "time": 1.0333, "name": "Big_bang_ubder_sea_0032" },
+					{ "time": 1.0666, "name": "Big_bang_ubder_sea_0033" },
+					{ "time": 1.1, "name": "Big_bang_ubder_sea_0034" },
+					{ "time": 1.1333, "name": "Big_bang_ubder_sea_0035" },
+					{ "time": 1.1666, "name": "Big_bang_ubder_sea_0036" },
+					{ "time": 1.2, "name": "Big_bang_ubder_sea_0037" },
+					{ "time": 1.2333, "name": "Big_bang_ubder_sea_0038" },
+					{ "time": 1.2666, "name": "Big_bang_ubder_sea_0039" },
+					{ "time": 1.3, "name": "Big_bang_ubder_sea_0040" },
+					{ "time": 1.3333, "name": "Big_bang_ubder_sea_0041" },
+					{ "time": 1.3666, "name": "Big_bang_ubder_sea_0042" },
+					{ "time": 1.4, "name": "Big_bang_ubder_sea_0043" },
+					{ "time": 1.4333, "name": "Big_bang_ubder_sea_0044" }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": "Light_blue_picture" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "fffffffd" },
+					{ "time": 0.6666, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Big_bang_ubder_sea": {
+				"translate": [
+					{ "time": 0, "x": 10.19, "y": -0.08 }
+				]
+			},
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 32.89, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.886, "y": 0.773 },
+					{ "time": 0.6666, "x": 1.555, "y": 1.565 }
+				]
+			}
+		}
+	},
+	"Bomb_at_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Bomb_at_sea_0001" },
+					{ "time": 0.0333, "name": "Bomb_at_sea_0002" },
+					{ "time": 0.0666, "name": "Bomb_at_sea_0003" },
+					{ "time": 0.1, "name": "Bomb_at_sea_0004" },
+					{ "time": 0.1333, "name": "Bomb_at_sea_0005" },
+					{ "time": 0.1666, "name": "Bomb_at_sea_0006" },
+					{ "time": 0.2, "name": "Bomb_at_sea_0007" },
+					{ "time": 0.2333, "name": "Bomb_at_sea_0008" },
+					{ "time": 0.2666, "name": "Bomb_at_sea_0009" },
+					{ "time": 0.3, "name": "Bomb_at_sea_0010" },
+					{ "time": 0.3333, "name": "Bomb_at_sea_0011" },
+					{ "time": 0.3666, "name": "Bomb_at_sea_0012" },
+					{ "time": 0.4, "name": "Bomb_at_sea_0013" },
+					{ "time": 0.4333, "name": "Bomb_at_sea_0014" },
+					{ "time": 0.4666, "name": "Bomb_at_sea_0015" },
+					{ "time": 0.5, "name": "Bomb_at_sea_0016" },
+					{ "time": 0.5333, "name": "Bomb_at_sea_0017" },
+					{ "time": 0.5666, "name": "Bomb_at_sea_0018" },
+					{ "time": 0.6, "name": "Bomb_at_sea_0019" },
+					{ "time": 0.6333, "name": "Bomb_at_sea_0020" },
+					{ "time": 0.6666, "name": "Bomb_at_sea_0021" },
+					{ "time": 0.7, "name": "Bomb_at_sea_0022" },
+					{ "time": 0.7333, "name": "Bomb_at_sea_0023" },
+					{ "time": 0.7666, "name": "Bomb_at_sea_0024" },
+					{ "time": 0.8, "name": "Bomb_at_sea_0025" },
+					{ "time": 0.8333, "name": "Bomb_at_sea_0026" },
+					{ "time": 0.8666, "name": "Bomb_at_sea_0027" },
+					{ "time": 0.9, "name": "Bomb_at_sea_0028" },
+					{ "time": 0.9333, "name": "Bomb_at_sea_0029" },
+					{ "time": 0.9666, "name": "Bomb_at_sea_0030" },
+					{ "time": 1, "name": "Bomb_at_sea_0031" },
+					{ "time": 1.0333, "name": "Bomb_at_sea_0032" },
+					{ "time": 1.0666, "name": "Bomb_at_sea_0033" },
+					{ "time": 1.1, "name": "Bomb_at_sea_0034" },
+					{ "time": 1.1333, "name": "Bomb_at_sea_0035" },
+					{ "time": 1.1666, "name": "Bomb_at_sea_0036" },
+					{ "time": 1.2, "name": "Bomb_at_sea_0037" },
+					{ "time": 1.2333, "name": "Bomb_at_sea_0038" },
+					{ "time": 1.2666, "name": "Bomb_at_sea_0039" },
+					{ "time": 1.3, "name": "Bomb_at_sea_0040" },
+					{ "time": 1.3333, "name": "Bomb_at_sea_0041" },
+					{ "time": 1.3666, "name": "Bomb_at_sea_0042" },
+					{ "time": 1.4, "name": "Bomb_at_sea_0043" },
+					{ "time": 1.4333, "name": "Bomb_at_sea_0044" },
+					{ "time": 1.4666, "name": "Bomb_at_sea_0045" },
+					{ "time": 1.5, "name": "Bomb_at_sea_0046" },
+					{ "time": 1.5333, "name": "Bomb_at_sea_0047" },
+					{ "time": 1.5666, "name": "Bomb_at_sea_0048" },
+					{ "time": 1.6, "name": "Bomb_at_sea_0049" },
+					{ "time": 1.6333, "name": "Bomb_at_sea_0050" }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0.8666, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Bomb_at_sea": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 12 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.9, "y": 0.9 }
+				]
+			},
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 148.95, "y": 11.31 },
+					{ "time": 0.1666, "x": 57.34, "y": 5.06 },
+					{ "time": 0.3333, "x": -53.85, "y": 10.13 },
+					{ "time": 0.5, "x": -42.94, "y": 15.2 },
+					{ "time": 0.6333, "x": 4.02, "y": 19.26 },
+					{ "time": 0.8333, "x": 11.13, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.394, "y": 0.3 },
+					{ "time": 0.1666, "x": 1.422, "y": 0.891 },
+					{ "time": 0.3333, "x": 1.579, "y": 1.189 },
+					{ "time": 0.5, "x": 1.681, "y": 0.661 },
+					{ "time": 0.6333, "x": 1.063, "y": 0.53 },
+					{ "time": 0.8333, "x": 1.803, "y": 2.3 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{ "time": 0, "curve": "stepped" },
+						{ "time": 0.8333, "curve": "stepped" },
+						{ "time": 0.8666 }
+					]
+				}
+			}
+		}
+	},
+	"Bomb_under_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Bomb_under_sea_0001" },
+					{ "time": 0.0333, "name": "Bomb_under_sea_0002" },
+					{ "time": 0.0666, "name": "Bomb_under_sea_0003" },
+					{ "time": 0.1, "name": "Bomb_under_sea_0004" },
+					{ "time": 0.1333, "name": "Bomb_under_sea_0005" },
+					{ "time": 0.1666, "name": "Bomb_under_sea_0006" },
+					{ "time": 0.2, "name": "Bomb_under_sea_0007" },
+					{ "time": 0.2333, "name": "Bomb_under_sea_0008" },
+					{ "time": 0.2666, "name": "Bomb_under_sea_0009" },
+					{ "time": 0.3, "name": "Bomb_under_sea_0010" },
+					{ "time": 0.3333, "name": "Bomb_under_sea_0011" },
+					{ "time": 0.3666, "name": "Bomb_under_sea_0012" },
+					{ "time": 0.4, "name": "Bomb_under_sea_0013" },
+					{ "time": 0.4333, "name": "Bomb_under_sea_0014" },
+					{ "time": 0.4666, "name": "Bomb_under_sea_0015" },
+					{ "time": 0.5, "name": "Bomb_under_sea_0016" },
+					{ "time": 0.5333, "name": "Bomb_under_sea_0017" },
+					{ "time": 0.5666, "name": "Bomb_under_sea_0018" },
+					{ "time": 0.6, "name": "Bomb_under_sea_0019" },
+					{ "time": 0.6333, "name": "Bomb_under_sea_0020" },
+					{ "time": 0.6666, "name": "Bomb_under_sea_0021" },
+					{ "time": 0.7, "name": "Bomb_under_sea_0022" },
+					{ "time": 0.7333, "name": "Bomb_under_sea_0023" },
+					{ "time": 0.7666, "name": "Bomb_under_sea_0024" },
+					{ "time": 0.8, "name": "Bomb_under_sea_0025" },
+					{ "time": 0.8333, "name": "Bomb_under_sea_0026" },
+					{ "time": 0.8666, "name": "Bomb_under_sea_0027" },
+					{ "time": 0.9, "name": "Bomb_under_sea_0028" },
+					{ "time": 0.9333, "name": "Bomb_under_sea_0029" },
+					{ "time": 0.9666, "name": "Bomb_under_sea_0030" },
+					{ "time": 1, "name": "Bomb_under_sea_0031" },
+					{ "time": 1.0333, "name": "Bomb_under_sea_0032" },
+					{ "time": 1.0666, "name": "Bomb_under_sea_0033" },
+					{ "time": 1.1, "name": "Bomb_under_sea_0034" },
+					{ "time": 1.1333, "name": "Bomb_under_sea_0035" },
+					{ "time": 1.1666, "name": "Bomb_under_sea_0036" },
+					{ "time": 1.2, "name": "Bomb_under_sea_0037" },
+					{ "time": 1.2333, "name": "Bomb_under_sea_0038" },
+					{ "time": 1.2666, "name": "Bomb_under_sea_0039" },
+					{ "time": 1.3, "name": "Bomb_under_sea_0040" },
+					{ "time": 1.3333, "name": "Bomb_under_sea_0041" },
+					{ "time": 1.3666, "name": "Bomb_under_sea_0042" },
+					{ "time": 1.4, "name": "Bomb_under_sea_0043" },
+					{ "time": 1.4333, "name": "Bomb_under_sea_0044" },
+					{ "time": 1.4666, "name": "Bomb_under_sea_0045" },
+					{ "time": 1.5, "name": "Bomb_under_sea_0046" },
+					{ "time": 1.5333, "name": "Bomb_under_sea_0047" },
+					{ "time": 1.5666, "name": "Bomb_under_sea_0048" },
+					{ "time": 1.6, "name": "Bomb_under_sea_0049" },
+					{ "time": 1.6333, "name": "Bomb_under_sea_0050" }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": "Light_blue_picture" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.0666, "color": "ffffffff" },
+					{ "time": 0.5333, "color": "ffffff60" },
+					{ "time": 0.6666, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Bomb_under_sea": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 11 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.9, "y": 0.9 }
+				]
+			},
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 158.08, "y": 7.19 },
+					{ "time": 0.3333, "x": 16.44, "y": 13.36 },
+					{ "time": 0.6666, "x": -43.17, "y": 13.36 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.1, "y": 1 },
+					{ "time": 0.3333, "x": 1.789, "y": 1.03 },
+					{ "time": 0.6666, "x": 1.241, "y": 0.71 }
+				]
+			},
+			"Buff": {
+				"scale": [
+					{ "time": 0, "x": 0.7, "y": 0.7 }
+				]
+			}
+		}
+	},
+	"Bubble": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": "Bubble_0001" },
+					{ "time": 0.0333, "name": "Bubble_0002" },
+					{ "time": 0.0666, "name": "Bubble_0003" },
+					{ "time": 0.1, "name": "Bubble_0004" },
+					{ "time": 0.1333, "name": "Bubble_0005" },
+					{ "time": 0.1666, "name": "Bubble_0006" },
+					{ "time": 0.2, "name": "Bubble_0007" },
+					{ "time": 0.2333, "name": "Bubble_0008" },
+					{ "time": 0.2666, "name": "Bubble_0009" },
+					{ "time": 0.3, "name": "Bubble_0010" },
+					{ "time": 0.3333, "name": "Bubble_0011" },
+					{ "time": 0.3666, "name": "Bubble_0012" },
+					{ "time": 0.4, "name": "Bubble_0013" },
+					{ "time": 0.4333, "name": "Bubble_0014" },
+					{ "time": 0.4666, "name": "Bubble_0015" },
+					{ "time": 0.5, "name": "Bubble_0016" },
+					{ "time": 0.5333, "name": "Bubble_0017" },
+					{ "time": 0.5666, "name": "Bubble_0018" },
+					{ "time": 0.6, "name": "Bubble_0019" },
+					{ "time": 0.6333, "name": "Bubble_0020" },
+					{ "time": 0.6666, "name": "Bubble_0021" },
+					{ "time": 0.7, "name": "Bubble_0022" },
+					{ "time": 0.7333, "name": "Bubble_0023" },
+					{ "time": 0.7666, "name": "Bubble_0024" },
+					{ "time": 0.8, "name": "Bubble_0025" },
+					{ "time": 0.8333, "name": "Bubble_0026" },
+					{ "time": 0.8666, "name": "Bubble_0027" },
+					{ "time": 0.9, "name": "Bubble_0028" },
+					{ "time": 0.9333, "name": "Bubble_0029" },
+					{ "time": 0.9666, "name": "Bubble_0030" },
+					{ "time": 1, "name": "Bubble_0031" },
+					{ "time": 1.0333, "name": "Bubble_0032" },
+					{ "time": 1.0666, "name": "Bubble_0033" },
+					{ "time": 1.1, "name": "Bubble_0034" },
+					{ "time": 1.1333, "name": "Bubble_0035" },
+					{ "time": 1.1666, "name": "Bubble_0036" },
+					{ "time": 1.2, "name": "Bubble_0037" },
+					{ "time": 1.2333, "name": "Bubble_0038" },
+					{ "time": 1.2666, "name": "Bubble_0039" },
+					{ "time": 1.3, "name": "Bubble_0040" },
+					{ "time": 1.3333, "name": "Bubble_0041" },
+					{ "time": 1.3666, "name": "Bubble_0042" },
+					{ "time": 1.4, "name": "Bubble_0043" },
+					{ "time": 1.4333, "name": "Bubble_0044" },
+					{ "time": 1.4666, "name": "Bubble_0045" },
+					{ "time": 1.5, "name": "Bubble_0046" },
+					{ "time": 1.5333, "name": "Bubble_0047" },
+					{ "time": 1.5666, "name": "Bubble_0048" },
+					{ "time": 1.6, "name": "Bubble_0049" },
+					{ "time": 1.6333, "name": "Bubble_0050" },
+					{ "time": 1.6666, "name": "Bubble_0051" },
+					{ "time": 1.7, "name": "Bubble_0052" },
+					{ "time": 1.7333, "name": "Bubble_0053" },
+					{ "time": 1.7666, "name": "Bubble_0054" },
+					{ "time": 1.8, "name": "Bubble_0055" },
+					{ "time": 1.8333, "name": "Bubble_0056" },
+					{ "time": 1.8666, "name": "Bubble_0057" },
+					{ "time": 1.9, "name": "Bubble_0058" },
+					{ "time": 1.9333, "name": "Bubble_0059" },
+					{ "time": 1.9666, "name": "Bubble_0060" }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Bubble": {
+				"translate": [
+					{ "time": 0, "x": 1.02, "y": 112.74 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.4, "y": 1.4 }
+				]
+			}
+		}
+	},
+	"Buff_effect": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": "Effect_Light_0001" },
+					{ "time": 0.0333, "name": "Effect_Light_0002" },
+					{ "time": 0.0666, "name": "Effect_Light_0003" },
+					{ "time": 0.1, "name": "Effect_Light_0004" },
+					{ "time": 0.1333, "name": "Effect_Light_0005" },
+					{ "time": 0.1666, "name": "Effect_Light_0006" },
+					{ "time": 0.2, "name": "Effect_Light_0007" },
+					{ "time": 0.2333, "name": "Effect_Light_0008" },
+					{ "time": 0.2666, "name": "Effect_Light_0009" },
+					{ "time": 0.3, "name": "Effect_Light_0010" },
+					{ "time": 0.3333, "name": "Effect_Light_0011" },
+					{ "time": 0.3666, "name": "Effect_Light_0012" },
+					{ "time": 0.4, "name": "Effect_Light_0013" },
+					{ "time": 0.4333, "name": "Effect_Light_0014" },
+					{ "time": 0.4666, "name": "Effect_Light_0015" },
+					{ "time": 0.5, "name": "Effect_Light_0016" },
+					{ "time": 0.5333, "name": "Effect_Light_0017" },
+					{ "time": 0.5666, "name": "Effect_Light_0018" },
+					{ "time": 0.6, "name": "Effect_Light_0019" },
+					{ "time": 0.6333, "name": "Effect_Light_0020" },
+					{ "time": 0.6666, "name": "Effect_Light_0021" },
+					{ "time": 0.7, "name": "Effect_Light_0022" },
+					{ "time": 0.7333, "name": "Effect_Light_0023" },
+					{ "time": 0.7666, "name": "Effect_Light_0024" },
+					{ "time": 0.8, "name": "Effect_Light_0025" },
+					{ "time": 0.8333, "name": "Effect_Light_0026" },
+					{ "time": 0.8666, "name": "Effect_Light_0027" },
+					{ "time": 0.9, "name": "Effect_Light_0028" },
+					{ "time": 0.9333, "name": "Effect_Light_0029" },
+					{ "time": 0.9666, "name": "Effect_Light_0030" },
+					{ "time": 1, "name": "Effect_Light_0031" },
+					{ "time": 1.0333, "name": "Effect_Light_0032" },
+					{ "time": 1.0666, "name": "Effect_Light_0033" },
+					{ "time": 1.1, "name": "Effect_Light_0034" },
+					{ "time": 1.1333, "name": "Effect_Light_0035" },
+					{ "time": 1.1666, "name": "Effect_Light_0036" },
+					{ "time": 1.2, "name": "Effect_Light_0037" },
+					{ "time": 1.2333, "name": "Effect_Light_0038" },
+					{ "time": 1.2666, "name": "Effect_Light_0039" },
+					{ "time": 1.3, "name": "Effect_Light_0040" },
+					{ "time": 1.3333, "name": "Effect_Light_0041" },
+					{ "time": 1.3666, "name": "Effect_Light_0042" },
+					{ "time": 1.4, "name": "Effect_Light_0043" }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Aircraft_explosion": {
+				"translate": [
+					{ "time": 0, "x": 5.99, "y": 6 }
+				]
+			},
+			"Buff": {
+				"translate": [
+					{ "time": 0, "x": 44.16, "y": 29.65 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.6, "y": 1.2 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{
+							"time": 0,
+							"vertices": [ -54.09333, 58.78074, 60.42417, 58.78074, 60.42417, -56.75377, -54.09333, -56.75377 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"Lock_On": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": "Lock_On_0001" },
+					{ "time": 0.0333, "name": "Lock_On_0002" },
+					{ "time": 0.0666, "name": "Lock_On_0003" },
+					{ "time": 0.1, "name": "Lock_On_0004" },
+					{ "time": 0.1333, "name": "Lock_On_0005" },
+					{ "time": 0.1666, "name": "Lock_On_0006" },
+					{ "time": 0.2, "name": "Lock_On_0007" },
+					{ "time": 0.2333, "name": "Lock_On_0008" },
+					{ "time": 0.2666, "name": "Lock_On_0009" },
+					{ "time": 0.3, "name": "Lock_On_0010" },
+					{ "time": 0.3333, "name": "Lock_On_0011" },
+					{ "time": 0.3666, "name": "Lock_On_0012" },
+					{ "time": 0.4, "name": "Lock_On_0013" },
+					{ "time": 0.4333, "name": "Lock_On_0014" },
+					{ "time": 0.4666, "name": "Lock_On_0015" },
+					{ "time": 0.5, "name": "Lock_On_0016" },
+					{ "time": 0.5333, "name": "Lock_On_0017" },
+					{ "time": 0.5666, "name": "Lock_On_0018" },
+					{ "time": 0.6, "name": "Lock_On_0019" },
+					{ "time": 0.6333, "name": "Lock_On_0020" },
+					{ "time": 0.6666, "name": "Lock_On_0021" },
+					{ "time": 0.7, "name": "Lock_On_0022" },
+					{ "time": 0.7333, "name": "Lock_On_0023" },
+					{ "time": 0.7666, "name": "Lock_On_0024" },
+					{ "time": 0.8, "name": "Lock_On_0025" },
+					{ "time": 0.8333, "name": "Lock_On_0026" },
+					{ "time": 0.8666, "name": "Lock_On_0027" },
+					{ "time": 0.9, "name": "Lock_On_0028" },
+					{ "time": 0.9333, "name": "Lock_On_0029" },
+					{ "time": 0.9666, "name": "Lock_On_0030" }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Lock_On": {
+				"translate": [
+					{ "time": 0, "x": 3, "y": 12 }
+				]
+			}
+		}
+	},
+	"Sank": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": "Splash_0001" },
+					{ "time": 0.0666, "name": "Splash_0002" },
+					{ "time": 0.1333, "name": "Splash_0003" },
+					{ "time": 0.2, "name": "Splash_0004" },
+					{ "time": 0.2666, "name": "Splash_0005" },
+					{ "time": 0.3333, "name": "Splash_0006" },
+					{ "time": 0.4, "name": "Splash_0007" },
+					{ "time": 0.4666, "name": "Splash_0008" },
+					{ "time": 0.5333, "name": "Splash_0009" },
+					{ "time": 0.6, "name": "Splash_0010" },
+					{ "time": 0.6666, "name": "Splash_0011" },
+					{ "time": 0.7333, "name": "Splash_0012" },
+					{ "time": 0.8, "name": "Splash_0013" },
+					{ "time": 0.8666, "name": "Splash_0014" },
+					{ "time": 0.9333, "name": "Splash_0015" },
+					{ "time": 1, "name": "Splash_0016" },
+					{ "time": 1.0666, "name": "Splash_0017" },
+					{ "time": 1.1333, "name": "Splash_0018" },
+					{ "time": 1.2, "name": "Splash_0019" },
+					{ "time": 1.2666, "name": "Splash_0020" },
+					{ "time": 1.3333, "name": "Splash_0021" },
+					{ "time": 1.4, "name": "Splash_0022" },
+					{ "time": 1.4666, "name": "Splash_0023" },
+					{ "time": 1.5333, "name": "Splash_0024" }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Splash": {
+				"translate": [
+					{ "time": 0, "x": -21.82, "y": 113.15 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.862, "y": 0.749 }
+				]
+			},
+			"Spray": {
+				"translate": [
+					{ "time": 0.5, "x": 0, "y": 85.48 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.869, "y": 1 },
+					{ "time": 0.5, "x": 2, "y": 2 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "Wave_Round", "offset": -15 }
+				]
+			}
+		]
+	},
+	"Shield": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": "Shield_0002" },
+					{ "time": 0.0333, "name": "Shield_0003" },
+					{ "time": 0.0666, "name": "Shield_0004" },
+					{ "time": 0.1, "name": "Shield_0005" },
+					{ "time": 0.1333, "name": "Shield_0006" },
+					{ "time": 0.1666, "name": "Shield_0007" },
+					{ "time": 0.2, "name": "Shield_0008" },
+					{ "time": 0.2333, "name": "Shield_0009" },
+					{ "time": 0.2666, "name": "Shield_0010" },
+					{ "time": 0.3, "name": "Shield_0011" },
+					{ "time": 0.3333, "name": "Shield_0012" },
+					{ "time": 0.3666, "name": "Shield_0013" },
+					{ "time": 0.4, "name": "Shield_0014" },
+					{ "time": 0.4333, "name": "Shield_0015" },
+					{ "time": 0.4666, "name": "Shield_0016" },
+					{ "time": 0.5, "name": "Shield_0017" },
+					{ "time": 0.5333, "name": "Shield_0018" },
+					{ "time": 0.5666, "name": "Shield_0019" },
+					{ "time": 0.6, "name": "Shield_0020" },
+					{ "time": 0.6333, "name": "Shield_0021" },
+					{ "time": 0.6666, "name": "Shield_0022" },
+					{ "time": 0.7, "name": "Shield_0023" },
+					{ "time": 0.7333, "name": "Shield_0024" },
+					{ "time": 0.7666, "name": "Shield_0025" },
+					{ "time": 0.8, "name": "Shield_0026" },
+					{ "time": 0.8333, "name": "Shield_0027" },
+					{ "time": 0.8666, "name": "Shield_0028" },
+					{ "time": 0.9, "name": "Shield_0029" },
+					{ "time": 0.9333, "name": "Shield_0030" },
+					{ "time": 0.9666, "name": "Shield_0031" },
+					{ "time": 1, "name": "Shield_0032" },
+					{ "time": 1.0333, "name": "Shield_0033" },
+					{ "time": 1.0666, "name": "Shield_0034" },
+					{ "time": 1.1, "name": "Shield_0035" },
+					{ "time": 1.1333, "name": "Shield_0036" },
+					{ "time": 1.1666, "name": "Shield_0037" },
+					{ "time": 1.2, "name": "Shield_0038" },
+					{ "time": 1.2333, "name": "Shield_0039" },
+					{ "time": 1.2666, "name": "Shield_0040" },
+					{ "time": 1.3, "name": "Shield_0041" },
+					{ "time": 1.3333, "name": "Shield_0042" },
+					{ "time": 1.3666, "name": "Shield_0043" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.4, "color": "ffffff82" },
+					{ "time": 0.7666, "color": "ffffffff" }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Ship_fire": {
+				"translate": [
+					{ "time": 0, "x": 27.98, "y": 0 }
+				]
+			},
+			"Shield": {
+				"translate": [
+					{ "time": 0, "x": 10.87, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.3, "y": 1.3 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.7, "name": "Shield_broken" }
+		]
+	},
+	"Ship_fire": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": "Light_picture" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": "Ship_fire_0001" },
+					{ "time": 0.0333, "name": "Ship_fire_0002" },
+					{ "time": 0.0666, "name": "Ship_fire_0003" },
+					{ "time": 0.1, "name": "Ship_fire_0004" },
+					{ "time": 0.1333, "name": "Ship_fire_0005" },
+					{ "time": 0.1666, "name": "Ship_fire_0006" },
+					{ "time": 0.2, "name": "Ship_fire_0007" },
+					{ "time": 0.2333, "name": "Ship_fire_0008" },
+					{ "time": 0.2666, "name": "Ship_fire_0009" },
+					{ "time": 0.3, "name": "Ship_fire_0010" },
+					{ "time": 0.3333, "name": "Ship_fire_0011" },
+					{ "time": 0.3666, "name": "Ship_fire_0012" },
+					{ "time": 0.4, "name": "Ship_fire_0013" },
+					{ "time": 0.4333, "name": "Ship_fire_0014" },
+					{ "time": 0.4666, "name": "Ship_fire_0015" },
+					{ "time": 0.5, "name": "Ship_fire_0016" },
+					{ "time": 0.5333, "name": "Ship_fire_0017" },
+					{ "time": 0.5666, "name": "Ship_fire_0018" },
+					{ "time": 0.6, "name": "Ship_fire_0019" },
+					{ "time": 0.6333, "name": "Ship_fire_0020" },
+					{ "time": 0.6666, "name": "Ship_fire_0021" },
+					{ "time": 0.7, "name": "Ship_fire_0022" },
+					{ "time": 0.7333, "name": "Ship_fire_0023" },
+					{ "time": 0.7666, "name": "Ship_fire_0024" },
+					{ "time": 0.8, "name": "Ship_fire_0025" },
+					{ "time": 0.8333, "name": "Ship_fire_0026" },
+					{ "time": 0.8666, "name": "Ship_fire_0027" },
+					{ "time": 0.9, "name": "Ship_fire_0028" },
+					{ "time": 0.9333, "name": "Ship_fire_0029" },
+					{ "time": 0.9666, "name": "Ship_fire_0030" },
+					{ "time": 1, "name": "Ship_fire_0031" },
+					{ "time": 1.0333, "name": "Ship_fire_0032" },
+					{ "time": 1.0666, "name": "Ship_fire_0033" },
+					{ "time": 1.1, "name": "Ship_fire_0034" },
+					{ "time": 1.1333, "name": "Ship_fire_0035" },
+					{ "time": 1.1666, "name": "Ship_fire_0036" },
+					{ "time": 1.2, "name": "Ship_fire_0037" },
+					{ "time": 1.2333, "name": "Ship_fire_0038" },
+					{ "time": 1.2666, "name": "Ship_fire_0039" },
+					{ "time": 1.3, "name": "Ship_fire_0040" },
+					{ "time": 1.3333, "name": "Ship_fire_0041" },
+					{ "time": 1.3666, "name": "Ship_fire_0042" },
+					{ "time": 1.4, "name": "Ship_fire_0043" },
+					{ "time": 1.4333, "name": "Ship_fire_0044" },
+					{ "time": 1.4666, "name": "Ship_fire_0045" }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Ship_fire": {
+				"translate": [
+					{ "time": 0, "x": 198.74, "y": -39.69 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.666, "y": 0.666 }
+				]
+			},
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 11.34, "y": 4.83 },
+					{ "time": 0.1, "x": -18, "y": 7.6 },
+					{ "time": 0.5, "x": 46.05, "y": 1.99 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.548, "y": 0.453 },
+					{ "time": 0.1, "x": 0.42, "y": 1.004 },
+					{ "time": 0.5, "x": 0.655, "y": 1.196 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{
+							"time": 0,
+							"vertices": [ -15.58181, 73.21328, 15.58205, 73.21328, 15.58205, -73.21329, -15.58181, -73.21329 ]
+						},
+						{
+							"time": 0.1,
+							"vertices": [ 272.98132, 31.99305, -23.90342, 31.99305, -23.90342, -31.99302, 272.98132, -31.99302 ]
+						},
+						{
+							"time": 0.5,
+							"vertices": [ 95.56348, 69.06747, -105.19743, 69.06747, -105.19743, -69.06748, 95.56348, -69.06748 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"Small_bang_at_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": "Light_picture" },
+					{ "time": 0.8666, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Small_bang_at_sea0001" },
+					{ "time": 0.0333, "name": "Small_bang_at_sea0002" },
+					{ "time": 0.0666, "name": "Small_bang_at_sea0003" },
+					{ "time": 0.1, "name": "Small_bang_at_sea0004" },
+					{ "time": 0.1333, "name": "Small_bang_at_sea0005" },
+					{ "time": 0.1666, "name": "Small_bang_at_sea0006" },
+					{ "time": 0.2, "name": "Small_bang_at_sea0007" },
+					{ "time": 0.2333, "name": "Small_bang_at_sea0008" },
+					{ "time": 0.2666, "name": "Small_bang_at_sea0009" },
+					{ "time": 0.3, "name": "Small_bang_at_sea0010" },
+					{ "time": 0.3333, "name": "Small_bang_at_sea0011" },
+					{ "time": 0.3666, "name": "Small_bang_at_sea0012" },
+					{ "time": 0.4, "name": "Small_bang_at_sea0013" },
+					{ "time": 0.4333, "name": "Small_bang_at_sea0014" },
+					{ "time": 0.4666, "name": "Small_bang_at_sea0015" },
+					{ "time": 0.5, "name": "Small_bang_at_sea0016" },
+					{ "time": 0.5333, "name": "Small_bang_at_sea0017" },
+					{ "time": 0.5666, "name": "Small_bang_at_sea0018" },
+					{ "time": 0.6, "name": "Small_bang_at_sea0019" },
+					{ "time": 0.6333, "name": "Small_bang_at_sea0020" },
+					{ "time": 0.6666, "name": "Small_bang_at_sea0021" },
+					{ "time": 0.7, "name": "Small_bang_at_sea0022" },
+					{ "time": 0.7333, "name": "Small_bang_at_sea0023" },
+					{ "time": 0.7666, "name": "Small_bang_at_sea0024" },
+					{ "time": 0.8, "name": "Small_bang_at_sea0025" },
+					{ "time": 0.8333, "name": "Small_bang_at_sea0026" },
+					{ "time": 0.8666, "name": "Small_bang_at_sea0027" },
+					{ "time": 0.9, "name": "Small_bang_at_sea0028" },
+					{ "time": 0.9333, "name": "Small_bang_at_sea0029" },
+					{ "time": 0.9666, "name": "Small_bang_at_sea0030" },
+					{ "time": 1, "name": "Small_bang_at_sea0031" },
+					{ "time": 1.0333, "name": "Small_bang_at_sea0032" },
+					{ "time": 1.0666, "name": "Small_bang_at_sea0033" },
+					{ "time": 1.1, "name": "Small_bang_at_sea0034" },
+					{ "time": 1.1333, "name": "Small_bang_at_sea0035" },
+					{ "time": 1.1666, "name": "Small_bang_at_sea0036" },
+					{ "time": 1.2, "name": "Small_bang_at_sea0037" },
+					{ "time": 1.2333, "name": "Small_bang_at_sea0038" },
+					{ "time": 1.2666, "name": "Small_bang_at_sea0039" },
+					{ "time": 1.3, "name": "Small_bang_at_sea0040" },
+					{ "time": 1.3333, "name": "Small_bang_at_sea0041" },
+					{ "time": 1.3666, "name": "Small_bang_at_sea0042" },
+					{ "time": 1.4, "name": "Small_bang_at_sea0043" },
+					{ "time": 1.4333, "name": "Small_bang_at_sea0044" }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 29.72, "y": 0 },
+					{ "time": 0.8333, "x": 6.52, "y": 25.34 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.661, "y": 0.546 },
+					{ "time": 0.8333, "x": 1.181, "y": 1.456 }
+				]
+			}
+		},
+		"ffd": {
+			"default": {
+				"Effect_All": {
+					"Light_picture": [
+						{ "time": 0, "curve": "stepped" },
+						{ "time": 0.8333 }
+					]
+				}
+			}
+		}
+	},
+	"Small_bang_under_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": "Light_blue_picture" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1666, "color": "ffffffff" },
+					{ "time": 0.4, "color": "ffffff00" }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Small_bang_under_sea_0001" },
+					{ "time": 0.0333, "name": "Small_bang_under_sea_0002" },
+					{ "time": 0.0666, "name": "Small_bang_under_sea_0003" },
+					{ "time": 0.1, "name": "Small_bang_under_sea_0004" },
+					{ "time": 0.1333, "name": "Small_bang_under_sea_0005" },
+					{ "time": 0.1666, "name": "Small_bang_under_sea_0006" },
+					{ "time": 0.2, "name": "Small_bang_under_sea_0007" },
+					{ "time": 0.2333, "name": "Small_bang_under_sea_0008" },
+					{ "time": 0.2666, "name": "Small_bang_under_sea_0009" },
+					{ "time": 0.3, "name": "Small_bang_under_sea_0010" },
+					{ "time": 0.3333, "name": "Small_bang_under_sea_0011" },
+					{ "time": 0.3666, "name": "Small_bang_under_sea_0012" },
+					{ "time": 0.4, "name": "Small_bang_under_sea_0013" },
+					{ "time": 0.4333, "name": "Small_bang_under_sea_0014" },
+					{ "time": 0.4666, "name": "Small_bang_under_sea_0015" },
+					{ "time": 0.5, "name": "Small_bang_under_sea_0016" },
+					{ "time": 0.5333, "name": "Small_bang_under_sea_0017" },
+					{ "time": 0.5666, "name": "Small_bang_under_sea_0018" },
+					{ "time": 0.6, "name": "Small_bang_under_sea_0019" },
+					{ "time": 0.6333, "name": "Small_bang_under_sea_0020" },
+					{ "time": 0.6666, "name": "Small_bang_under_sea_0021" },
+					{ "time": 0.7, "name": "Small_bang_under_sea_0022" },
+					{ "time": 0.7333, "name": "Small_bang_under_sea_0023" },
+					{ "time": 0.7666, "name": "Small_bang_under_sea_0024" },
+					{ "time": 0.8, "name": "Small_bang_under_sea_0025" },
+					{ "time": 0.8333, "name": "Small_bang_under_sea_0026" },
+					{ "time": 0.8666, "name": "Small_bang_under_sea_0027" },
+					{ "time": 0.9, "name": "Small_bang_under_sea_0028" },
+					{ "time": 0.9333, "name": "Small_bang_under_sea_0029" },
+					{ "time": 0.9666, "name": "Small_bang_under_sea_0030" },
+					{ "time": 1, "name": "Small_bang_under_sea_0031" },
+					{ "time": 1.0333, "name": "Small_bang_under_sea_0032" },
+					{ "time": 1.0666, "name": "Small_bang_under_sea_0033" },
+					{ "time": 1.1, "name": "Small_bang_under_sea_0034" },
+					{ "time": 1.1333, "name": "Small_bang_under_sea_0035" },
+					{ "time": 1.1666, "name": "Small_bang_under_sea_0036" },
+					{ "time": 1.2, "name": "Small_bang_under_sea_0037" },
+					{ "time": 1.2333, "name": "Small_bang_under_sea_0038" },
+					{ "time": 1.2666, "name": "Small_bang_under_sea_0039" },
+					{ "time": 1.3, "name": "Small_bang_under_sea_0040" },
+					{ "time": 1.3333, "name": "Small_bang_under_sea_0041" },
+					{ "time": 1.3666, "name": "Small_bang_under_sea_0042" },
+					{ "time": 1.4, "name": "Small_bang_under_sea_0043" },
+					{ "time": 1.4333, "name": "Small_bang_under_sea_0044" }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Light_Effect": {
+				"translate": [
+					{ "time": 0, "x": 25.69, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.629, "y": 0.506 },
+					{ "time": 0.1666, "x": 1.498, "y": 1.009 },
+					{ "time": 0.4, "x": 1.422, "y": 1.074 }
+				]
+			}
+		}
+	},
+	"Smoke_L": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": "Smoke_L_0001" },
+					{ "time": 0.0333, "name": "Smoke_L_0002" },
+					{ "time": 0.0666, "name": "Smoke_L_0003" },
+					{ "time": 0.1, "name": "Smoke_L_0004" },
+					{ "time": 0.1333, "name": "Smoke_L_0005" },
+					{ "time": 0.1666, "name": "Smoke_L_0006" },
+					{ "time": 0.2, "name": "Smoke_L_0007" },
+					{ "time": 0.2333, "name": "Smoke_L_0008" },
+					{ "time": 0.2666, "name": "Smoke_L_0009" },
+					{ "time": 0.3, "name": "Smoke_L_0010" },
+					{ "time": 0.3333, "name": "Smoke_L_0011" },
+					{ "time": 0.3666, "name": "Smoke_L_0012" },
+					{ "time": 0.4, "name": "Smoke_L_0013" },
+					{ "time": 0.4333, "name": "Smoke_L_0014" },
+					{ "time": 0.4666, "name": "Smoke_L_0015" },
+					{ "time": 0.5, "name": "Smoke_L_0016" },
+					{ "time": 0.5333, "name": "Smoke_L_0017" },
+					{ "time": 0.5666, "name": "Smoke_L_0018" },
+					{ "time": 0.6, "name": "Smoke_L_0019" },
+					{ "time": 0.6333, "name": "Smoke_L_0020" },
+					{ "time": 0.6666, "name": "Smoke_L_0021" },
+					{ "time": 0.7, "name": "Smoke_L_0022" },
+					{ "time": 0.7333, "name": "Smoke_L_0023" },
+					{ "time": 0.7666, "name": "Smoke_L_0024" },
+					{ "time": 0.8, "name": "Smoke_L_0025" },
+					{ "time": 0.8333, "name": "Smoke_L_0026" },
+					{ "time": 0.8666, "name": "Smoke_L_0027" },
+					{ "time": 0.9, "name": "Smoke_L_0028" },
+					{ "time": 0.9333, "name": "Smoke_L_0029" },
+					{ "time": 0.9666, "name": "Smoke_L_0030" },
+					{ "time": 1, "name": "Smoke_L_0031" },
+					{ "time": 1.0333, "name": "Smoke_L_0032" },
+					{ "time": 1.0666, "name": "Smoke_L_0033" },
+					{ "time": 1.1, "name": "Smoke_L_0034" },
+					{ "time": 1.1333, "name": "Smoke_L_0035" },
+					{ "time": 1.1666, "name": "Smoke_L_0036" }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Smoke_L": {
+				"translate": [
+					{ "time": 0, "x": 36.49, "y": 56 }
+				]
+			}
+		}
+	},
+	"Smoke_R": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": "Smoke_R_0001" },
+					{ "time": 0.0333, "name": "Smoke_R_0002" },
+					{ "time": 0.0666, "name": "Smoke_R_0003" },
+					{ "time": 0.1, "name": "Smoke_R_0004" },
+					{ "time": 0.1333, "name": "Smoke_R_0005" },
+					{ "time": 0.1666, "name": "Smoke_R_0006" },
+					{ "time": 0.2, "name": "Smoke_R_0007" },
+					{ "time": 0.2333, "name": "Smoke_R_0008" },
+					{ "time": 0.2666, "name": "Smoke_R_0009" },
+					{ "time": 0.3, "name": "Smoke_R_0010" },
+					{ "time": 0.3333, "name": "Smoke_R_0011" },
+					{ "time": 0.3666, "name": "Smoke_R_0012" },
+					{ "time": 0.4, "name": "Smoke_R_0013" },
+					{ "time": 0.4333, "name": "Smoke_R_0014" },
+					{ "time": 0.4666, "name": "Smoke_R_0015" },
+					{ "time": 0.5, "name": "Smoke_R_0016" },
+					{ "time": 0.5333, "name": "Smoke_R_0017" },
+					{ "time": 0.5666, "name": "Smoke_R_0018" },
+					{ "time": 0.6, "name": "Smoke_R_0019" },
+					{ "time": 0.6333, "name": "Smoke_R_0020" },
+					{ "time": 0.6666, "name": "Smoke_R_0021" },
+					{ "time": 0.7, "name": "Smoke_R_0022" },
+					{ "time": 0.7333, "name": "Smoke_R_0023" },
+					{ "time": 0.7666, "name": "Smoke_R_0024" },
+					{ "time": 0.8, "name": "Smoke_R_0025" },
+					{ "time": 0.8333, "name": "Smoke_R_0026" },
+					{ "time": 0.8666, "name": "Smoke_R_0027" },
+					{ "time": 0.9, "name": "Smoke_R_0028" },
+					{ "time": 0.9333, "name": "Smoke_R_0029" },
+					{ "time": 0.9666, "name": "Smoke_R_0030" },
+					{ "time": 1, "name": "Smoke_R_0031" },
+					{ "time": 1.0333, "name": "Smoke_R_0032" },
+					{ "time": 1.0666, "name": "Smoke_R_0033" },
+					{ "time": 1.1, "name": "Smoke_R_0034" },
+					{ "time": 1.1333, "name": "Smoke_R_0035" },
+					{ "time": 1.1666, "name": "Smoke_R_0036" }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Smoke_R": {
+				"translate": [
+					{ "time": 0, "x": -39.67, "y": 55.83 }
+				]
+			}
+		}
+	},
+	"Splash": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": "Splash_0001" },
+					{ "time": 0.0333, "name": "Splash_0002" },
+					{ "time": 0.0666, "name": "Splash_0003" },
+					{ "time": 0.1, "name": "Splash_0004" },
+					{ "time": 0.1333, "name": "Splash_0005" },
+					{ "time": 0.1666, "name": "Splash_0006" },
+					{ "time": 0.2, "name": "Splash_0007" },
+					{ "time": 0.2333, "name": "Splash_0008" },
+					{ "time": 0.2666, "name": "Splash_0009" },
+					{ "time": 0.3, "name": "Splash_0010" },
+					{ "time": 0.3333, "name": "Splash_0011" },
+					{ "time": 0.3666, "name": "Splash_0012" },
+					{ "time": 0.4, "name": "Splash_0013" },
+					{ "time": 0.4333, "name": "Splash_0014" },
+					{ "time": 0.4666, "name": "Splash_0015" },
+					{ "time": 0.5, "name": "Splash_0016" },
+					{ "time": 0.5333, "name": "Splash_0017" },
+					{ "time": 0.5666, "name": "Splash_0018" },
+					{ "time": 0.6, "name": "Splash_0019" },
+					{ "time": 0.6333, "name": "Splash_0020" },
+					{ "time": 0.6666, "name": "Splash_0021" },
+					{ "time": 0.7, "name": "Splash_0022" },
+					{ "time": 0.7333, "name": "Splash_0023" },
+					{ "time": 0.7666, "name": "Splash_0024" }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Splash": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 125.28 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.8, "y": 0.8 }
+				]
+			}
+		}
+	},
+	"Spray": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": "Wave_Back_0001" },
+					{ "time": 0.0666, "name": "Wave_Back_0002" },
+					{ "time": 0.1333, "name": "Wave_Back_0003" },
+					{ "time": 0.2, "name": "Wave_Back_0004" },
+					{ "time": 0.2666, "name": "Wave_Back_0001" }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Waterlines": {
+				"translate": [
+					{ "time": 0, "x": -33, "y": 78.86 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.5, "y": 1.5 }
+				]
+			}
+		}
+	},
+	"Torpedo_wave_at_sea": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Torpedo_wave_at_sea_0001" },
+					{ "time": 0.0333, "name": "Torpedo_wave_at_sea_0002" },
+					{ "time": 0.0666, "name": "Torpedo_wave_at_sea_0003" },
+					{ "time": 0.1, "name": "Torpedo_wave_at_sea_0004" },
+					{ "time": 0.1333, "name": "Torpedo_wave_at_sea_0005" },
+					{ "time": 0.1666, "name": "Torpedo_wave_at_sea_0006" },
+					{ "time": 0.2, "name": "Torpedo_wave_at_sea_0007" },
+					{ "time": 0.2333, "name": "Torpedo_wave_at_sea_0008" },
+					{ "time": 0.2666, "name": "Torpedo_wave_at_sea_0009" },
+					{ "time": 0.3, "name": "Torpedo_wave_at_sea_0010" },
+					{ "time": 0.3333, "name": "Torpedo_wave_at_sea_0011" },
+					{ "time": 0.3666, "name": "Torpedo_wave_at_sea_0012" },
+					{ "time": 0.4, "name": "Torpedo_wave_at_sea_0013" },
+					{ "time": 0.4333, "name": "Torpedo_wave_at_sea_0014" },
+					{ "time": 0.4666, "name": "Torpedo_wave_at_sea_0015" },
+					{ "time": 0.5, "name": "Torpedo_wave_at_sea_0016" },
+					{ "time": 0.5333, "name": "Torpedo_wave_at_sea_0017" },
+					{ "time": 0.5666, "name": "Torpedo_wave_at_sea_0018" },
+					{ "time": 0.6, "name": "Torpedo_wave_at_sea_0019" },
+					{ "time": 0.6333, "name": "Torpedo_wave_at_sea_0020" },
+					{ "time": 0.6666, "name": "Torpedo_wave_at_sea_0021" },
+					{ "time": 0.7, "name": "Torpedo_wave_at_sea_0022" },
+					{ "time": 0.7333, "name": "Torpedo_wave_at_sea_0023" },
+					{ "time": 0.7666, "name": "Torpedo_wave_at_sea_0024" },
+					{ "time": 0.8, "name": "Torpedo_wave_at_sea_0025" },
+					{ "time": 0.8333, "name": "Torpedo_wave_at_sea_0026" },
+					{ "time": 0.8666, "name": "Torpedo_wave_at_sea_0027" },
+					{ "time": 0.9, "name": "Torpedo_wave_at_sea_0028" },
+					{ "time": 0.9333, "name": "Torpedo_wave_at_sea_0029" },
+					{ "time": 0.9666, "name": "Torpedo_wave_at_sea_0030" },
+					{ "time": 1, "name": "Torpedo_wave_at_sea_0031" },
+					{ "time": 1.0333, "name": "Torpedo_wave_at_sea_0032" },
+					{ "time": 1.0666, "name": "Torpedo_wave_at_sea_0033" },
+					{ "time": 1.1, "name": "Torpedo_wave_at_sea_0034" },
+					{ "time": 1.1333, "name": "Torpedo_wave_at_sea_0035" },
+					{ "time": 1.1666, "name": "Torpedo_wave_at_sea_0036" },
+					{ "time": 1.2, "name": "Torpedo_wave_at_sea_0037" },
+					{ "time": 1.2333, "name": "Torpedo_wave_at_sea_0038" },
+					{ "time": 1.2666, "name": "Torpedo_wave_at_sea_0039" },
+					{ "time": 1.3, "name": "Torpedo_wave_at_sea_0040" },
+					{ "time": 1.3333, "name": "Torpedo_wave_at_sea_0041" },
+					{ "time": 1.3666, "name": "Torpedo_wave_at_sea_0042" },
+					{ "time": 1.4, "name": "Torpedo_wave_at_sea_0043" },
+					{ "time": 1.4333, "name": "Torpedo_wave_at_sea_0044" }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Torpedo_wave_at_sea": {
+				"rotate": [
+					{ "time": 0, "angle": 358.25 }
+				],
+				"translate": [
+					{ "time": 0, "x": 115.98, "y": -5.5, "curve": "stepped" },
+					{ "time": 1.3, "x": 115.98, "y": -5.5 },
+					{ "time": 1.3333, "x": 115.98, "y": -6.69 },
+					{ "time": 1.3666, "x": 115.98, "y": -5.5 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.5, "y": 0.8 }
+				]
+			}
+		}
+	},
+	"Torpedo_wave_at_sea_by_air": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": "Torpedo_wave_at_sea_0001" },
+					{ "time": 0.0333, "name": "Torpedo_wave_at_sea_0002" },
+					{ "time": 0.0666, "name": "Torpedo_wave_at_sea_0003" },
+					{ "time": 0.1, "name": "Torpedo_wave_at_sea_0004" },
+					{ "time": 0.1333, "name": "Torpedo_wave_at_sea_0005" },
+					{ "time": 0.1666, "name": "Torpedo_wave_at_sea_0006" },
+					{ "time": 0.2, "name": "Torpedo_wave_at_sea_0007" },
+					{ "time": 0.2333, "name": "Torpedo_wave_at_sea_0008" },
+					{ "time": 0.2666, "name": "Torpedo_wave_at_sea_0009" },
+					{ "time": 0.3, "name": "Torpedo_wave_at_sea_0010" },
+					{ "time": 0.3333, "name": "Torpedo_wave_at_sea_0011" },
+					{ "time": 0.3666, "name": "Torpedo_wave_at_sea_0012" },
+					{ "time": 0.4, "name": "Torpedo_wave_at_sea_0013" },
+					{ "time": 0.4333, "name": "Torpedo_wave_at_sea_0014" },
+					{ "time": 0.4666, "name": "Torpedo_wave_at_sea_0015" },
+					{ "time": 0.5, "name": "Torpedo_wave_at_sea_0016" },
+					{ "time": 0.5333, "name": "Torpedo_wave_at_sea_0017" },
+					{ "time": 0.5666, "name": "Torpedo_wave_at_sea_0018" },
+					{ "time": 0.6, "name": "Torpedo_wave_at_sea_0019" },
+					{ "time": 0.6333, "name": "Torpedo_wave_at_sea_0020" },
+					{ "time": 0.6666, "name": "Torpedo_wave_at_sea_0021" },
+					{ "time": 0.7, "name": "Torpedo_wave_at_sea_0022" },
+					{ "time": 0.7333, "name": "Torpedo_wave_at_sea_0023" },
+					{ "time": 0.7666, "name": "Torpedo_wave_at_sea_0024" },
+					{ "time": 0.8, "name": "Torpedo_wave_at_sea_0025" },
+					{ "time": 0.8333, "name": "Torpedo_wave_at_sea_0026" },
+					{ "time": 0.8666, "name": "Torpedo_wave_at_sea_0027" },
+					{ "time": 0.9, "name": "Torpedo_wave_at_sea_0028" },
+					{ "time": 0.9333, "name": "Torpedo_wave_at_sea_0029" },
+					{ "time": 0.9666, "name": "Torpedo_wave_at_sea_0030" },
+					{ "time": 1, "name": "Torpedo_wave_at_sea_0031" },
+					{ "time": 1.0333, "name": "Torpedo_wave_at_sea_0032" },
+					{ "time": 1.0666, "name": "Torpedo_wave_at_sea_0033" },
+					{ "time": 1.1, "name": "Torpedo_wave_at_sea_0034" },
+					{ "time": 1.1333, "name": "Torpedo_wave_at_sea_0035" },
+					{ "time": 1.1666, "name": "Torpedo_wave_at_sea_0036" },
+					{ "time": 1.2, "name": "Torpedo_wave_at_sea_0037" },
+					{ "time": 1.2333, "name": "Torpedo_wave_at_sea_0038" },
+					{ "time": 1.2666, "name": "Torpedo_wave_at_sea_0039" },
+					{ "time": 1.3, "name": "Torpedo_wave_at_sea_0040" },
+					{ "time": 1.3333, "name": "Torpedo_wave_at_sea_0041" },
+					{ "time": 1.3666, "name": "Torpedo_wave_at_sea_0042" },
+					{ "time": 1.4, "name": "Torpedo_wave_at_sea_0043" },
+					{ "time": 1.4333, "name": "Torpedo_wave_at_sea_0044" }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Torpedo_wave_at_sea": {
+				"rotate": [
+					{ "time": 0, "angle": 358.25 }
+				],
+				"translate": [
+					{ "time": 0, "x": 140.37, "y": -2.97 },
+					{ "time": 1.3, "x": 141.35, "y": -2.97 },
+					{ "time": 1.3333, "x": 142.32, "y": -3.66 },
+					{ "time": 1.3666, "x": 141.84, "y": -2.97 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.35, "y": 0.5 }
+				]
+			}
+		}
+	},
+	"Waterlines": {
+		"slots": {
+			"Aircraft_explosion": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Anti_aircraft_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Base_Blue": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Big_bang_ubder_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bomb_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Bubble": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_All": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Effect_Light_0001": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Lock_On": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Shield": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Ship_fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Small_bang_under_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_L": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Smoke_R": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Splash": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Torpedo_wave_at_sea": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Back": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Wave_Round": {
+				"attachment": [
+					{ "time": 0, "name": "Round_0001" },
+					{ "time": 0.0333, "name": "Round_0002" },
+					{ "time": 0.0666, "name": "Round_0003" },
+					{ "time": 0.1, "name": "Round_0004" },
+					{ "time": 0.1333, "name": "Round_0005" },
+					{ "time": 0.1666, "name": "Round_0006" },
+					{ "time": 0.2, "name": "Round_0007" },
+					{ "time": 0.2333, "name": "Round_0008" },
+					{ "time": 0.2666, "name": "Round_0009" },
+					{ "time": 0.3, "name": "Round_0010" },
+					{ "time": 0.3333, "name": "Round_0011" },
+					{ "time": 0.3666, "name": "Round_0012" },
+					{ "time": 0.4, "name": "Round_0013" },
+					{ "time": 0.4333, "name": "Round_0014" },
+					{ "time": 0.4666, "name": "Round_0015" },
+					{ "time": 0.5, "name": "Round_0016" },
+					{ "time": 0.5333, "name": "Round_0017" },
+					{ "time": 0.5666, "name": "Round_0018" },
+					{ "time": 0.6, "name": "Round_0019" },
+					{ "time": 0.6333, "name": "Round_0020" },
+					{ "time": 0.6666, "name": "Round_0021" },
+					{ "time": 0.7, "name": "Round_0022" },
+					{ "time": 0.7333, "name": "Round_0023" },
+					{ "time": 0.7666, "name": "Round_0024" },
+					{ "time": 0.8, "name": "Round_0025" },
+					{ "time": 0.8333, "name": "Round_0026" },
+					{ "time": 0.8666, "name": "Round_0027" },
+					{ "time": 0.9, "name": "Round_0028" },
+					{ "time": 0.9333, "name": "Round_0029" },
+					{ "time": 0.9666, "name": "Round_0030" },
+					{ "time": 1, "name": "Round_0031" },
+					{ "time": 1.0333, "name": "Round_0032" },
+					{ "time": 1.0666, "name": "Round_0033" },
+					{ "time": 1.1, "name": "Round_0034" },
+					{ "time": 1.1333, "name": "Round_0035" },
+					{ "time": 1.1666, "name": "Round_0036" },
+					{ "time": 1.2, "name": "Round_0037" },
+					{ "time": 1.2333, "name": "Round_0038" },
+					{ "time": 1.2666, "name": "Round_0039" },
+					{ "time": 1.3, "name": "Round_0040" },
+					{ "time": 1.3333, "name": "Round_0041" },
+					{ "time": 1.3666, "name": "Round_0042" },
+					{ "time": 1.4, "name": "Round_0043" },
+					{ "time": 1.4333, "name": "Round_0044" },
+					{ "time": 1.4666, "name": "Round_0045" },
+					{ "time": 1.5, "name": "Round_0046" },
+					{ "time": 1.5333, "name": "Round_0047" },
+					{ "time": 1.5666, "name": "Round_0048" },
+					{ "time": 1.6, "name": "Round_0049" },
+					{ "time": 1.6333, "name": "Round_0050" },
+					{ "time": 1.6666, "name": "Round_0051" },
+					{ "time": 1.7, "name": "Round_0052" },
+					{ "time": 1.7333, "name": "Round_0053" },
+					{ "time": 1.7666, "name": "Round_0054" },
+					{ "time": 1.8, "name": "Round_0055" },
+					{ "time": 1.8333, "name": "Round_0056" },
+					{ "time": 1.8666, "name": "Round_0057" },
+					{ "time": 1.9, "name": "Round_0058" },
+					{ "time": 1.9333, "name": "Round_0059" },
+					{ "time": 1.9666, "name": "Round_0060" },
+					{ "time": 2, "name": "Round_0001" }
+				]
+			}
+		},
+		"bones": {
+			"Spray": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 3.07, "y": -11.27 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 0.8 }
+				]
+			}
+		}
+	}
+}
+}

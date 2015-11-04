@@ -1,0 +1,20 @@
+
+Base.png
+size: 256,32
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Base_Blue
+  rotate: false
+  xy: 2, 2
+  size: 96, 27
+  orig: 96, 27
+  offset: 0, 0
+  index: -1
+Base_Yellow
+  rotate: false
+  xy: 100, 2
+  size: 96, 27
+  orig: 96, 27
+  offset: 0, 0
+  index: -1

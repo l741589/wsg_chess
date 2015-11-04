@@ -3,14 +3,14 @@
 
 void FieldLayer::createMoveTiles(Actor*actor, onSelectedListener listener) {
 	createTiles(actor, [=](const Vec2&sv,const Vec2&v) {
-		int color = 0x80ffff;
+		ColorF4B color(128, 255, 255, 128);
 		auto direction = actor->getDirection();
 		int glen = (int)round(actor->getShip()->speed / 5);
 		auto v2 = v - actor->getFieldPosition();
 		if (v2 == Vec2::ZERO) return color;
 		auto v1= Vec2::forAngle(direction);		
 		auto angle = Vec2::angle(v1, v2);
-		return sv.distanceSquared(v) <= glen*glen&&angle <= PI *0.26 ? 0x80ffff : 0;
+		return sv.distanceSquared(v) <= glen*glen&&angle <= PI *0.26 ? color : ColorF4B::Flag::DISABLE;
 	}, listener);
 }
 
@@ -41,10 +41,10 @@ void FieldLayer::createTiles(Actor* actor, VecFilter filter, onSelectedListener 
 		queue.pop_front();
 		if (v.x < 0 || v.y<0) continue;
 		auto color = filter(start,v);
-		if (color==DISABLE) continue;
-		if (color!=DISABLE_BUT_ALLOW&&color!=DISABLE) 
-			createTile(v, cnt++, Color4B((color >> 16) & 0xff, (color >> 8) & 0xff, color & 0xff, (color >> 24) & 0xff), listener);
-		if (color != DISABLE) {
+		if (color.f==ColorF4B::Flag::DISABLE) continue;
+		if (color.f&ColorF4B::Flag::SHOW) 
+			createTile(v, cnt++, color, listener);
+		if (color.f &ColorF4B::Flag::ALLOW) {
 			addVec(flags, queue, v + Vec2{ 1, 0 });
 			addVec(flags, queue, v + Vec2{ 0, 1 });
 			addVec(flags, queue, v + Vec2{ -1, 0 });
@@ -78,7 +78,7 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSele
 	sp->runAction(Sequence::create(
 		
 		Spawn::create(
-			FadeTo::create(0.5f,color.a==0?128:color.a),
+			FadeTo::create(0.5f,color.a),
 			RotateTo::create(0.5f, 0),
 			ScaleTo::create(0.5f, targetScale),
 			nullptr
@@ -88,13 +88,19 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSele
 	return sp;
 }
 
-void FieldLayer::clear() {
+void FieldLayer::clear(float time) {
+	int max = 1;
+	for (Node* e : getChildren()) {
+		FieldTile*sp = dynamic_cast<FieldTile*>(e);
+		if (sp->index > max) max = sp->index;
+	}
+	float es = time / max;
 	for (Node* e : getChildren()) {
 		FieldTile*sp = dynamic_cast<FieldTile*>(e);
 		sp->enable = false;
 		if (sp == nullptr) return;
 		e->runAction(Sequence::create(
-			DelayTime::create(0.01f*sp->index),
+			DelayTime::create(es*sp->index),
 			Spawn::create(
 				FadeOut::create(0.5f),
 				RotateTo::create(0.5f, 90),

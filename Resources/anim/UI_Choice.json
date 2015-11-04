@@ -1,0 +1,725 @@
+{
+"skeleton": { "hash": "vxUMgtpTUmRlDhy19fnUdEpFoyA", "spine": "2.1.27", "width": 226, "height": 460, "images": "" },
+"bones": [
+	{ "name": "Picture_All" },
+	{ "name": "UI_Choice_Picture", "parent": "Picture_All", "y": -288 },
+	{ "name": "Belt_in", "parent": "UI_Choice_Picture", "x": -331.12, "y": -18.74 },
+	{ "name": "Belt_out", "parent": "UI_Choice_Picture", "x": -264.74, "y": -134.32 },
+	{ "name": "Frame", "parent": "UI_Choice_Picture", "x": -278.11 },
+	{ "name": "Gear_in", "parent": "UI_Choice_Picture", "x": -358.3, "y": -43.01 },
+	{ "name": "Gear_in_second", "parent": "UI_Choice_Picture", "x": -307.91, "y": -3.02 },
+	{ "name": "Nut_D", "parent": "UI_Choice_Picture", "x": -232.99, "y": -197.85 },
+	{ "name": "Nut_M", "parent": "UI_Choice_Picture", "x": -287.89, "y": -87.78 },
+	{ "name": "Nut_U", "parent": "UI_Choice_Picture", "x": -237.96, "y": 42.2 },
+	{ "name": "Piston", "parent": "UI_Choice_Picture", "x": -307.83, "y": 55.99 },
+	{ "name": "Title", "parent": "UI_Choice_Picture", "x": -280.98, "y": -225.97 }
+],
+"slots": [
+	{ "name": "Piston", "bone": "Piston", "attachment": "Piston" },
+	{ "name": "Gear_in_second_shadow", "bone": "Gear_in_second", "attachment": "Gear_in_second_shadow" },
+	{ "name": "Gear_in_second", "bone": "Gear_in_second", "attachment": "Gear_in_second" },
+	{ "name": "Gear_in_shadow", "bone": "Gear_in", "attachment": "Gear_in_shadow" },
+	{ "name": "Gear_in", "bone": "Gear_in", "attachment": "Gear_in" },
+	{ "name": "Belt_in", "bone": "Belt_in", "attachment": "Belt_in" },
+	{ "name": "Gear_out_big_shadow", "bone": "Nut_M", "attachment": "Gear_out_big_shadow" },
+	{ "name": "Gear_out_big", "bone": "Nut_M", "attachment": "Gear_out_big" },
+	{ "name": "Gear_out_shadow", "bone": "Nut_U", "attachment": "Gear_out_shadow" },
+	{ "name": "Gear_out", "bone": "Nut_U", "attachment": "Gear_out" },
+	{ "name": "Belt_out", "bone": "Belt_out", "attachment": "Belt_out" },
+	{ "name": "Belt_in_light", "bone": "Belt_in", "attachment": "Belt_in_light/Belt_in_light_3" },
+	{ "name": "Belt_out_light", "bone": "Belt_out", "attachment": "Belt_out_light/Belt_out_light_3" },
+	{ "name": "Frame", "bone": "Frame", "attachment": "Frame" },
+	{ "name": "Nut_D", "bone": "Nut_D", "attachment": "Nut_D" },
+	{ "name": "Nut_M", "bone": "Nut_M", "attachment": "Nut_M" },
+	{ "name": "Nut_U", "bone": "Nut_U", "attachment": "Nut_U" },
+	{ "name": "Title", "bone": "Title", "attachment": "Title" }
+],
+"skins": {
+	"default": {
+		"Belt_in": {
+			"Belt_in": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 45.12, -46.25, -48.87, -46.25, -48.87, 37.74, 45.12, 37.74 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 94,
+				"height": 84
+			}
+		},
+		"Belt_in_light": {
+			"Belt_in_light/Belt_in_light_1": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 37.00999, -39.41999, -41.98, -39.41999, -41.98, 29.57, 37.00999, 29.57 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 79,
+				"height": 69
+			},
+			"Belt_in_light/Belt_in_light_2": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 36.05, -39.41999, -41.93999, -39.41999, -41.93999, 29.57, 36.05, 29.57 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 78,
+				"height": 69
+			},
+			"Belt_in_light/Belt_in_light_3": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 36.55, -39.41999, -42.44, -39.41999, -42.44, 29.57, 36.55, 29.57 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 79,
+				"height": 69
+			}
+		},
+		"Belt_out": {
+			"Belt_out": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 63.74, -95.67, -55.25, -95.67, -55.25, 78.32, 63.74, 78.32 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 119,
+				"height": 174
+			}
+		},
+		"Belt_out_light": {
+			"Belt_out_light/Belt_out_light_1": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 56.57, -88.55, -47.42, -88.55, -47.42, 70.44, 56.57, 70.44 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 104,
+				"height": 159
+			},
+			"Belt_out_light/Belt_out_light_2": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 56.07, -88.55, -46.92, -88.55, -46.92, 70.44, 56.07, 70.44 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 103,
+				"height": 159
+			},
+			"Belt_out_light/Belt_out_light_3": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 56.07, -88.54, -46.92, -88.54, -46.92, 70.44999, 56.07, 70.44999 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 103,
+				"height": 159
+			}
+		},
+		"Frame": {
+			"Frame": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 85.11, -260, -91.88, -260, -91.88, 200, 85.11, 200 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 177,
+				"height": 460
+			}
+		},
+		"Gear_in": {
+			"Gear_in": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 29.3, -28.98, -28.69, -28.98, -28.69, 29.01, 29.3, 29.01 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 58,
+				"height": 58
+			}
+		},
+		"Gear_in_second": {
+			"Gear_in_second": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 28.91, -28.97, -29.08, -28.97, -29.08, 29.02, 28.91, 29.02 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 58,
+				"height": 58
+			}
+		},
+		"Gear_in_second_shadow": {
+			"Gear_in_second_shadow": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 23.91, -24.97, -22.08, -24.97, -22.08, 21.02, 23.91, 21.02 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 46,
+				"height": 46
+			}
+		},
+		"Gear_in_shadow": {
+			"Gear_in_shadow": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 24.3, -24.98, -21.69, -24.98, -21.69, 21.01, 24.3, 21.01 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 46,
+				"height": 46
+			}
+		},
+		"Gear_out": {
+			"Gear_out": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 76.96, -78.19999, -77.03, -78.19999, -77.03, 77.79, 76.96, 77.79 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 154,
+				"height": 156
+			}
+		},
+		"Gear_out_big": {
+			"Gear_out_big": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 87.89, -88.21, -88.1, -88.21, -88.1, 87.78, 87.89, 87.78 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 176,
+				"height": 176
+			}
+		},
+		"Gear_out_big_shadow": {
+			"Gear_out_big_shadow": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 82.89, -84.21, -81.1, -84.21, -81.1, 79.78, 82.89, 79.78 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 164,
+				"height": 164
+			}
+		},
+		"Gear_out_shadow": {
+			"Gear_out_shadow": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 72.96, -74.19999, -71.03, -74.19999, -71.03, 69.79, 72.96, 69.79 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 144,
+				"height": 144
+			}
+		},
+		"Nut_D": {
+			"Nut_D": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 21.99, -22.14, -22, -22.14, -22, 21.85, 21.99, 21.85 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 44,
+				"height": 44
+			}
+		},
+		"Nut_M": {
+			"Nut_M": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 8.89, -9.21, -9.1, -9.21, -9.1, 8.78, 8.89, 8.78 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 18,
+				"height": 18
+			}
+		},
+		"Nut_U": {
+			"Nut_U": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 13.96, -14.2, -14.03, -14.2, -14.03, 13.79, 13.96, 13.79 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 28,
+				"height": 28
+			}
+		},
+		"Piston": {
+			"Piston": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 11.83, -70.99, -28.16, -70.99, -28.16, 12, 11.83, 12 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 40,
+				"height": 83
+			}
+		},
+		"Title": {
+			"Title": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 74.98, -21.02, -76.01, -21.02, -76.01, 39.97, 74.98, 39.97 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 151,
+				"height": 61
+			}
+		}
+	}
+},
+"animations": {
+	"Always": {
+		"slots": {
+			"Belt_in_light": {
+				"attachment": [
+					{ "time": 0, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.0333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.0666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.1, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.1333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.1666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.2, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.2333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.2666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.3, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.3333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.3666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.4, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.4333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.4666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.5, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.5333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.5666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.6, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.6333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.6666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.7, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.7333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.7666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.8, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.8333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.8666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 0.9, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 0.9333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 0.9666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.0333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.0666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.1, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.1333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.1666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.2, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.2333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.2666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.3, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.3333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.3666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.4, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.4333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.4666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.5, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.5333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.5666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.6, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.6333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.6666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.7, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.7333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.7666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.8, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.8333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.8666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 1.9, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 1.9333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 1.9666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.0333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.0666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.1, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.1333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.1666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.2, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.2333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.2666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.3, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.3333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.3666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.4, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.4333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.4666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.5, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.5333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.5666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.6, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.6333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.6666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.7, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.7333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.7666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.8, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.8333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.8666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 2.9, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 2.9333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 2.9666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.0333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.0666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.1, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.1333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.1666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.2, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.2333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.2666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.3, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.3333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.3666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.4, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.4333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.4666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.5, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.5333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.5666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.6, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.6333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.6666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.7, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.7333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.7666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.8, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.8333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.8666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 3.9, "name": "Belt_in_light/Belt_in_light_3" },
+					{ "time": 3.9333, "name": "Belt_in_light/Belt_in_light_2" },
+					{ "time": 3.9666, "name": "Belt_in_light/Belt_in_light_1" },
+					{ "time": 4, "name": "Belt_in_light/Belt_in_light_3" }
+				]
+			},
+			"Belt_out_light": {
+				"attachment": [
+					{ "time": 0, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.0333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.0666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.1, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.1333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.1666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.2, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.2333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.2666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.3, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.3333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.3666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.4, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.4333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.4666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.5, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.5333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.5666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.6, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.6333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.6666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.7, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.7333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.7666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.8, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.8333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.8666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 0.9, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 0.9333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 0.9666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.0333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.0666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.1, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.1333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.1666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.2, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.2333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.2666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.3, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.3333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.3666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.4, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.4333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.4666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.5, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.5333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.5666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.6, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.6333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.6666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.7, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.7333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.7666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.8, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.8333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.8666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 1.9, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 1.9333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 1.9666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.0333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.0666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.1, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.1333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.1666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.2, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.2333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.2666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.3, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.3333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.3666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.4, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.4333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.4666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.5, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.5333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.5666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.6, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.6333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.6666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.7, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.7333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.7666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.8, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.8333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.8666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 2.9, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 2.9333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 2.9666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.0333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.0666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.1, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.1333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.1666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.2, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.2333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.2666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.3, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.3333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.3666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.4, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.4333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.4666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.5, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.5333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.5666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.6, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.6333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.6666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.7, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.7333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.7666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.8, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.8333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.8666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 3.9, "name": "Belt_out_light/Belt_out_light_1" },
+					{ "time": 3.9333, "name": "Belt_out_light/Belt_out_light_2" },
+					{ "time": 3.9666, "name": "Belt_out_light/Belt_out_light_3" },
+					{ "time": 4, "name": "Belt_out_light/Belt_out_light_1" }
+				]
+			}
+		},
+		"bones": {
+			"UI_Choice_Picture": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 288 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Belt_in": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Belt_out": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Frame": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Gear_in": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": 90 },
+					{ "time": 1, "angle": 180 },
+					{ "time": 1.5, "angle": 270 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": 90 },
+					{ "time": 3, "angle": 180 },
+					{ "time": 3.5, "angle": 270 },
+					{ "time": 4, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Gear_in_second": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": 90 },
+					{ "time": 1, "angle": 180 },
+					{ "time": 1.5, "angle": 270 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": 90 },
+					{ "time": 3, "angle": 180 },
+					{ "time": 3.5, "angle": 270 },
+					{ "time": 4, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Nut_D": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": 270 },
+					{ "time": 2, "angle": 180 },
+					{ "time": 3, "angle": 90 },
+					{ "time": 4, "angle": 360 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Nut_M": {
+				"rotate": [
+					{ "time": 0, "angle": 180 },
+					{ "time": 1, "angle": 405 },
+					{ "time": 2, "angle": 270 },
+					{ "time": 3, "angle": 135 },
+					{ "time": 4, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Nut_U": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 1, "angle": 150 },
+					{ "time": 2, "angle": 300 },
+					{ "time": 3, "angle": 450 },
+					{ "time": 4, "angle": 600 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Piston": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.5, "angle": 15 },
+					{ "time": 1, "angle": 30 },
+					{ "time": 1.5, "angle": 15 },
+					{ "time": 2, "angle": 0 },
+					{ "time": 2.5, "angle": 15 },
+					{ "time": 3, "angle": 30 },
+					{ "time": 3.5, "angle": 15 },
+					{ "time": 4, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.5, "x": 0, "y": -11.99 },
+					{ "time": 1, "x": 0, "y": 0 },
+					{ "time": 1.5, "x": 0, "y": 20 },
+					{ "time": 2, "x": 0, "y": 0 },
+					{ "time": 2.5, "x": 0, "y": -11.99 },
+					{ "time": 3, "x": 0, "y": 0 },
+					{ "time": 3.5, "x": 0, "y": 20 },
+					{ "time": 4, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Title": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			},
+			"Picture_All": {
+				"translate": [
+					{ "time": 0, "x": 280, "y": 30 }
+				]
+			}
+		}
+	}
+}
+}

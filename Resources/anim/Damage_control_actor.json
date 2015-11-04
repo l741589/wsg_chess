@@ -1,0 +1,240 @@
+{
+"skeleton": { "hash": "ErlDqflOtQrngmBYfCILkY+3t6c", "spine": "2.1.27", "width": 1536, "height": 1536, "images": "" },
+"bones": [
+	{ "name": "Control" },
+	{ "name": "Actor_picture", "parent": "Control", "x": 45.14, "y": -156.94, "scaleX": 1.5, "scaleY": 1.5 },
+	{ "name": "Actor_picture_Light", "parent": "Control", "x": 45.14, "y": -156.94, "scaleX": 1.5, "scaleY": 1.5 },
+	{ "name": "BG_mask", "parent": "Control" },
+	{ "name": "Damage_picture", "parent": "Control", "x": 45.14, "y": -156.94, "scaleX": 1.5, "scaleY": 1.5 },
+	{ "name": "Damage_picture_Light", "parent": "Control", "x": 45.14, "y": -156.94, "scaleX": 1.5, "scaleY": 1.5 }
+],
+"slots": [
+	{ "name": "mask", "bone": "BG_mask", "attachment": "mask" },
+	{ "name": "Actor_damage_picture", "bone": "Damage_picture", "attachment": "Actor_damage_picture" },
+	{ "name": "Actor_damage_picture_Light", "bone": "Damage_picture_Light", "attachment": "Actor_damage_picture", "blend": "additive" },
+	{ "name": "Actor_picture", "bone": "Actor_picture", "attachment": "Actor_picture" },
+	{ "name": "Actor_picture_Light", "bone": "Actor_picture_Light", "attachment": "Actor_picture", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"Actor_damage_picture": {
+			"Actor_damage_picture": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 512, -511.99, -512, -511.99, -512, 512, 512, 512 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 1024,
+				"height": 1024
+			}
+		},
+		"Actor_damage_picture_Light": {
+			"Actor_damage_picture": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 512, -511.99, -512, -511.99, -512, 512, 512, 512 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 1024,
+				"height": 1024
+			}
+		},
+		"Actor_picture": {
+			"Actor_picture": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 512, -511.99, -512, -511.99, -512, 512, 512, 512 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 1024,
+				"height": 1024
+			}
+		},
+		"Actor_picture_Light": {
+			"Actor_picture": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 512, -511.99, -512, -511.99, -512, 512, 512, 512 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 1024,
+				"height": 1024
+			}
+		},
+		"mask": {
+			"mask": { "scaleX": 36, "scaleY": 30, "width": 32, "height": 32 }
+		}
+	}
+},
+"animations": {
+	"Actor_animation": {
+		"slots": {
+			"Actor_damage_picture": {
+				"color": [
+					{ "time": 0, "color": "4a000000" },
+					{ "time": 0.1666, "color": "6e3333ff" },
+					{ "time": 1.1666, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 3.5,
+						"color": "ffffffff",
+						"curve": [ 0.214, 0.78, 0.319, 0.91 ]
+					},
+					{ "time": 3.8333, "color": "ffffff00" }
+				]
+			},
+			"Actor_damage_picture_Light": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "Actor_damage_picture" }
+				],
+				"color": [
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.6666, "color": "ffffff89" },
+					{ "time": 2.2666, "color": "ffffff00" },
+					{ "time": 2.8666, "color": "ffffff89" },
+					{ "time": 3.5, "color": "ffffff00" }
+				]
+			},
+			"Actor_picture": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 3.5, "name": "Actor_picture" }
+				],
+				"color": [
+					{ "time": 3.5, "color": "ffffff00" },
+					{ "time": 4, "color": "ffffffff" }
+				]
+			},
+			"Actor_picture_Light": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 3.5, "name": "Actor_picture" }
+				],
+				"color": [
+					{ "time": 3.5, "color": "ffffff00" },
+					{ "time": 3.6, "color": "ffffffff" },
+					{ "time": 4.1666, "color": "ffffff00" }
+				]
+			},
+			"mask": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffff00",
+						"curve": [ 0.224, 0.59, 0.447, 0.83 ]
+					},
+					{ "time": 0.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.3666, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"Actor_picture": {
+				"rotate": [
+					{ "time": 4.3666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": -228.46, "y": 0, "curve": "stepped" },
+					{ "time": 4.3666, "x": -228.46, "y": 0 }
+				]
+			},
+			"Damage_picture": {
+				"translate": [
+					{ "time": 0, "x": -228.46, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1.5, "y": 1.5 },
+					{ "time": 0.3333, "x": 1, "y": 1 }
+				]
+			},
+			"Control": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4.3666, "x": 0, "y": 0 }
+				]
+			},
+			"Damage_picture_Light": {
+				"translate": [
+					{ "time": 0, "x": -228.46, "y": 0 }
+				],
+				"scale": [
+					{ "time": 4, "x": 1.5, "y": 1.5 }
+				]
+			},
+			"Actor_picture_Light": {
+				"translate": [
+					{ "time": 0, "x": -228.46, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 3.5,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.208, 0.58, 0.38, 0.77 ]
+					},
+					{ "time": 4.3333, "x": 1.2, "y": 1.2 }
+				]
+			}
+		}
+	},
+	"Actor_animation_out": {
+		"slots": {
+			"Actor_damage_picture": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Actor_damage_picture_Light": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Actor_picture": {
+				"color": [
+					{ "time": 1.6666, "color": "ffffffff" },
+					{ "time": 2.1666, "color": "ffffff00" }
+				]
+			},
+			"Actor_picture_Light": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"mask": {
+				"color": [
+					{ "time": 0, "color": "ffffffff", "curve": "stepped" },
+					{
+						"time": 1.6666,
+						"color": "ffffffff",
+						"curve": [ 0.203, 0.53, 0.57, 0.81 ]
+					},
+					{ "time": 2.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Actor_picture": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": -228.46, "y": 0, "curve": "stepped" },
+					{ "time": 1.6666, "x": -228.46, "y": 0 },
+					{ "time": 2.3333, "x": -191.08, "y": -196.22 }
+				],
+				"scale": [
+					{ "time": 1.6666, "x": 1, "y": 1 },
+					{ "time": 2.1666, "x": 1.5, "y": 1.5 }
+				]
+			}
+		}
+	}
+}
+}

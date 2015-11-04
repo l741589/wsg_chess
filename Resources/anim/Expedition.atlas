@@ -1,0 +1,342 @@
+
+Expedition.png
+size: 1024,128
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Expedition_Actor/01
+  rotate: true
+  xy: 370, 54
+  size: 72, 79
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/09
+  rotate: true
+  xy: 370, 54
+  size: 72, 79
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/17
+  rotate: true
+  xy: 370, 54
+  size: 72, 79
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/25
+  rotate: true
+  xy: 370, 54
+  size: 72, 79
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/02
+  rotate: true
+  xy: 534, 64
+  size: 62, 81
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/26
+  rotate: true
+  xy: 534, 64
+  size: 62, 81
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/18
+  rotate: true
+  xy: 534, 64
+  size: 62, 81
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/10
+  rotate: true
+  xy: 534, 64
+  size: 62, 81
+  orig: 217, 103
+  offset: 6, 4
+  index: -1
+Expedition_Actor/03
+  rotate: true
+  xy: 451, 2
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/19
+  rotate: true
+  xy: 451, 2
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/27
+  rotate: true
+  xy: 451, 2
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/11
+  rotate: true
+  xy: 451, 2
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/04
+  rotate: true
+  xy: 702, 70
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/12
+  rotate: true
+  xy: 702, 70
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/28
+  rotate: true
+  xy: 702, 70
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/20
+  rotate: true
+  xy: 702, 70
+  size: 56, 82
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/05
+  rotate: true
+  xy: 617, 69
+  size: 57, 83
+  orig: 217, 103
+  offset: 5, 0
+  index: -1
+Expedition_Actor/21
+  rotate: true
+  xy: 617, 69
+  size: 57, 83
+  orig: 217, 103
+  offset: 5, 0
+  index: -1
+Expedition_Actor/13
+  rotate: true
+  xy: 617, 69
+  size: 57, 83
+  orig: 217, 103
+  offset: 5, 0
+  index: -1
+Expedition_Actor/29
+  rotate: true
+  xy: 617, 69
+  size: 57, 83
+  orig: 217, 103
+  offset: 5, 0
+  index: -1
+Expedition_Actor/06
+  rotate: true
+  xy: 451, 60
+  size: 66, 81
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/30
+  rotate: true
+  xy: 451, 60
+  size: 66, 81
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/22
+  rotate: true
+  xy: 451, 60
+  size: 66, 81
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/14
+  rotate: true
+  xy: 451, 60
+  size: 66, 81
+  orig: 217, 103
+  offset: 5, 3
+  index: -1
+Expedition_Actor/07
+  rotate: true
+  xy: 204, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/15
+  rotate: true
+  xy: 204, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/23
+  rotate: true
+  xy: 204, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/31
+  rotate: true
+  xy: 204, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/08
+  rotate: true
+  xy: 287, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/24
+  rotate: true
+  xy: 287, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/32
+  rotate: true
+  xy: 287, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Actor/16
+  rotate: true
+  xy: 287, 52
+  size: 74, 81
+  orig: 217, 103
+  offset: 5, 4
+  index: -1
+Expedition_Enemy/17
+  rotate: false
+  xy: 2, 47
+  size: 112, 79
+  orig: 217, 103
+  offset: 0, 4
+  index: -1
+Expedition_Enemy/18
+  rotate: false
+  xy: 116, 55
+  size: 86, 71
+  orig: 217, 103
+  offset: 22, 4
+  index: -1
+Expedition_Enemy/19
+  rotate: false
+  xy: 786, 69
+  size: 59, 57
+  orig: 217, 103
+  offset: 45, 4
+  index: -1
+Expedition_Enemy/20
+  rotate: false
+  xy: 70, 7
+  size: 40, 38
+  orig: 217, 103
+  offset: 56, 4
+  index: -1
+Expedition_Enemy/21
+  rotate: false
+  xy: 619, 35
+  size: 54, 32
+  orig: 217, 103
+  offset: 37, 4
+  index: -1
+Expedition_Enemy/22
+  rotate: false
+  xy: 889, 72
+  size: 41, 54
+  orig: 217, 103
+  offset: 45, 2
+  index: -1
+Expedition_Enemy/23
+  rotate: false
+  xy: 932, 72
+  size: 41, 54
+  orig: 217, 103
+  offset: 38, 2
+  index: -1
+Expedition_Enemy/24
+  rotate: false
+  xy: 932, 72
+  size: 41, 54
+  orig: 217, 103
+  offset: 38, 2
+  index: -1
+Expedition_Enemy/25
+  rotate: true
+  xy: 2, 4
+  size: 41, 66
+  orig: 217, 103
+  offset: 33, 0
+  index: -1
+Expedition_Enemy/26
+  rotate: false
+  xy: 847, 69
+  size: 40, 57
+  orig: 217, 103
+  offset: 28, 1
+  index: -1
+Expedition_Enemy/27
+  rotate: false
+  xy: 975, 74
+  size: 40, 52
+  orig: 217, 103
+  offset: 22, 4
+  index: -1
+Expedition_Enemy/28
+  rotate: false
+  xy: 975, 74
+  size: 40, 52
+  orig: 217, 103
+  offset: 22, 4
+  index: -1
+Expedition_Enemy/29
+  rotate: false
+  xy: 535, 10
+  size: 40, 52
+  orig: 217, 103
+  offset: 16, 4
+  index: -1
+Expedition_Enemy/30
+  rotate: false
+  xy: 577, 11
+  size: 40, 51
+  orig: 217, 103
+  offset: 10, 4
+  index: -1
+Expedition_Enemy/31
+  rotate: false
+  xy: 116, 2
+  size: 40, 51
+  orig: 217, 103
+  offset: 4, 4
+  index: -1
+Expedition_Enemy/32
+  rotate: false
+  xy: 158, 3
+  size: 39, 50
+  orig: 217, 103
+  offset: 0, 4
+  index: -1

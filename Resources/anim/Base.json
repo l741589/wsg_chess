@@ -1,0 +1,48 @@
+{
+"skeleton": { "hash": "5fa4zSVH6/Ze1PSlqy2DO6cyzaM", "spine": "2.1.27", "width": 96, "height": 27.03, "images": "" },
+"bones": [
+	{ "name": "Picture" },
+	{ "name": "Picture_Light", "parent": "Picture", "length": 25.96, "rotation": -0.9 }
+],
+"slots": [
+	{ "name": "Base_Color", "bone": "Picture_Light", "attachment": "Color_Change", "blend": "additive" }
+],
+"skins": {
+	"default": {},
+	"Blue": {
+		"Base_Color": {
+			"Color_Change": { "name": "Base_Blue", "rotation": 0.9, "width": 96, "height": 27 }
+		}
+	},
+	"Yellow": {
+		"Base_Color": {
+			"Color_Change": { "name": "Base_Yellow", "rotation": 0.9, "width": 96, "height": 27 }
+		}
+	}
+},
+"animations": {
+	"Light": {
+		"slots": {
+			"Base_Color": {
+				"attachment": [
+					{ "time": 0, "name": "Color_Change" },
+					{ "time": 1.1666, "name": "Color_Change" }
+				],
+				"color": [
+					{
+						"time": 0,
+						"color": "fffffffd",
+						"curve": [ 0.188, 0.46, 0.529, 0.74 ]
+					},
+					{
+						"time": 0.5,
+						"color": "ffffff00",
+						"curve": [ 0.567, 0.21, 0.883, 0.6 ]
+					},
+					{ "time": 1.1666, "color": "fffffffd" }
+				]
+			}
+		}
+	}
+}
+}

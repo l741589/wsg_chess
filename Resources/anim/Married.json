@@ -1,0 +1,426 @@
+{
+"skeleton": { "hash": "pRLP8gWWLrB1/Sc+LygHg0m4qIQ", "spine": "2.1.27", "width": 1995.61, "height": 1963.35, "images": "" },
+"bones": [
+	{ "name": "Picture" },
+	{ "name": "Actor", "parent": "Picture", "y": 636.6 },
+	{ "name": "Black_BG", "parent": "Picture" },
+	{ "name": "Flowers", "parent": "Picture" },
+	{ "name": "Hand_M", "parent": "Picture", "x": -1358.85, "y": 2.46 },
+	{ "name": "Hand_W", "parent": "Picture" },
+	{ "name": "White", "parent": "Picture" },
+	{ "name": "Rain", "parent": "Hand_W", "x": -471.13, "y": 29.22 },
+	{ "name": "Light_00", "parent": "Rain", "x": -2.48, "y": 1.02 }
+],
+"slots": [
+	{ "name": "Picture", "bone": "Actor", "attachment": "Married_00" },
+	{ "name": "Black_color", "bone": "Black_BG", "attachment": "Black_Color" },
+	{ "name": "Flower_all", "bone": "Flowers", "attachment": "Flower_0001", "blend": "screen" },
+	{ "name": "Hand_00", "bone": "Hand_W", "attachment": "Hand_00" },
+	{ "name": "Hand_01", "bone": "Hand_M", "attachment": "Hand_01" },
+	{ "name": "Rain_00", "bone": "Rain", "attachment": "Rain_00" },
+	{ "name": "Light_Large", "bone": "Light_00", "attachment": "Light_Large", "blend": "additive" },
+	{ "name": "White_Mask", "bone": "White", "attachment": "White_00" }
+],
+"skins": {
+	"default": {
+		"Black_color": {
+			"Black_Color": { "scaleX": 12, "scaleY": 10, "width": 100, "height": 100 }
+		},
+		"Flower_all": {
+			"Flower_0001": { "width": 256, "height": 192 },
+			"Flower_0002": { "width": 256, "height": 192 },
+			"Flower_0003": { "width": 256, "height": 192 },
+			"Flower_0004": { "width": 256, "height": 192 },
+			"Flower_0005": { "width": 256, "height": 192 },
+			"Flower_0006": { "width": 256, "height": 192 },
+			"Flower_0007": { "width": 256, "height": 192 },
+			"Flower_0008": { "width": 256, "height": 192 },
+			"Flower_0009": { "width": 256, "height": 192 },
+			"Flower_0010": { "width": 256, "height": 192 },
+			"Flower_0011": { "width": 256, "height": 192 },
+			"Flower_0012": { "width": 256, "height": 192 },
+			"Flower_0013": { "width": 256, "height": 192 },
+			"Flower_0014": { "width": 256, "height": 192 },
+			"Flower_0015": { "width": 256, "height": 192 },
+			"Flower_0016": { "width": 256, "height": 192 },
+			"Flower_0017": { "width": 256, "height": 192 },
+			"Flower_0018": { "width": 256, "height": 192 },
+			"Flower_0019": { "width": 256, "height": 192 },
+			"Flower_0020": { "width": 256, "height": 192 },
+			"Flower_0021": { "width": 256, "height": 192 },
+			"Flower_0022": { "width": 256, "height": 192 },
+			"Flower_0023": { "width": 256, "height": 192 },
+			"Flower_0024": { "width": 256, "height": 192 },
+			"Flower_0025": { "width": 256, "height": 192 },
+			"Flower_0026": { "width": 256, "height": 192 },
+			"Flower_0027": { "width": 256, "height": 192 },
+			"Flower_0028": { "width": 256, "height": 192 },
+			"Flower_0029": { "width": 256, "height": 192 },
+			"Flower_0030": { "width": 256, "height": 192 },
+			"Flower_0031": { "width": 256, "height": 192 },
+			"Flower_0032": { "width": 256, "height": 192 },
+			"Flower_0033": { "width": 256, "height": 192 },
+			"Flower_0034": { "width": 256, "height": 192 },
+			"Flower_0035": { "width": 256, "height": 192 },
+			"Flower_0036": { "width": 256, "height": 192 },
+			"Flower_0037": { "width": 256, "height": 192 },
+			"Flower_0038": { "width": 256, "height": 192 },
+			"Flower_0039": { "width": 256, "height": 192 },
+			"Flower_0040": { "width": 256, "height": 192 },
+			"Flower_0041": { "width": 256, "height": 192 },
+			"Flower_0042": { "width": 256, "height": 192 },
+			"Flower_0043": { "width": 256, "height": 192 },
+			"Flower_0044": { "width": 256, "height": 192 },
+			"Flower_0045": { "width": 256, "height": 192 },
+			"Flower_0046": { "width": 256, "height": 192 },
+			"Flower_0047": { "width": 256, "height": 192 },
+			"Flower_0048": { "width": 256, "height": 192 },
+			"Flower_0049": { "width": 256, "height": 192 },
+			"Flower_0050": { "width": 256, "height": 192 },
+			"Flower_0051": { "width": 256, "height": 192 },
+			"Flower_0052": { "width": 256, "height": 192 },
+			"Flower_0053": { "width": 256, "height": 192 },
+			"Flower_0054": { "width": 256, "height": 192 },
+			"Flower_0055": { "width": 256, "height": 192 },
+			"Flower_0056": { "width": 256, "height": 192 },
+			"Flower_0057": { "width": 256, "height": 192 },
+			"Flower_0058": { "width": 256, "height": 192 },
+			"Flower_0059": { "width": 256, "height": 192 },
+			"Flower_0060": { "width": 256, "height": 192 },
+			"Flower_0061": { "width": 256, "height": 192 },
+			"Flower_0062": { "width": 256, "height": 192 },
+			"Flower_0063": { "width": 256, "height": 192 },
+			"Flower_0064": { "width": 256, "height": 192 },
+			"Flower_0065": { "width": 256, "height": 192 },
+			"Flower_0066": { "width": 256, "height": 192 },
+			"Flower_0067": { "width": 256, "height": 192 },
+			"Flower_0068": { "width": 256, "height": 192 },
+			"Flower_0069": { "width": 256, "height": 192 },
+			"Flower_0070": { "width": 256, "height": 192 },
+			"Flower_0071": { "width": 256, "height": 192 },
+			"Flower_0072": { "width": 256, "height": 192 },
+			"Flower_0073": { "width": 256, "height": 192 },
+			"Flower_0074": { "width": 256, "height": 192 },
+			"Flower_0075": { "width": 256, "height": 192 },
+			"Flower_0076": { "width": 256, "height": 192 },
+			"Flower_0077": { "width": 256, "height": 192 },
+			"Flower_0078": { "width": 256, "height": 192 },
+			"Flower_0079": { "width": 256, "height": 192 },
+			"Flower_0080": { "width": 256, "height": 192 },
+			"Flower_0081": { "width": 256, "height": 192 },
+			"Flower_0082": { "width": 256, "height": 192 },
+			"Flower_0083": { "width": 256, "height": 192 },
+			"Flower_0084": { "width": 256, "height": 192 },
+			"Flower_0085": { "width": 256, "height": 192 },
+			"Flower_0086": { "width": 256, "height": 192 },
+			"Flower_0087": { "width": 256, "height": 192 },
+			"Flower_0088": { "width": 256, "height": 192 }
+		},
+		"Hand_00": {
+			"Hand_00": { "x": -312.18, "y": -30.97, "width": 850, "height": 298 }
+		},
+		"Hand_01": {
+			"Hand_01": { "x": 388.24, "y": 27.04, "width": 850, "height": 298 }
+		},
+		"Light_Large": {
+			"Light_Large": { "x": -4.26, "y": -25.51, "scaleX": 1.2, "scaleY": 1.2, "width": 500, "height": 473 }
+		},
+		"Picture": {
+			"Married_00": { "y": 106.75, "scaleX": 0.9, "scaleY": 0.9, "width": 1224, "height": 1600 }
+		},
+		"Rain_00": {
+			"Rain_00": { "x": -2.53, "y": -3.38, "width": 56, "height": 48 }
+		},
+		"White_Mask": {
+			"White_00": { "scaleX": 12, "scaleY": 10, "width": 100, "height": 100 }
+		}
+	}
+},
+"animations": {
+	"Married": {
+		"slots": {
+			"Black_color": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.1666, "name": "Black_Color" }
+				],
+				"color": [
+					{ "time": 1.1666, "color": "ffffff00" },
+					{ "time": 1.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.3333, "color": "ffffffff" },
+					{ "time": 4.8333, "color": "ffffff00" }
+				]
+			},
+			"Flower_all": {
+				"attachment": [
+					{ "time": 0, "name": "Flower_0001" },
+					{ "time": 0.0666, "name": "Flower_0002" },
+					{ "time": 0.1333, "name": "Flower_0003" },
+					{ "time": 0.2, "name": "Flower_0004" },
+					{ "time": 0.2666, "name": "Flower_0005" },
+					{ "time": 0.3333, "name": "Flower_0006" },
+					{ "time": 0.4, "name": "Flower_0007" },
+					{ "time": 0.4666, "name": "Flower_0008" },
+					{ "time": 0.5333, "name": "Flower_0009" },
+					{ "time": 0.6, "name": "Flower_0010" },
+					{ "time": 0.6666, "name": "Flower_0011" },
+					{ "time": 0.7333, "name": "Flower_0012" },
+					{ "time": 0.8, "name": "Flower_0013" },
+					{ "time": 0.8666, "name": "Flower_0014" },
+					{ "time": 0.9333, "name": "Flower_0015" },
+					{ "time": 1, "name": "Flower_0016" },
+					{ "time": 1.0666, "name": "Flower_0017" },
+					{ "time": 1.1333, "name": "Flower_0018" },
+					{ "time": 1.2, "name": "Flower_0019" },
+					{ "time": 1.2666, "name": "Flower_0020" },
+					{ "time": 1.3333, "name": "Flower_0021" },
+					{ "time": 1.4, "name": "Flower_0022" },
+					{ "time": 1.4666, "name": "Flower_0023" },
+					{ "time": 1.5333, "name": "Flower_0024" },
+					{ "time": 1.6, "name": "Flower_0025" },
+					{ "time": 1.6666, "name": "Flower_0026" },
+					{ "time": 1.7333, "name": "Flower_0027" },
+					{ "time": 1.8, "name": "Flower_0028" },
+					{ "time": 1.8666, "name": "Flower_0029" },
+					{ "time": 1.9333, "name": "Flower_0030" },
+					{ "time": 2, "name": "Flower_0031" },
+					{ "time": 2.0666, "name": "Flower_0032" },
+					{ "time": 2.1333, "name": "Flower_0033" },
+					{ "time": 2.2, "name": "Flower_0034" },
+					{ "time": 2.2666, "name": "Flower_0035" },
+					{ "time": 2.3333, "name": "Flower_0036" },
+					{ "time": 2.4, "name": "Flower_0037" },
+					{ "time": 2.4666, "name": "Flower_0038" },
+					{ "time": 2.5333, "name": "Flower_0039" },
+					{ "time": 2.6, "name": "Flower_0040" },
+					{ "time": 2.6666, "name": "Flower_0041" },
+					{ "time": 2.7333, "name": "Flower_0042" },
+					{ "time": 2.8, "name": "Flower_0043" },
+					{ "time": 2.8666, "name": "Flower_0044" },
+					{ "time": 2.9333, "name": "Flower_0045" },
+					{ "time": 3, "name": "Flower_0046" },
+					{ "time": 3.0666, "name": "Flower_0047" },
+					{ "time": 3.1333, "name": "Flower_0048" },
+					{ "time": 3.2, "name": "Flower_0049" },
+					{ "time": 3.2666, "name": "Flower_0050" },
+					{ "time": 3.3333, "name": "Flower_0051" },
+					{ "time": 3.4, "name": "Flower_0052" },
+					{ "time": 3.4666, "name": "Flower_0053" },
+					{ "time": 3.5333, "name": "Flower_0054" },
+					{ "time": 3.6, "name": "Flower_0055" },
+					{ "time": 3.6666, "name": "Flower_0056" },
+					{ "time": 3.7333, "name": "Flower_0057" },
+					{ "time": 3.8, "name": "Flower_0058" },
+					{ "time": 3.8666, "name": "Flower_0059" },
+					{ "time": 3.9333, "name": "Flower_0060" },
+					{ "time": 4, "name": "Flower_0061" },
+					{ "time": 4.0666, "name": "Flower_0062" },
+					{ "time": 4.1333, "name": "Flower_0063" },
+					{ "time": 4.2, "name": "Flower_0064" },
+					{ "time": 4.2666, "name": "Flower_0065" },
+					{ "time": 4.3333, "name": "Flower_0066" },
+					{ "time": 4.4, "name": "Flower_0067" },
+					{ "time": 4.4666, "name": "Flower_0068" },
+					{ "time": 4.5333, "name": "Flower_0069" },
+					{ "time": 4.6, "name": "Flower_0070" },
+					{ "time": 4.6666, "name": "Flower_0071" },
+					{ "time": 4.7333, "name": "Flower_0072" },
+					{ "time": 4.8, "name": "Flower_0073" },
+					{ "time": 4.8666, "name": "Flower_0074" },
+					{ "time": 4.9333, "name": "Flower_0075" },
+					{ "time": 5, "name": "Flower_0076" },
+					{ "time": 5.0666, "name": "Flower_0077" },
+					{ "time": 5.1333, "name": "Flower_0078" },
+					{ "time": 5.2, "name": "Flower_0079" },
+					{ "time": 5.2666, "name": "Flower_0080" },
+					{ "time": 5.3333, "name": "Flower_0081" },
+					{ "time": 5.4, "name": "Flower_0082" },
+					{ "time": 5.4666, "name": "Flower_0083" },
+					{ "time": 5.5333, "name": "Flower_0084" },
+					{ "time": 5.6, "name": "Flower_0085" },
+					{ "time": 5.6666, "name": "Flower_0086" },
+					{ "time": 5.7333, "name": "Flower_0087" },
+					{ "time": 5.8, "name": "Flower_0088" },
+					{ "time": 5.8666, "name": "Flower_0001" },
+					{ "time": 5.9333, "name": "Flower_0002" },
+					{ "time": 6, "name": "Flower_0003" },
+					{ "time": 6.0666, "name": "Flower_0004" },
+					{ "time": 6.1333, "name": "Flower_0005" },
+					{ "time": 6.2, "name": "Flower_0006" },
+					{ "time": 6.2666, "name": "Flower_0007" },
+					{ "time": 6.3333, "name": "Flower_0008" },
+					{ "time": 6.4, "name": "Flower_0009" },
+					{ "time": 6.4666, "name": "Flower_0010" },
+					{ "time": 6.5333, "name": "Flower_0011" },
+					{ "time": 6.6, "name": "Flower_0012" },
+					{ "time": 6.6666, "name": "Flower_0013" },
+					{ "time": 6.7333, "name": "Flower_0014" },
+					{ "time": 6.8, "name": "Flower_0015" },
+					{ "time": 6.8666, "name": "Flower_0016" },
+					{ "time": 6.9333, "name": "Flower_0017" },
+					{ "time": 7, "name": "Flower_0018" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.5, "color": "ffffffff" },
+					{ "time": 7, "color": "ffffff00" }
+				]
+			},
+			"Hand_00": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.1666, "name": "Hand_00" }
+				],
+				"color": [
+					{ "time": 1.1666, "color": "ffffff00" },
+					{ "time": 1.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.3333, "color": "ffffffff" },
+					{ "time": 4.8333, "color": "ffffff00" }
+				]
+			},
+			"Hand_01": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.1666, "name": "Hand_01" }
+				],
+				"color": [
+					{ "time": 1.1666, "color": "ffffff00" },
+					{ "time": 1.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.3333, "color": "ffffffff" },
+					{ "time": 4.8333, "color": "ffffff00" }
+				]
+			},
+			"Light_Large": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 2.3333, "name": "Light_Large" },
+					{ "time": 3.3333, "name": null },
+					{ "time": 3.4, "name": "Light_Large" }
+				],
+				"color": [
+					{ "time": 2.3333, "color": "ffffff00" },
+					{ "time": 2.4333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3, "color": "ffffffff" },
+					{ "time": 3.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6, "color": "ffffff00" },
+					{ "time": 3.8, "color": "ffffffba" },
+					{ "time": 4.1666, "color": "ffffff00" }
+				]
+			},
+			"Rain_00": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 3, "name": "Rain_00" }
+				],
+				"color": [
+					{ "time": 4.3333, "color": "ffffffff" },
+					{ "time": 4.8333, "color": "ffffff00" }
+				]
+			},
+			"White_Mask": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.203, 0.48, 0.626, 0.88 ]
+					},
+					{ "time": 1.3333, "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 5.6666,
+						"color": "ffffff00",
+						"curve": [ 0.234, 0.49, 0.601, 0.89 ]
+					},
+					{ "time": 7, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"Flowers": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 4, "y": 4 }
+				]
+			},
+			"Picture": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 5.8666, "x": 0, "y": 0 }
+				]
+			},
+			"Light_00": {
+				"rotate": [
+					{
+						"time": 2.3333,
+						"angle": 0,
+						"curve": [ 0.244, 0.53, 0.585, 0.92 ]
+					},
+					{ "time": 3.3333, "angle": -57.08 }
+				],
+				"scale": [
+					{
+						"time": 2.3333,
+						"x": 0.5,
+						"y": 0.5,
+						"curve": [ 0.219, 0.58, 0.596, 0.92 ]
+					},
+					{ "time": 3.3333, "x": 1.5, "y": 1.5 },
+					{ "time": 3.4, "x": 0.3, "y": 0.3 }
+				]
+			},
+			"Hand_W": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 707.62,
+						"y": 151.57,
+						"curve": [ 0.234, 0.52, 0.591, 0.94 ]
+					},
+					{ "time": 2.1666, "x": 599.8, "y": 71.04 },
+					{ "time": 5.3333, "x": 572.55, "y": 71.04 }
+				]
+			},
+			"Hand_M": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 414.19,
+						"y": -160.02,
+						"curve": [ 0.234, 0.51, 0.585, 0.96 ]
+					},
+					{ "time": 2.1666, "x": 682.44, "y": -101.23 },
+					{ "time": 5.3333, "x": 709.7, "y": -101.23 }
+				]
+			},
+			"Actor": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -482.96 },
+					{
+						"time": 4.5,
+						"x": 0,
+						"y": -566.83,
+						"curve": [ 0.557, 0.12, 0.857, 0.41 ]
+					},
+					{ "time": 7, "x": 0, "y": -631.77 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 2,
+						"y": 2,
+						"curve": [ 0.193, 0.66, 0.544, 0.95 ]
+					},
+					{ "time": 3.8333, "x": 1, "y": 1 }
+				]
+			},
+			"White": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

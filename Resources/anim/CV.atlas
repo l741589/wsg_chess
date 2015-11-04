@@ -1,0 +1,125 @@
+
+CV.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Color_Mask_gold_0002
+  rotate: false
+  xy: 2, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0003
+  rotate: false
+  xy: 80, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0004
+  rotate: false
+  xy: 158, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0005
+  rotate: false
+  xy: 236, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0006
+  rotate: false
+  xy: 314, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0007
+  rotate: false
+  xy: 392, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0008
+  rotate: false
+  xy: 470, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0009
+  rotate: false
+  xy: 548, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0010
+  rotate: false
+  xy: 626, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0011
+  rotate: false
+  xy: 704, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0012
+  rotate: false
+  xy: 782, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0013
+  rotate: false
+  xy: 860, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Color_Mask_gold_0014
+  rotate: false
+  xy: 938, 42
+  size: 76, 74
+  orig: 76, 74
+  offset: 0, 0
+  index: -1
+Gold_CV
+  rotate: false
+  xy: 2, 2
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1
+Gold_CV_Wide
+  rotate: false
+  xy: 53, 2
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1
+Silver_CV
+  rotate: false
+  xy: 104, 2
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1
+Silver_CV_Wide
+  rotate: false
+  xy: 155, 2
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1

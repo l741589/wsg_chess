@@ -1,0 +1,55 @@
+
+Damage.png
+size: 1404,1028
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Actor_picture
+  rotate: false
+  xy: 2, 2
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+BG_red
+  rotate: true
+  xy: 1028, 542
+  size: 484, 198
+  orig: 484, 198
+  offset: 0, 0
+  index: -1
+BG_yellow
+  rotate: true
+  xy: 1028, 56
+  size: 484, 198
+  orig: 484, 198
+  offset: 0, 0
+  index: -1
+Font_B
+  rotate: false
+  xy: 1228, 852
+  size: 174, 174
+  orig: 174, 174
+  offset: 0, 0
+  index: -1
+Font_D
+  rotate: false
+  xy: 1228, 546
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+Font_M
+  rotate: false
+  xy: 1228, 676
+  size: 174, 174
+  orig: 174, 174
+  offset: 0, 0
+  index: -1
+Mask_new
+  rotate: false
+  xy: 1228, 444
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1

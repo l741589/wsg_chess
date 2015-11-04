@@ -1,0 +1,650 @@
+{
+"skeleton": { "hash": "EkFU8VH0lvxAFG+RBDEd/NhvtJI", "spine": "2.1.27", "width": 159.75, "height": 135.14, "images": "" },
+"bones": [
+	{ "name": "Build_picture" },
+	{ "name": "Carry", "parent": "Build_picture", "x": -20.51, "y": 55 },
+	{ "name": "Carry_complete", "parent": "Build_picture", "x": -34.81, "y": 55.48 },
+	{ "name": "Cast", "parent": "Build_picture", "x": 4.94, "y": 52.09 },
+	{ "name": "Cast_complete", "parent": "Build_picture", "x": -0.14, "y": 54.76 },
+	{ "name": "Fire", "parent": "Build_picture", "x": 2.51, "y": 53.54 },
+	{ "name": "Fire_Other", "parent": "Build_picture", "x": 2.51, "y": 53.54 },
+	{ "name": "Light_01", "parent": "Build_picture", "y": 52.66 },
+	{ "name": "Weld", "parent": "Build_picture", "x": 2.51, "y": 51.85 },
+	{ "name": "Weld_complete", "parent": "Build_picture", "x": 2.51, "y": 55.24 }
+],
+"slots": [
+	{ "name": "Cast_C", "bone": "Cast_complete", "attachment": "JZ01B-0001" },
+	{ "name": "Carry", "bone": "Carry", "attachment": "JZ02A-0003" },
+	{ "name": "Carry_C", "bone": "Carry_complete", "attachment": "JZ02B-0001" },
+	{ "name": "Weld", "bone": "Weld", "attachment": "JZ03A-0001" },
+	{ "name": "Weld_C", "bone": "Weld_complete", "attachment": "JZ03B-0001" },
+	{ "name": "Cast", "bone": "Cast", "attachment": "JZ01A-0006" },
+	{ "name": "Fire", "bone": "Fire", "attachment": "Spark_0020", "blend": "additive" },
+	{ "name": "Fire_Other", "bone": "Fire_Other", "attachment": "Spark_0020", "blend": "additive" },
+	{ "name": "Fire_light_0000", "bone": "Light_01", "attachment": "JZ03A_light_0000", "blend": "additive" }
+],
+"skins": {
+	"default": {
+		"Carry": {
+			"JZ02A-0001": { "width": 120, "height": 120 },
+			"JZ02A-0002": { "width": 120, "height": 120 },
+			"JZ02A-0003": { "width": 120, "height": 120 },
+			"JZ02A-0004": { "width": 120, "height": 120 }
+		},
+		"Carry_C": {
+			"JZ02B-0001": { "width": 120, "height": 120 },
+			"JZ02B-0002": { "width": 120, "height": 120 },
+			"JZ02B-0003": { "width": 120, "height": 120 },
+			"JZ02B-0004": { "width": 120, "height": 120 },
+			"JZ02B-0005": { "width": 120, "height": 120 },
+			"JZ02B-0006": { "width": 120, "height": 120 },
+			"JZ02B-0007": { "width": 120, "height": 120 },
+			"JZ02B-0008": { "width": 120, "height": 120 },
+			"JZ02B-0009": { "width": 120, "height": 120 },
+			"JZ02B-0010": { "width": 120, "height": 120 },
+			"JZ02B-0011": { "width": 120, "height": 120 },
+			"JZ02B-0012": { "width": 120, "height": 120 },
+			"JZ02B-0013": { "width": 120, "height": 120 },
+			"JZ02B-0014": { "width": 120, "height": 120 },
+			"JZ02B-0015": { "width": 120, "height": 120 },
+			"JZ02B-0016": { "width": 120, "height": 120 },
+			"JZ02B-0017": { "width": 120, "height": 120 },
+			"JZ02B-0018": { "width": 120, "height": 120 },
+			"JZ02B-0019": { "width": 120, "height": 120 }
+		},
+		"Cast": {
+			"JZ01A-0001": { "width": 120, "height": 120 },
+			"JZ01A-0002": { "width": 120, "height": 120 },
+			"JZ01A-0003": { "width": 120, "height": 120 },
+			"JZ01A-0004": { "width": 120, "height": 120 },
+			"JZ01A-0005": { "y": 3.6, "width": 120, "height": 120 },
+			"JZ01A-0006": { "y": 3.6, "width": 120, "height": 120 },
+			"JZ01A-0007": { "width": 120, "height": 120 }
+		},
+		"Cast_C": {
+			"JZ01B-0001": { "width": 120, "height": 120 },
+			"JZ01B-0002": { "width": 120, "height": 120 },
+			"JZ01B-0003": { "width": 120, "height": 120 },
+			"JZ01B-0004": { "width": 120, "height": 120 },
+			"JZ01B-0005": { "width": 120, "height": 120 },
+			"JZ01B-0006": { "width": 120, "height": 120 },
+			"JZ01B-0007": { "width": 120, "height": 120 },
+			"JZ01B-0008": { "width": 120, "height": 120 },
+			"JZ01B-0009": { "width": 120, "height": 120 },
+			"JZ01B-0010": { "width": 120, "height": 120 },
+			"JZ01B-0011": { "width": 120, "height": 120 }
+		},
+		"Fire": {
+			"Spark_0001": { "width": 76, "height": 77 },
+			"Spark_0002": { "width": 76, "height": 77 },
+			"Spark_0003": { "width": 76, "height": 77 },
+			"Spark_0004": { "width": 76, "height": 77 },
+			"Spark_0005": { "width": 76, "height": 77 },
+			"Spark_0006": { "width": 76, "height": 77 },
+			"Spark_0007": { "width": 76, "height": 77 },
+			"Spark_0008": { "width": 76, "height": 77 },
+			"Spark_0009": { "width": 76, "height": 77 },
+			"Spark_0010": { "width": 76, "height": 77 },
+			"Spark_0011": { "width": 76, "height": 77 },
+			"Spark_0012": { "width": 76, "height": 77 },
+			"Spark_0013": { "width": 76, "height": 77 },
+			"Spark_0014": { "width": 76, "height": 77 },
+			"Spark_0015": { "width": 76, "height": 77 },
+			"Spark_0016": { "width": 76, "height": 77 },
+			"Spark_0017": { "width": 76, "height": 77 },
+			"Spark_0018": { "width": 76, "height": 77 },
+			"Spark_0019": { "width": 76, "height": 77 },
+			"Spark_0020": { "x": -33.11, "y": -34.49, "width": 76, "height": 77 }
+		},
+		"Fire_Other": {
+			"Spark_0001": { "width": 76, "height": 77 },
+			"Spark_0002": { "width": 76, "height": 77 },
+			"Spark_0003": { "width": 76, "height": 77 },
+			"Spark_0004": { "width": 76, "height": 77 },
+			"Spark_0005": { "width": 76, "height": 77 },
+			"Spark_0006": { "width": 76, "height": 77 },
+			"Spark_0007": { "width": 76, "height": 77 },
+			"Spark_0008": { "width": 76, "height": 77 },
+			"Spark_0009": { "width": 76, "height": 77 },
+			"Spark_0010": { "width": 76, "height": 77 },
+			"Spark_0011": { "width": 76, "height": 77 },
+			"Spark_0012": { "width": 76, "height": 77 },
+			"Spark_0013": { "width": 76, "height": 77 },
+			"Spark_0014": { "width": 76, "height": 77 },
+			"Spark_0015": { "width": 76, "height": 77 },
+			"Spark_0016": { "width": 76, "height": 77 },
+			"Spark_0017": { "width": 76, "height": 77 },
+			"Spark_0018": { "width": 76, "height": 77 },
+			"Spark_0019": { "width": 76, "height": 77 },
+			"Spark_0020": { "x": -33.11, "y": -34.49, "width": 76, "height": 77 }
+		},
+		"Fire_light_0000": {
+			"JZ03A_light_0000": { "width": 120, "height": 120 }
+		},
+		"Weld": {
+			"JZ03A-0001": { "width": 120, "height": 120 },
+			"JZ03A-0002": { "width": 120, "height": 120 },
+			"JZ03A-0003": { "width": 120, "height": 120 },
+			"JZ03A-0004": { "width": 120, "height": 120 },
+			"JZ03A-0005": { "width": 120, "height": 120 },
+			"JZ03A-0006": { "width": 120, "height": 120 },
+			"JZ03A-0007": { "width": 120, "height": 120 },
+			"JZ03A-0008": { "width": 120, "height": 120 },
+			"JZ03A-0009": { "width": 120, "height": 120 },
+			"JZ03A-0010": { "width": 120, "height": 120 },
+			"JZ03A-0011": { "width": 120, "height": 120 },
+			"JZ03A-0012": { "width": 120, "height": 120 },
+			"JZ03A-0013": { "width": 120, "height": 120 },
+			"JZ03A-0014": { "width": 120, "height": 120 },
+			"JZ03A-0015": { "width": 120, "height": 120 },
+			"JZ03A-0016": { "width": 120, "height": 120 },
+			"JZ03A-0017": { "width": 120, "height": 120 },
+			"JZ03A-0018": { "width": 120, "height": 120 },
+			"JZ03A-0019": { "width": 120, "height": 120 },
+			"JZ03A-0020": { "width": 120, "height": 120 },
+			"JZ03A-0021": { "width": 120, "height": 120 },
+			"JZ03A-0022": { "width": 120, "height": 120 },
+			"JZ03A-0023": { "width": 120, "height": 120 },
+			"JZ03A-0024": { "width": 120, "height": 120 },
+			"JZ03A-0025": { "width": 120, "height": 120 },
+			"JZ03A-0026": { "width": 120, "height": 120 },
+			"JZ03A-0027": { "width": 120, "height": 120 },
+			"JZ03A-0028": { "width": 120, "height": 120 },
+			"JZ03A-0029": { "width": 120, "height": 120 },
+			"JZ03A-0030": { "width": 120, "height": 120 },
+			"JZ03A-0031": { "width": 120, "height": 120 },
+			"JZ03A-0032": { "width": 120, "height": 120 },
+			"JZ03A-0033": { "width": 120, "height": 120 },
+			"JZ03A-0034": { "width": 120, "height": 120 },
+			"JZ03A-0035": { "width": 120, "height": 120 },
+			"JZ03A-0036": { "width": 120, "height": 120 },
+			"JZ03A-0037": { "width": 120, "height": 120 },
+			"JZ03A-0038": { "width": 120, "height": 120 },
+			"JZ03A-0039": { "width": 120, "height": 120 },
+			"JZ03A-0040": { "width": 120, "height": 120 },
+			"JZ03A-0041": { "width": 120, "height": 120 },
+			"JZ03A-0042": { "width": 120, "height": 120 },
+			"JZ03A-0043": { "width": 120, "height": 120 },
+			"JZ03A-0044": { "width": 120, "height": 120 },
+			"JZ03A-0045": { "width": 120, "height": 120 },
+			"JZ03A-0046": { "width": 120, "height": 120 }
+		},
+		"Weld_C": {
+			"JZ03B-0001": { "width": 120, "height": 120 },
+			"JZ03B-0002": { "width": 120, "height": 120 },
+			"JZ03B-0003": { "width": 120, "height": 120 },
+			"JZ03B-0004": { "width": 120, "height": 120 },
+			"JZ03B-0005": { "width": 120, "height": 120 },
+			"JZ03B-0006": { "width": 120, "height": 120 },
+			"JZ03B-0007": { "width": 120, "height": 120 },
+			"JZ03B-0008": { "width": 120, "height": 120 },
+			"JZ03B-0009": { "width": 120, "height": 120 }
+		}
+	}
+},
+"animations": {
+	"Carry": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": "JZ02A-0001" },
+					{ "time": 0.1666, "name": "JZ02A-0002" },
+					{ "time": 0.3333, "name": "JZ02A-0003" },
+					{ "time": 0.5, "name": "JZ02A-0004" },
+					{ "time": 0.6666, "name": "JZ02A-0001" }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_Other": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_light_0000": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Carry_complete": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": "JZ02B-0001" },
+					{ "time": 0.0666, "name": "JZ02B-0002" },
+					{ "time": 0.1333, "name": "JZ02B-0003" },
+					{ "time": 0.2, "name": "JZ02B-0004" },
+					{ "time": 0.2666, "name": "JZ02B-0005" },
+					{ "time": 0.3333, "name": "JZ02B-0006" },
+					{ "time": 0.4, "name": "JZ02B-0007" },
+					{ "time": 0.4666, "name": "JZ02B-0008" },
+					{ "time": 0.5333, "name": "JZ02B-0009" },
+					{ "time": 0.6, "name": "JZ02B-0010" },
+					{ "time": 0.6666, "name": "JZ02B-0011" },
+					{ "time": 0.7333, "name": "JZ02B-0012" },
+					{ "time": 0.8, "name": "JZ02B-0013" },
+					{ "time": 0.8666, "name": "JZ02B-0014" },
+					{ "time": 0.9333, "name": "JZ02B-0015" },
+					{ "time": 1, "name": "JZ02B-0016" },
+					{ "time": 1.0666, "name": "JZ02B-0017" },
+					{ "time": 1.1333, "name": "JZ02B-0018" },
+					{ "time": 1.2, "name": "JZ02B-0019" },
+					{ "time": 1.2666, "name": "JZ02B-0001" }
+				]
+			},
+			"Cast": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_Other": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_light_0000": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Cast": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast": {
+				"attachment": [
+					{ "time": 0, "name": "JZ01A-0001" },
+					{ "time": 0.2333, "name": "JZ01A-0002" },
+					{ "time": 0.4666, "name": "JZ01A-0003" },
+					{ "time": 0.7, "name": "JZ01A-0004" },
+					{ "time": 0.9333, "name": "JZ01A-0005" },
+					{ "time": 1.1666, "name": "JZ01A-0006" },
+					{ "time": 1.4, "name": "JZ01A-0007" },
+					{ "time": 1.6333, "name": "JZ01A-0001" }
+				]
+			},
+			"Cast_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_Other": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_light_0000": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Cast_complete": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast_C": {
+				"attachment": [
+					{ "time": 0, "name": "JZ01B-0001" },
+					{ "time": 0.0666, "name": "JZ01B-0002" },
+					{ "time": 0.1333, "name": "JZ01B-0003" },
+					{ "time": 0.2, "name": "JZ01B-0004" },
+					{ "time": 0.2666, "name": "JZ01B-0005" },
+					{ "time": 0.3333, "name": "JZ01B-0006" },
+					{ "time": 0.4, "name": "JZ01B-0007" },
+					{ "time": 0.4666, "name": "JZ01B-0008" },
+					{ "time": 0.5333, "name": "JZ01B-0009" },
+					{ "time": 0.6, "name": "JZ01B-0010" },
+					{ "time": 0.6666, "name": "JZ01B-0011" },
+					{ "time": 0.7333, "name": "JZ01B-0001" }
+				]
+			},
+			"Fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_Other": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_light_0000": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Weld": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.0333, "name": "Spark_0001" },
+					{ "time": 0.0666, "name": "Spark_0002" },
+					{ "time": 0.1, "name": "Spark_0003" },
+					{ "time": 0.1333, "name": "Spark_0004" },
+					{ "time": 0.1666, "name": "Spark_0005" },
+					{ "time": 0.2, "name": "Spark_0006" },
+					{ "time": 0.2333, "name": "Spark_0007" },
+					{ "time": 0.2666, "name": "Spark_0008" },
+					{ "time": 0.3, "name": "Spark_0009" },
+					{ "time": 0.3333, "name": "Spark_0010" },
+					{ "time": 0.3666, "name": "Spark_0011" },
+					{ "time": 0.4, "name": "Spark_0012" },
+					{ "time": 0.4333, "name": "Spark_0013" },
+					{ "time": 0.4666, "name": "Spark_0014" },
+					{ "time": 0.5, "name": "Spark_0015" },
+					{ "time": 0.5333, "name": "Spark_0016" },
+					{ "time": 0.5666, "name": "Spark_0017" },
+					{ "time": 0.6, "name": "Spark_0018" },
+					{ "time": 0.6333, "name": "Spark_0019" },
+					{ "time": 0.6666, "name": "Spark_0020" },
+					{ "time": 0.7, "name": null }
+				]
+			},
+			"Fire_Other": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.3333, "name": "Spark_0001" },
+					{ "time": 0.3666, "name": "Spark_0002" },
+					{ "time": 0.4, "name": "Spark_0003" },
+					{ "time": 0.4333, "name": "Spark_0004" },
+					{ "time": 0.4666, "name": "Spark_0005" },
+					{ "time": 0.5, "name": "Spark_0006" },
+					{ "time": 0.5333, "name": "Spark_0007" },
+					{ "time": 0.5666, "name": "Spark_0008" },
+					{ "time": 0.6, "name": "Spark_0009" },
+					{ "time": 0.6333, "name": "Spark_0010" },
+					{ "time": 0.6666, "name": "Spark_0011" },
+					{ "time": 0.7, "name": "Spark_0012" },
+					{ "time": 0.7333, "name": "Spark_0013" },
+					{ "time": 0.7666, "name": "Spark_0014" },
+					{ "time": 0.8, "name": "Spark_0015" },
+					{ "time": 0.8333, "name": "Spark_0016" },
+					{ "time": 0.8666, "name": "Spark_0017" },
+					{ "time": 0.9, "name": "Spark_0018" },
+					{ "time": 0.9333, "name": "Spark_0019" },
+					{ "time": 0.9666, "name": "Spark_0020" },
+					{ "time": 1, "name": null }
+				]
+			},
+			"Fire_light_0000": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.0333, "name": "JZ03A_light_0000" }
+				],
+				"color": [
+					{ "time": 0.0333, "color": "ffffff00" },
+					{ "time": 0.0666, "color": "ffffffb2" },
+					{ "time": 0.1, "color": "ffffff11" },
+					{ "time": 0.1666, "color": "ffffff99" },
+					{ "time": 0.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3666, "color": "ffffff00" },
+					{ "time": 0.4333, "color": "ffffff9a" },
+					{ "time": 0.6666, "color": "ffffff00" }
+				]
+			},
+			"Weld": {
+				"attachment": [
+					{ "time": 0, "name": "JZ03A-0001" },
+					{ "time": 0.0666, "name": "JZ03A-0002" },
+					{ "time": 0.1333, "name": "JZ03A-0003" },
+					{ "time": 0.2, "name": "JZ03A-0004" },
+					{ "time": 0.2666, "name": "JZ03A-0005" },
+					{ "time": 0.3333, "name": "JZ03A-0006" },
+					{ "time": 0.4, "name": "JZ03A-0007" },
+					{ "time": 0.4666, "name": "JZ03A-0008" },
+					{ "time": 0.5333, "name": "JZ03A-0009" },
+					{ "time": 0.6, "name": "JZ03A-0010" },
+					{ "time": 0.6666, "name": "JZ03A-0011" },
+					{ "time": 0.7333, "name": "JZ03A-0012" },
+					{ "time": 0.8, "name": "JZ03A-0013" },
+					{ "time": 0.8666, "name": "JZ03A-0014" },
+					{ "time": 0.9333, "name": "JZ03A-0015" },
+					{ "time": 1, "name": "JZ03A-0016" },
+					{ "time": 1.0666, "name": "JZ03A-0017" },
+					{ "time": 1.1333, "name": "JZ03A-0018" },
+					{ "time": 1.2, "name": "JZ03A-0019" },
+					{ "time": 1.2666, "name": "JZ03A-0020" },
+					{ "time": 1.3333, "name": "JZ03A-0021" },
+					{ "time": 1.4, "name": "JZ03A-0022" },
+					{ "time": 1.4666, "name": "JZ03A-0023" },
+					{ "time": 1.5333, "name": "JZ03A-0024" },
+					{ "time": 1.6, "name": "JZ03A-0025" },
+					{ "time": 1.6666, "name": "JZ03A-0026" },
+					{ "time": 1.7333, "name": "JZ03A-0027" },
+					{ "time": 1.8, "name": "JZ03A-0028" },
+					{ "time": 1.8666, "name": "JZ03A-0029" },
+					{ "time": 1.9333, "name": "JZ03A-0030" },
+					{ "time": 2, "name": "JZ03A-0031" },
+					{ "time": 2.0666, "name": "JZ03A-0032" },
+					{ "time": 2.1333, "name": "JZ03A-0033" },
+					{ "time": 2.2, "name": "JZ03A-0034" },
+					{ "time": 2.2666, "name": "JZ03A-0035" },
+					{ "time": 2.3333, "name": "JZ03A-0036" },
+					{ "time": 2.4, "name": "JZ03A-0037" },
+					{ "time": 2.4666, "name": "JZ03A-0038" },
+					{ "time": 2.5333, "name": "JZ03A-0039" },
+					{ "time": 2.6, "name": "JZ03A-0040" },
+					{ "time": 2.6666, "name": "JZ03A-0041" },
+					{ "time": 2.7333, "name": "JZ03A-0042" },
+					{ "time": 2.8, "name": "JZ03A-0043" },
+					{ "time": 2.8666, "name": "JZ03A-0044" },
+					{ "time": 2.9333, "name": "JZ03A-0045" },
+					{ "time": 3, "name": "JZ03A-0046" },
+					{ "time": 3.0666, "name": "JZ03A-0001" }
+				]
+			},
+			"Weld_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Fire": {
+				"translate": [
+					{ "time": 0.0333, "x": -36.51, "y": -58.54 }
+				]
+			},
+			"Fire_Other": {
+				"rotate": [
+					{ "time": 0.3333, "angle": 345 }
+				],
+				"translate": [
+					{ "time": 0.3333, "x": -40.51, "y": -55.54 }
+				]
+			},
+			"Light_01": {
+				"translate": [
+					{ "time": 0.0333, "x": 3.01, "y": -0.69 }
+				]
+			}
+		}
+	},
+	"Weld_complete": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Cast_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_Other": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Fire_light_0000": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Weld_C": {
+				"attachment": [
+					{ "time": 0, "name": "JZ03B-0001" },
+					{ "time": 0.1666, "name": "JZ03B-0002" },
+					{ "time": 0.3333, "name": "JZ03B-0003" },
+					{ "time": 0.5, "name": "JZ03B-0004" },
+					{ "time": 0.6666, "name": "JZ03B-0005" },
+					{ "time": 0.8333, "name": "JZ03B-0006" },
+					{ "time": 1, "name": "JZ03B-0007" },
+					{ "time": 1.1666, "name": "JZ03B-0008" },
+					{ "time": 1.3333, "name": "JZ03B-0009" },
+					{ "time": 1.5, "name": "JZ03B-0001" }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,34 @@
+
+Skil_effect_mirror.png
+size: 1133,1028
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Actor_picture
+  rotate: false
+  xy: 2, 2
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+Mask_new
+  rotate: false
+  xy: 1028, 223
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+Skill_black_line
+  rotate: false
+  xy: 1028, 325
+  size: 50, 161
+  orig: 50, 161
+  offset: 0, 0
+  index: -1
+Skill_name
+  rotate: true
+  xy: 1028, 488
+  size: 538, 103
+  orig: 538, 103
+  offset: 0, 0
+  index: -1

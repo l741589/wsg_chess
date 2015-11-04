@@ -4,6 +4,7 @@
 #include "ActionMenu.h"
 #include "layout/LayoutInflater.h"
 #include "InfoBar.h"
+#include "Weapon.h"
 
 bool FightScene::init() {
 	if (!Scene::init()) return false;

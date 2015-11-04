@@ -1,0 +1,188 @@
+{
+"skeleton": { "hash": "LqV+vl9FC4GHI9x6ovfjAAoC5j4", "spine": "2.1.27", "width": 934.24, "height": 649.82, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Fighter_00", "parent": "root", "x": 224.96, "y": 100.96, "scaleX": 1.2, "scaleY": 1.2 },
+	{ "name": "Fighter_01", "parent": "root", "x": -169, "y": 287.33, "scaleX": 1.5, "scaleY": 1.5 },
+	{ "name": "Fighter_00_picture", "parent": "Fighter_00", "scaleX": 1.4, "scaleY": 1.4 },
+	{ "name": "Fighter_00_picture_shadow", "parent": "Fighter_00", "scaleX": 1.4, "scaleY": 1.4 },
+	{ "name": "Fighter_01_picture", "parent": "Fighter_01", "x": -84.99, "y": -294.63, "scaleX": 1.4, "scaleY": 1.4 },
+	{ "name": "Fighter_01_picture_shadow", "parent": "Fighter_01", "x": -84.99, "y": -294.63, "scaleX": 1.4, "scaleY": 1.4 }
+],
+"slots": [
+	{ "name": "Fighter_picture_shadow_00", "bone": "Fighter_00_picture_shadow", "color": "0000008e", "attachment": "Fighters" },
+	{ "name": "Fighter_picture_00", "bone": "Fighter_00_picture", "attachment": "Fighters" },
+	{ "name": "Fighter_picture_shadow_01", "bone": "Fighter_01_picture_shadow", "color": "0000008e", "attachment": "Fighters" },
+	{ "name": "Fighter_picture_01", "bone": "Fighter_01_picture", "attachment": "Fighters" }
+],
+"skins": {
+	"default": {
+		"Fighter_picture_00": {
+			"Fighters": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 159.24, -122.2, -159.24, -122.2, -159.24, 122.2, 159.24, 122.2 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 245,
+				"height": 188
+			}
+		},
+		"Fighter_picture_01": {
+			"Fighters": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 249.33, -89.96, -69.16, -89.96, -69.16, 154.43, 249.33, 154.43 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 245,
+				"height": 188
+			}
+		},
+		"Fighter_picture_shadow_00": {
+			"Fighters": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 159.24, -122.2, -159.24, -122.2, -159.24, 122.2, 159.24, 122.2 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 245,
+				"height": 188
+			}
+		},
+		"Fighter_picture_shadow_01": {
+			"Fighters": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 249.33, -89.96, -69.16, -89.96, -69.16, 154.43, 249.33, 154.43 ],
+				"hull": 4,
+				"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+				"width": 245,
+				"height": 188
+			}
+		}
+	}
+},
+"animations": {
+	"appear": {
+		"slots": {
+			"Fighter_picture_00": {
+				"attachment": [
+					{ "time": 1.2333, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0666, "color": "ffffff00" },
+					{ "time": 0.1666, "color": "ffffffff" }
+				]
+			},
+			"Fighter_picture_01": {
+				"attachment": [
+					{ "time": 1.4, "name": null }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.0666, "color": "ffffff00" },
+					{ "time": 0.1333, "color": "ffffffff" }
+				]
+			},
+			"Fighter_picture_shadow_00": {
+				"color": [
+					{ "time": 0, "color": "00000000", "curve": "stepped" },
+					{ "time": 0.1, "color": "00000000" },
+					{ "time": 0.2333, "color": "00000071" },
+					{ "time": 0.8333, "color": "00000077" },
+					{ "time": 1.2333, "color": "00000000" }
+				]
+			},
+			"Fighter_picture_shadow_01": {
+				"color": [
+					{ "time": 0, "color": "00000000", "curve": "stepped" },
+					{ "time": 0.0666, "color": "00000000" },
+					{ "time": 0.1333, "color": "00000078" },
+					{ "time": 0.8333, "color": "0000007e" },
+					{ "time": 1.4, "color": "00000000" }
+				]
+			}
+		},
+		"bones": {
+			"Fighter_00_picture": {
+				"rotate": [
+					{ "time": 0, "angle": 3, "curve": "stepped" },
+					{ "time": 0.4, "angle": 3 },
+					{ "time": 0.8333, "angle": 4 },
+					{ "time": 1.1666, "angle": 5 }
+				],
+				"translate": [
+					{ "time": 0, "x": -524.09, "y": -44.49 },
+					{ "time": 0.4, "x": -264.58, "y": -28.97 },
+					{ "time": 0.8333, "x": -27.18, "y": -33.95 },
+					{ "time": 1.1666, "x": 745.29, "y": 19.41 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.714, "y": 0.714 },
+					{ "time": 0.4, "x": 0.857, "y": 0.857 }
+				]
+			},
+			"Fighter_00_picture_shadow": {
+				"rotate": [
+					{ "time": 0, "angle": 4 },
+					{ "time": 0.4, "angle": 5, "curve": "stepped" },
+					{ "time": 0.8333, "angle": 5 },
+					{ "time": 1.2333, "angle": 6 }
+				],
+				"translate": [
+					{ "time": 0, "x": -550.08, "y": -135.67 },
+					{ "time": 0.4, "x": -259.64, "y": -159.55 },
+					{ "time": 0.8333, "x": -16.97, "y": -166.25 },
+					{ "time": 1.2333, "x": 893.19, "y": -223.39 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.571, "y": 0.571 },
+					{ "time": 0.4, "x": 0.714, "y": 0.714 }
+				]
+			},
+			"Fighter_01_picture": {
+				"rotate": [
+					{ "time": 0, "angle": 3, "curve": "stepped" },
+					{ "time": 0.3333, "angle": 3 },
+					{ "time": 0.8333, "angle": 4 },
+					{ "time": 1.3333, "angle": 5 }
+				],
+				"translate": [
+					{ "time": 0, "x": -483.48, "y": -58.3 },
+					{ "time": 0.3333, "x": -198.97, "y": -38.63 },
+					{ "time": 0.8333, "x": -3.49, "y": -51.9 },
+					{ "time": 1.3333, "x": 745.29, "y": 5.81 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.714, "y": 0.714 },
+					{ "time": 0.3333, "x": 0.857, "y": 0.857 }
+				]
+			},
+			"Fighter_01_picture_shadow": {
+				"rotate": [
+					{ "time": 0, "angle": 4 },
+					{ "time": 0.3333, "angle": 5, "curve": "stepped" },
+					{ "time": 0.8333, "angle": 5 },
+					{ "time": 1.4, "angle": 6 }
+				],
+				"translate": [
+					{ "time": 0, "x": -462.74, "y": -121.48 },
+					{ "time": 0.3333, "x": -175.58, "y": -138.45 },
+					{ "time": 0.8333, "x": 21.27, "y": -162.09 },
+					{ "time": 1.4, "x": 851.74, "y": -125.22 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.571, "y": 0.571 },
+					{ "time": 0.3333, "x": 0.714, "y": 0.714 }
+				]
+			}
+		}
+	}
+}
+}

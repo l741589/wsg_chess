@@ -1,0 +1,26 @@
+
+Damage_control_mask.png
+size: 1024,1024
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Black_L
+  rotate: false
+  xy: 2, 2
+  size: 929, 768
+  orig: 931, 770
+  offset: 1, 1
+  index: -1
+
+Damage_control_mask2.png
+size: 512,1024
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Black_R
+  rotate: false
+  xy: 2, 2
+  size: 393, 768
+  orig: 395, 770
+  offset: 1, 1
+  index: -1

@@ -57,6 +57,9 @@
     <ClCompile Include="..\Classes\InfoBar.cpp">
       <Filter>src\gui</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Weapon.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -96,6 +99,9 @@
       <Filter>src\gui</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\stdafx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Weapon.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

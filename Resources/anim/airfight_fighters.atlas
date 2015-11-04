@@ -1,0 +1,13 @@
+
+airfight_fighters.png
+size: 249,192
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Fighters
+  rotate: false
+  xy: 2, 2
+  size: 245, 188
+  orig: 245, 188
+  offset: 0, 0
+  index: -1

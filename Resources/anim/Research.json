@@ -1,0 +1,434 @@
+{
+"skeleton": { "hash": "YEDEVyYtCeLObS1sh37ztp7lAS8", "spine": "2.1.27", "width": 124.32, "height": 130, "images": "" },
+"bones": [
+	{ "name": "Research_picture" },
+	{ "name": "Carry", "parent": "Research_picture", "x": -1.08, "y": 54.9 },
+	{ "name": "Carry_complete", "parent": "Research_picture", "y": 55.99 },
+	{ "name": "Design", "parent": "Research_picture", "y": 45.98 },
+	{ "name": "Design_complete", "parent": "Research_picture", "y": 55.18 },
+	{ "name": "Survey", "parent": "Research_picture", "x": 3.24, "y": 55.18 },
+	{ "name": "Survey_complete", "parent": "Research_picture", "y": 54.9 }
+],
+"slots": [
+	{ "name": "Design", "bone": "Design", "attachment": "KF01A-0001" },
+	{ "name": "Design_C", "bone": "Design_complete", "attachment": "KF01B-0001" },
+	{ "name": "Carry", "bone": "Carry", "attachment": "KF02A-0001" },
+	{ "name": "Carry_C", "bone": "Carry_complete", "attachment": "KF02B-0001" },
+	{ "name": "Survey", "bone": "Survey", "attachment": "KF03A-0001" },
+	{ "name": "Survey_C", "bone": "Survey_complete", "attachment": "KF03B-0001" }
+],
+"skins": {
+	"default": {
+		"Carry": {
+			"KF02A-0001": { "width": 120, "height": 120 },
+			"KF02A-0002": { "width": 120, "height": 120 },
+			"KF02A-0003": { "width": 120, "height": 120 },
+			"KF02A-0004": { "width": 120, "height": 120 }
+		},
+		"Carry_C": {
+			"KF02B-0001": { "width": 120, "height": 120 },
+			"KF02B-0002": { "width": 120, "height": 120 },
+			"KF02B-0003": { "width": 120, "height": 120 },
+			"KF02B-0004": { "width": 120, "height": 120 },
+			"KF02B-0005": { "width": 120, "height": 120 },
+			"KF02B-0006": { "width": 120, "height": 120 },
+			"KF02B-0007": { "width": 120, "height": 120 },
+			"KF02B-0008": { "width": 120, "height": 120 },
+			"KF02B-0009": { "width": 120, "height": 120 },
+			"KF02B-0010": { "width": 120, "height": 120 }
+		},
+		"Design": {
+			"KF01A-0001": { "width": 120, "height": 120 },
+			"KF01A-0002": { "width": 120, "height": 120 },
+			"KF01A-0003": { "width": 120, "height": 120 },
+			"KF01A-0004": { "width": 120, "height": 120 },
+			"KF01A-0005": { "width": 120, "height": 120 },
+			"KF01A-0006": { "width": 120, "height": 120 },
+			"KF01A-0007": { "width": 120, "height": 120 },
+			"KF01A-0008": { "width": 120, "height": 120 },
+			"KF01A-0009": { "width": 120, "height": 120 },
+			"KF01A-0010": { "width": 120, "height": 120 },
+			"KF01A-0011": { "width": 120, "height": 120 },
+			"KF01A-0012": { "width": 120, "height": 120 },
+			"KF01A-0013": { "width": 120, "height": 120 },
+			"KF01A-0014": { "width": 120, "height": 120 },
+			"KF01A-0015": { "width": 120, "height": 120 },
+			"KF01A-0016": { "width": 120, "height": 120 },
+			"KF01A-0017": { "width": 120, "height": 120 },
+			"KF01A-0018": { "width": 120, "height": 120 },
+			"KF01A-0019": { "width": 120, "height": 120 },
+			"KF01A-0020": { "width": 120, "height": 120 },
+			"KF01A-0021": { "width": 120, "height": 120 },
+			"KF01A-0022": { "width": 120, "height": 120 },
+			"KF01A-0023": { "width": 120, "height": 120 },
+			"KF01A-0024": { "width": 120, "height": 120 },
+			"KF01A-0025": { "width": 120, "height": 120 },
+			"KF01A-0026": { "width": 120, "height": 120 },
+			"KF01A-0027": { "width": 120, "height": 120 },
+			"KF01A-0028": { "width": 120, "height": 120 },
+			"KF01A-0029": { "width": 120, "height": 120 },
+			"KF01A-0030": { "width": 120, "height": 120 },
+			"KF01A-0031": { "width": 120, "height": 120 },
+			"KF01A-0032": { "width": 120, "height": 120 },
+			"KF01A-0033": { "width": 120, "height": 120 }
+		},
+		"Design_C": {
+			"KF01B-0001": { "width": 120, "height": 120 },
+			"KF01B-0002": { "width": 120, "height": 120 },
+			"KF01B-0003": { "width": 120, "height": 120 },
+			"KF01B-0004": { "width": 120, "height": 120 },
+			"KF01B-0005": { "width": 120, "height": 120 },
+			"KF01B-0006": { "width": 120, "height": 120 },
+			"KF01B-0007": { "width": 120, "height": 120 },
+			"KF01B-0008": { "width": 120, "height": 120 },
+			"KF01B-0009": { "width": 120, "height": 120 },
+			"KF01B-0010": { "width": 120, "height": 120 },
+			"KF01B-0011": { "width": 120, "height": 120 },
+			"KF01B-0012": { "width": 120, "height": 120 },
+			"KF01B-0013": { "width": 120, "height": 120 },
+			"KF01B-0014": { "width": 120, "height": 120 },
+			"KF01B-0015": { "width": 120, "height": 120 },
+			"KF01B-0016": { "width": 120, "height": 120 },
+			"KF01B-0017": { "width": 120, "height": 120 },
+			"KF01B-0018": { "width": 120, "height": 120 },
+			"KF01B-0019": { "width": 120, "height": 120 },
+			"KF01B-0020": { "width": 120, "height": 120 },
+			"KF01B-0021": { "width": 120, "height": 120 },
+			"KF01B-0022": { "width": 120, "height": 120 },
+			"KF01B-0023": { "width": 120, "height": 120 },
+			"KF01B-0024": { "width": 120, "height": 120 }
+		},
+		"Survey": {
+			"KF03A-0001": { "width": 120, "height": 120 },
+			"KF03A-0002": { "width": 120, "height": 120 },
+			"KF03A-0003": { "width": 120, "height": 120 },
+			"KF03A-0004": { "width": 120, "height": 120 },
+			"KF03A-0005": { "width": 120, "height": 120 },
+			"KF03A-0006": { "width": 120, "height": 120 },
+			"KF03A-0007": { "width": 120, "height": 120 },
+			"KF03A-0008": { "width": 120, "height": 120 },
+			"KF03A-0009": { "width": 120, "height": 120 },
+			"KF03A-0010": { "width": 120, "height": 120 },
+			"KF03A-0011": { "width": 120, "height": 120 },
+			"KF03A-0012": { "width": 120, "height": 120 }
+		},
+		"Survey_C": {
+			"KF03B-0001": { "width": 120, "height": 120 },
+			"KF03B-0002": { "width": 120, "height": 120 },
+			"KF03B-0003": { "width": 120, "height": 120 },
+			"KF03B-0004": { "width": 120, "height": 120 },
+			"KF03B-0005": { "width": 120, "height": 120 },
+			"KF03B-0006": { "width": 120, "height": 120 },
+			"KF03B-0007": { "width": 120, "height": 120 },
+			"KF03B-0008": { "width": 120, "height": 120 },
+			"KF03B-0009": { "width": 120, "height": 120 },
+			"KF03B-0010": { "width": 120, "height": 120 },
+			"KF03B-0011": { "width": 120, "height": 120 },
+			"KF03B-0012": { "width": 120, "height": 120 },
+			"KF03B-0013": { "width": 120, "height": 120 }
+		}
+	}
+},
+"animations": {
+	"Carry": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": "KF02A-0001" },
+					{ "time": 0.1666, "name": "KF02A-0002" },
+					{ "time": 0.3333, "name": "KF02A-0003" },
+					{ "time": 0.5, "name": "KF02A-0004" },
+					{ "time": 0.6666, "name": "KF02A-0001" }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Carry_complete": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": "KF02B-0001" },
+					{ "time": 0.1666, "name": "KF02B-0002" },
+					{ "time": 0.3333, "name": "KF02B-0003" },
+					{ "time": 0.5, "name": "KF02B-0004" },
+					{ "time": 0.6666, "name": "KF02B-0005" },
+					{ "time": 0.8333, "name": "KF02B-0006" },
+					{ "time": 1, "name": "KF02B-0007" },
+					{ "time": 1.1666, "name": "KF02B-0008" },
+					{ "time": 1.3333, "name": "KF02B-0009" },
+					{ "time": 1.5, "name": "KF02B-0010" },
+					{ "time": 1.6666, "name": "KF02B-0001" }
+				]
+			},
+			"Design": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Design": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design": {
+				"attachment": [
+					{ "time": 0, "name": "KF01A-0001" },
+					{ "time": 0.1, "name": "KF01A-0002" },
+					{ "time": 0.2, "name": "KF01A-0003" },
+					{ "time": 0.3, "name": "KF01A-0004" },
+					{ "time": 0.4, "name": "KF01A-0005" },
+					{ "time": 0.5, "name": "KF01A-0006" },
+					{ "time": 0.6, "name": "KF01A-0007" },
+					{ "time": 0.7, "name": "KF01A-0008" },
+					{ "time": 0.8, "name": "KF01A-0009" },
+					{ "time": 0.9, "name": "KF01A-0010" },
+					{ "time": 1, "name": "KF01A-0011" },
+					{ "time": 1.1, "name": "KF01A-0012" },
+					{ "time": 1.2, "name": "KF01A-0013" },
+					{ "time": 1.3, "name": "KF01A-0014" },
+					{ "time": 1.4, "name": "KF01A-0015" },
+					{ "time": 1.5, "name": "KF01A-0016" },
+					{ "time": 1.6, "name": "KF01A-0017" },
+					{ "time": 1.7, "name": "KF01A-0018" },
+					{ "time": 1.8, "name": "KF01A-0019" },
+					{ "time": 1.9, "name": "KF01A-0020" },
+					{ "time": 2, "name": "KF01A-0021" },
+					{ "time": 2.1, "name": "KF01A-0022" },
+					{ "time": 2.2, "name": "KF01A-0023" },
+					{ "time": 2.3, "name": "KF01A-0024" },
+					{ "time": 2.4, "name": "KF01A-0025" },
+					{ "time": 2.5, "name": "KF01A-0026" },
+					{ "time": 2.6, "name": "KF01A-0027" },
+					{ "time": 2.7, "name": "KF01A-0028" },
+					{ "time": 2.8, "name": "KF01A-0029" },
+					{ "time": 2.9, "name": "KF01A-0030" },
+					{ "time": 3, "name": "KF01A-0031" },
+					{ "time": 3.1, "name": "KF01A-0032" },
+					{ "time": 3.2, "name": "KF01A-0033" },
+					{ "time": 3.3, "name": "KF01A-0001" }
+				]
+			},
+			"Design_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Design_complete": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design_C": {
+				"attachment": [
+					{ "time": 0, "name": "KF01B-0001" },
+					{ "time": 0.1, "name": "KF01B-0002" },
+					{ "time": 0.2, "name": "KF01B-0003" },
+					{ "time": 0.3, "name": "KF01B-0004" },
+					{ "time": 0.4, "name": "KF01B-0005" },
+					{ "time": 0.5, "name": "KF01B-0006" },
+					{ "time": 0.6, "name": "KF01B-0007" },
+					{ "time": 0.7, "name": "KF01B-0008" },
+					{ "time": 0.8, "name": "KF01B-0009" },
+					{ "time": 0.9, "name": "KF01B-0010" },
+					{ "time": 1, "name": "KF01B-0011" },
+					{ "time": 1.1, "name": "KF01B-0012" },
+					{ "time": 1.2, "name": "KF01B-0013" },
+					{ "time": 1.3, "name": "KF01B-0014" },
+					{ "time": 1.4, "name": "KF01B-0015" },
+					{ "time": 1.5, "name": "KF01B-0016" },
+					{ "time": 1.6, "name": "KF01B-0017" },
+					{ "time": 1.7, "name": "KF01B-0018" },
+					{ "time": 1.8, "name": "KF01B-0019" },
+					{ "time": 1.9, "name": "KF01B-0020" },
+					{ "time": 2, "name": "KF01B-0021" },
+					{ "time": 2.1, "name": "KF01B-0022" },
+					{ "time": 2.2, "name": "KF01B-0023" },
+					{ "time": 2.3, "name": "KF01B-0024" },
+					{ "time": 2.4, "name": "KF01B-0001" }
+				]
+			},
+			"Survey": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Survey": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey": {
+				"attachment": [
+					{ "time": 0, "name": "KF03A-0001" },
+					{ "time": 0.2333, "name": "KF03A-0002" },
+					{ "time": 0.4666, "name": "KF03A-0003" },
+					{ "time": 0.7, "name": "KF03A-0004" },
+					{ "time": 0.9333, "name": "KF03A-0005" },
+					{ "time": 1.1666, "name": "KF03A-0006" },
+					{ "time": 1.4, "name": "KF03A-0007" },
+					{ "time": 1.6333, "name": "KF03A-0008" },
+					{ "time": 1.8666, "name": "KF03A-0009" },
+					{ "time": 2.1, "name": "KF03A-0010" },
+					{ "time": 2.3333, "name": "KF03A-0011" },
+					{ "time": 2.5666, "name": "KF03A-0012" },
+					{ "time": 2.8, "name": "KF03A-0001" }
+				]
+			},
+			"Survey_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"Survey_complete": {
+		"slots": {
+			"Carry": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Carry_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Design_C": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"Survey_C": {
+				"attachment": [
+					{ "time": 0, "name": "KF03B-0001" },
+					{ "time": 0.1, "name": "KF03B-0002" },
+					{ "time": 0.2, "name": "KF03B-0003" },
+					{ "time": 0.3, "name": "KF03B-0004" },
+					{ "time": 0.4, "name": "KF03B-0005" },
+					{ "time": 0.5, "name": "KF03B-0006" },
+					{ "time": 0.6, "name": "KF03B-0007" },
+					{ "time": 0.7, "name": "KF03B-0008" },
+					{ "time": 0.8, "name": "KF03B-0009" },
+					{ "time": 0.9, "name": "KF03B-0010" },
+					{ "time": 1, "name": "KF03B-0011" },
+					{ "time": 1.1, "name": "KF03B-0012" },
+					{ "time": 1.2, "name": "KF03B-0013" },
+					{ "time": 1.3, "name": "KF03B-0001" }
+				]
+			}
+		}
+	}
+}
+}

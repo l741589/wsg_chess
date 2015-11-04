@@ -1,0 +1,133 @@
+{
+"skeleton": { "hash": "IWIOUPzogcHT7kV1IzFaQrh8RE4", "spine": "2.1.27", "width": 217, "height": 103, "images": "" },
+"bones": [
+	{ "name": "Expedition_picture" },
+	{ "name": "Expedition_Actor", "parent": "Expedition_picture", "x": 72.8, "y": 47.4 },
+	{ "name": "Expedition_Enemy", "parent": "Expedition_picture", "x": 72.81, "y": 47.4 }
+],
+"slots": [
+	{ "name": "Expedition_Enemy_Picture", "bone": "Expedition_Enemy", "attachment": "Expedition_Enemy/17" },
+	{ "name": "Expedition_Actor_Picture", "bone": "Expedition_Actor", "attachment": "Expedition_Actor/01" }
+],
+"skins": {
+	"default": {
+		"Expedition_Actor_Picture": {
+			"Expedition_Actor/01": { "width": 217, "height": 103 },
+			"Expedition_Actor/02": { "width": 217, "height": 103 },
+			"Expedition_Actor/03": { "width": 217, "height": 103 },
+			"Expedition_Actor/04": { "width": 217, "height": 103 },
+			"Expedition_Actor/05": { "width": 217, "height": 103 },
+			"Expedition_Actor/06": { "width": 217, "height": 103 },
+			"Expedition_Actor/07": { "width": 217, "height": 103 },
+			"Expedition_Actor/08": { "width": 217, "height": 103 },
+			"Expedition_Actor/09": { "width": 217, "height": 103 },
+			"Expedition_Actor/10": { "width": 217, "height": 103 },
+			"Expedition_Actor/11": { "width": 217, "height": 103 },
+			"Expedition_Actor/12": { "width": 217, "height": 103 },
+			"Expedition_Actor/13": { "width": 217, "height": 103 },
+			"Expedition_Actor/14": { "width": 217, "height": 103 },
+			"Expedition_Actor/15": { "width": 217, "height": 103 },
+			"Expedition_Actor/16": { "width": 217, "height": 103 },
+			"Expedition_Actor/17": { "width": 217, "height": 103 },
+			"Expedition_Actor/18": { "width": 217, "height": 103 },
+			"Expedition_Actor/19": { "width": 217, "height": 103 },
+			"Expedition_Actor/20": { "width": 217, "height": 103 },
+			"Expedition_Actor/21": { "width": 217, "height": 103 },
+			"Expedition_Actor/22": { "width": 217, "height": 103 },
+			"Expedition_Actor/23": { "width": 217, "height": 103 },
+			"Expedition_Actor/24": { "width": 217, "height": 103 },
+			"Expedition_Actor/25": { "width": 217, "height": 103 },
+			"Expedition_Actor/26": { "width": 217, "height": 103 },
+			"Expedition_Actor/27": { "width": 217, "height": 103 },
+			"Expedition_Actor/28": { "width": 217, "height": 103 },
+			"Expedition_Actor/29": { "width": 217, "height": 103 },
+			"Expedition_Actor/30": { "width": 217, "height": 103 },
+			"Expedition_Actor/31": { "width": 217, "height": 103 },
+			"Expedition_Actor/32": { "width": 217, "height": 103 }
+		},
+		"Expedition_Enemy_Picture": {
+			"Expedition_Enemy/17": { "width": 217, "height": 103 },
+			"Expedition_Enemy/18": { "width": 217, "height": 103 },
+			"Expedition_Enemy/19": { "width": 217, "height": 103 },
+			"Expedition_Enemy/20": { "width": 217, "height": 103 },
+			"Expedition_Enemy/21": { "width": 217, "height": 103 },
+			"Expedition_Enemy/22": { "width": 217, "height": 103 },
+			"Expedition_Enemy/23": { "width": 217, "height": 103 },
+			"Expedition_Enemy/24": { "width": 217, "height": 103 },
+			"Expedition_Enemy/25": { "width": 217, "height": 103 },
+			"Expedition_Enemy/26": { "width": 217, "height": 103 },
+			"Expedition_Enemy/27": { "width": 217, "height": 103 },
+			"Expedition_Enemy/28": { "width": 217, "height": 103 },
+			"Expedition_Enemy/29": { "width": 217, "height": 103 },
+			"Expedition_Enemy/30": { "width": 217, "height": 103 },
+			"Expedition_Enemy/31": { "width": 217, "height": 103 },
+			"Expedition_Enemy/32": { "width": 217, "height": 103 }
+		}
+	}
+},
+"animations": {
+	"Expedition": {
+		"slots": {
+			"Expedition_Actor_Picture": {
+				"attachment": [
+					{ "time": 0, "name": "Expedition_Actor/01" },
+					{ "time": 0.1, "name": "Expedition_Actor/02" },
+					{ "time": 0.2, "name": "Expedition_Actor/03" },
+					{ "time": 0.3, "name": "Expedition_Actor/04" },
+					{ "time": 0.4, "name": "Expedition_Actor/05" },
+					{ "time": 0.5, "name": "Expedition_Actor/06" },
+					{ "time": 0.6, "name": "Expedition_Actor/07" },
+					{ "time": 0.7, "name": "Expedition_Actor/08" },
+					{ "time": 0.8, "name": "Expedition_Actor/09" },
+					{ "time": 0.9, "name": "Expedition_Actor/10" },
+					{ "time": 1, "name": "Expedition_Actor/11" },
+					{ "time": 1.1, "name": "Expedition_Actor/12" },
+					{ "time": 1.2, "name": "Expedition_Actor/13" },
+					{ "time": 1.3, "name": "Expedition_Actor/14" },
+					{ "time": 1.4, "name": "Expedition_Actor/15" },
+					{ "time": 1.5, "name": "Expedition_Actor/16" },
+					{ "time": 1.6, "name": "Expedition_Actor/17" },
+					{ "time": 1.7, "name": "Expedition_Actor/18" },
+					{ "time": 1.8, "name": "Expedition_Actor/19" },
+					{ "time": 1.9, "name": "Expedition_Actor/20" },
+					{ "time": 2, "name": "Expedition_Actor/21" },
+					{ "time": 2.1, "name": "Expedition_Actor/22" },
+					{ "time": 2.2, "name": "Expedition_Actor/23" },
+					{ "time": 2.3, "name": "Expedition_Actor/24" },
+					{ "time": 2.4, "name": "Expedition_Actor/25" },
+					{ "time": 2.5, "name": "Expedition_Actor/26" },
+					{ "time": 2.6, "name": "Expedition_Actor/27" },
+					{ "time": 2.7, "name": "Expedition_Actor/28" },
+					{ "time": 2.8, "name": "Expedition_Actor/29" },
+					{ "time": 2.9, "name": "Expedition_Actor/30" },
+					{ "time": 3, "name": "Expedition_Actor/31" },
+					{ "time": 3.1, "name": "Expedition_Actor/32" },
+					{ "time": 3.2, "name": "Expedition_Actor/01" }
+				]
+			},
+			"Expedition_Enemy_Picture": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.6, "name": "Expedition_Enemy/17" },
+					{ "time": 1.7, "name": "Expedition_Enemy/18" },
+					{ "time": 1.8, "name": "Expedition_Enemy/19" },
+					{ "time": 1.9, "name": "Expedition_Enemy/20" },
+					{ "time": 2, "name": "Expedition_Enemy/21" },
+					{ "time": 2.1, "name": "Expedition_Enemy/22" },
+					{ "time": 2.2, "name": "Expedition_Enemy/23" },
+					{ "time": 2.3, "name": "Expedition_Enemy/24" },
+					{ "time": 2.4, "name": "Expedition_Enemy/25" },
+					{ "time": 2.5, "name": "Expedition_Enemy/26" },
+					{ "time": 2.6, "name": "Expedition_Enemy/27" },
+					{ "time": 2.7, "name": "Expedition_Enemy/28" },
+					{ "time": 2.8, "name": "Expedition_Enemy/29" },
+					{ "time": 2.9, "name": "Expedition_Enemy/30" },
+					{ "time": 3, "name": "Expedition_Enemy/31" },
+					{ "time": 3.1, "name": "Expedition_Enemy/32" },
+					{ "time": 3.2, "name": null }
+				]
+			}
+		}
+	}
+}
+}

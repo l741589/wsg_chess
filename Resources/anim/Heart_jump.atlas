@@ -1,0 +1,13 @@
+
+Heart_jump.png
+size: 64,64
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+Heart
+  rotate: false
+  xy: 2, 2
+  size: 38, 34
+  orig: 38, 34
+  offset: 0, 0
+  index: -1
