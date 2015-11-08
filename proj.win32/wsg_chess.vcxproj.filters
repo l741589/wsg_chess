@@ -19,6 +19,9 @@
     <Filter Include="src\layout">
       <UniqueIdentifier>{a3c9f4f0-2502-4b41-94d6-bf49fd4d648b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{105264b1-cc5c-4502-851c-7200bd785e51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,9 +39,6 @@
     <ClCompile Include="..\Classes\GameData.cpp">
       <Filter>src\data</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\util.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\FieldLayer.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -51,14 +51,14 @@
     <ClCompile Include="..\Classes\layout\LayoutInflater.cpp">
       <Filter>src\layout</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\ControlSet.cpp">
-      <Filter>src\gui</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\InfoBar.cpp">
       <Filter>src\gui</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Weapon.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\util.cpp">
+      <Filter>src\util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,9 +72,6 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Actor.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\util.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameData.h">
@@ -92,17 +89,20 @@
     <ClInclude Include="..\Classes\layout\LayoutInflater.h">
       <Filter>src\layout</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\ControlSet.h">
-      <Filter>src\gui</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\InfoBar.h">
       <Filter>src\gui</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\stdafx.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Weapon.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\stdafx.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cache.h">
+      <Filter>src\util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

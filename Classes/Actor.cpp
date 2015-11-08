@@ -5,7 +5,7 @@
 #include "ActionMenu.h"
 #include "Weapon.h"
 
-using namespace util;
+using namespace G;
 
 const char* Actor::Anim::Antiaircraft = "Antiaircraft";
 const char* Actor::Anim::Attack = "attack";

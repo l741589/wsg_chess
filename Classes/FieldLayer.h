@@ -30,8 +30,7 @@ public:
 };
 
 class FieldLayer : public cocos2d::Node{
-public:
-	
+public:	
 	typedef std::function<void(Sprite*tile, const Vec2&pos)> onSelectedListener;
 	typedef std::function<ColorF4B(const Vec2&,const Vec2&)> VecFilter;
 	CREATE_FUNC(FieldLayer);
@@ -41,8 +40,8 @@ public:
 	static Vec2 localToField(Vec2 in) { return Vec2{ floorf(in.x / TileSize), floorf(in.y / TileSize) }; }
 	static Vec2 fixLocal(Vec2 in) {return fieldToLocal(localToField(in));}
 	FieldTile* createTile(Vec2 position, int index, Color4B color, onSelectedListener listener);
-	void createTiles(Actor* actor, VecFilter filter, onSelectedListener listener);
-	void clear(float time=0.5f);
+	Node* createTiles(Actor* actor, VecFilter filter, onSelectedListener listener);
+	void clear(Node*group=nullptr, float time = 0.5f);
 
 public:
 	void createMoveTiles(Actor*actor, onSelectedListener listener);

@@ -14,12 +14,12 @@ InfoBar::InfoBar(FightScene*scene) {
 	attackMenu = new AttackMenu();
 	node->addChild(attackMenu->getMenu());
 	node->setPosition(Vec2(Director::getInstance()->getWinSize()));
-	avatarImage=util::find<ImageView>(node, "AvatarImage");
-	shipClass = util::find<ImageView>(node, "Class");
-	flag = util::find<ImageView>(node, "Flag");
-	name = util::find<Text>(node, "Name");
-	hp = util::find<Text>(node, "Hp");
-	hpBar = util::find<LoadingBar>(node, "HpBar");
+	avatarImage=G::find<ImageView>(node, "AvatarImage");
+	shipClass = G::find<ImageView>(node, "Class");
+	flag = G::find<ImageView>(node, "Flag");
+	name = G::find<Text>(node, "Name");
+	hp = G::find<Text>(node, "Hp");
+	hpBar = G::find<LoadingBar>(node, "HpBar");
 }
 
 InfoBar::~InfoBar() {
@@ -30,12 +30,12 @@ InfoBar::~InfoBar() {
 void InfoBar::update(Actor*actor) {
 	if (actor) {
 		avatarImage->setVisible(true);
-		avatarImage->loadTexture(util::format("model/S_NORMAL_%d.png", actor->getShip()->picId));
+		avatarImage->loadTexture(G::format("model/S_NORMAL_%d.png", actor->getShip()->picId));
 		shipClass->setVisible(true);
-		shipClass->loadTexture(util::format("ui/st_%d.png", actor->getShip()->type));
+		shipClass->loadTexture(G::format("ui/st_%d.png", actor->getShip()->type));
 		showActionMenu(actor);
 		name->setString(actor->getShip()->title);
-		hp->setString(util::format("%d/%d", actor->getHp(), actor->getShip()->hpMax));
+		hp->setString(G::format("%d/%d", actor->getHp(), actor->getShip()->hpMax));
 		hpBar->setVisible(true);
 		hpBar->setPercent(actor->getHp()*100.0f / actor->getShip()->hpMax);
 	} else {
@@ -68,7 +68,7 @@ void InfoBar::showActionMenu(Actor*actor) {
 				actionMenu->show(
 					"",
 					{
-						{ "battle.action.direct.ml", [=](Ref*) {  actor->turn(-PI / 4); } },
+						{ "battle.action.direct.ml", [=](Ref*) { actor->turn(-PI / 4); } },
 						{ "battle.action.direct.mm", [=](Ref*) { actor->turn(-PI / 6); } },
 						{ "battle.action.direct.ms", [=](Ref*) { actor->turn(-PI / 12); } },
 						{ "battle.action.direct.pl", [=](Ref*) { actor->turn(PI / 4); } },

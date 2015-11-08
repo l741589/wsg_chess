@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "FightScene.h"
 #include "StringRes.h"
+#include "Cache.h"
 
 USING_NS_CC;
 
@@ -32,6 +33,7 @@ void AppDelegate::initGLContextAttrs()
 void initData() {
 	G::initStringRes();
 	FileUtils::getInstance()->addSearchPath("res");
+	new Cache();
 }
 
 // If you want to use packages manager to install more packages, 

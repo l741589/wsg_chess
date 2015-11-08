@@ -16,7 +16,7 @@ void BaseMenu::hide() {
 
 ActionMenu::ActionMenu() : BaseMenu() {
 	menu = LayoutInflater::inflate("ctrl/Panel1.json");
-	util::setLayoutParameter((Widget*)menu, Margin::ZERO, LinearLayoutParameter::LinearGravity::RIGHT);
+	G::setLayoutParameter((Widget*)menu, Margin::ZERO, LinearLayoutParameter::LinearGravity::RIGHT);
 	menu->retain();
 	hide();
 }
@@ -45,23 +45,23 @@ Node* ActionMenu::show(const char*title,std::initializer_list<std::pair<std::str
 AttackMenu::AttackMenu() : BaseMenu()
 {
 	menu = LayoutInflater::inflate("ctrl/Panel1.json");
-	util::setLayoutParameter((Widget*)menu, Margin::ZERO, LinearLayoutParameter::LinearGravity::RIGHT);
+	G::setLayoutParameter((Widget*)menu, Margin::ZERO, LinearLayoutParameter::LinearGravity::RIGHT);
 	menu->retain();
 	hide();
 }
 
 void AttackMenu::addEquip(Equip*e) {
 	auto n = LayoutInflater::inflate("ctrl/EquipmentItem.json");
-	Button*button = util::find<Button>(n,"Button");
-	Text*name = util::find<Text>(n, "Name");
-	Text*range = util::find<Text>(n, "Range");
-	Text*type = util::find<Text>(n, "Type");
-	ImageView*image = util::find<ImageView>(n, "Image");
-	ImageView*level = util::find<ImageView>(n, "Level");
+	Button*button = G::find<Button>(n,"Button");
+	Text*name = G::find<Text>(n, "Name");
+	Text*range = G::find<Text>(n, "Range");
+	Text*type = G::find<Text>(n, "Type");
+	ImageView*image = G::find<ImageView>(n, "Image");
+	ImageView*level = G::find<ImageView>(n, "Level");
 	auto eq = e->getEquipment();
 	name->setString(eq->title);
-	image->loadTexture(util::format("equip/equip_L_%d.png", eq->picId));
-	level->loadTexture(util::format("ui/equipBG%d.png", eq->star));
+	image->loadTexture(G::format("equip/equip_L_%d.png", eq->picId));
+	level->loadTexture(G::format("ui/equipBG%d.png", eq->star));
 	menu->addChild(n);
 	type->setString(G::getString("equipment.type", eq->type));
 	if (eq->type == 1) {

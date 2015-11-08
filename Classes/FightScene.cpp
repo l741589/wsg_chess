@@ -16,7 +16,7 @@ bool FightScene::init() {
 	
 	addChild(gameLayer);
 
-	util::bindTouchEvent(gameLayer, [](Touch*, Event*) {return true; }, CC_CALLBACK_2(FightScene::moveGameLayer, this), nullptr);
+	G::bindTouchEvent(gameLayer, [](Touch*, Event*) {return true; }, CC_CALLBACK_2(FightScene::moveGameLayer, this), nullptr);
 	auto e=EventListenerMouse::create();
 	e->onMouseScroll = [=](Event*e) {
 		auto em = (EventMouse*)e;
@@ -81,7 +81,7 @@ bool FightScene::init() {
 	}, x, 1.0f, false, "updateTile");
 	
 	gameLayer->addChild(x);	
-	util::bindTouchEvent(gameLayer, [=](Touch*t, Event*e) {
+	G::bindTouchEvent(gameLayer, [=](Touch*t, Event*e) {
 		auto n = e->getCurrentTarget();
 		auto pos = n->convertTouchToNodeSpace(t);
 		Vec2 v = FieldLayer::fixLocal(pos);

@@ -3,9 +3,11 @@
 
 #define READONLY_PROP(type,name) private: type _##name;public: type get##name(){return _##name;}
 #define MENU_WIDTH 200
-
-namespace util {
+class Cache;
+namespace G {
 	USING_NS_CC;
+	
+	extern Cache*cache;
 	Rect operator+(const Rect&l, const Vec2&r);
 	Rect operator-(const Rect&l, const Vec2&r);
 	Vec2 rotate(const Vec2&vec, float rad);
@@ -32,6 +34,7 @@ namespace util {
 	}
 	const char*format(const char*fmt, ...);
 	void bindTouchEvent(Node*node, EventListenerTouchOneByOne::ccTouchBeganCallback onBegin, EventListenerTouchOneByOne::ccTouchCallback onMove, EventListenerTouchOneByOne::ccTouchCallback onEnd, EventListenerTouchOneByOne::ccTouchCallback onCancel = nullptr);
+	void postDelay(Node*who,float time, std::function<void()> func);
 }
 
-#define JSON_SET(PROP) util::__jsonSet(this->PROP,json[#PROP]);
+#define JSON_SET(PROP) G::__jsonSet(this->PROP,json[#PROP]);

@@ -1,6 +1,8 @@
 #include "util.h"
 
-namespace util {
+namespace G {
+	Cache*cache = nullptr;
+
 	Rect operator+(const Rect&l, const Vec2&r) {
 		return Rect(l.origin + r, l.size);
 	}
@@ -23,7 +25,7 @@ namespace util {
 
 	bool isPtInNodeEventCallback(Touch*t, Event*e) {
 		auto node=e->getCurrentTarget();
-		return util::isPtInNode(node->getParent()->convertTouchToNodeSpaceAR(t), node);
+		return G::isPtInNode(node->getParent()->convertTouchToNodeSpaceAR(t), node);
 	}
 
 	void setScale9Background(Layout*layout, std::string file)
@@ -112,4 +114,9 @@ namespace util {
 		node->getEventDispatcher()->addEventListenerWithSceneGraphPriority(e, node);
 	}
 
+	void postDelay(Node*who, float time, std::function<void()> func) {
+		who->runAction(Sequence::createWithTwoActions(DelayTime::create(time), CallFunc::create(func)));
+	}
+
 }
+

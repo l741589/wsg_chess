@@ -28,10 +28,12 @@ void addVec(std::set<Vec2, VecLess>& flags, std::list<Vec2>& queue,Vec2 p) {
 	flags.insert(p);
 }
 
-void FieldLayer::createTiles(Actor* actor, VecFilter filter, onSelectedListener listener)
+Node* FieldLayer::createTiles(Actor* actor, VecFilter filter, onSelectedListener listener)
 {
+	Node*group = Node::create();
 	const Vec2&start = actor->getFieldPosition();
-	if (this->getChildrenCount()) this->removeAllChildren();
+	removeAllChildren();
+	addChild(group);
 	std::set<Vec2, VecLess> flags;
 	std::list<Vec2> queue;
 	int cnt = 0;
@@ -43,14 +45,15 @@ void FieldLayer::createTiles(Actor* actor, VecFilter filter, onSelectedListener 
 		auto color = filter(start,v);
 		if (color.f==ColorF4B::Flag::DISABLE) continue;
 		if (color.f&ColorF4B::Flag::SHOW) 
-			createTile(v, cnt++, color, listener);
+			group->addChild(createTile(v, cnt++, color, listener));
 		if (color.f &ColorF4B::Flag::ALLOW) {
 			addVec(flags, queue, v + Vec2{ 1, 0 });
 			addVec(flags, queue, v + Vec2{ 0, 1 });
 			addVec(flags, queue, v + Vec2{ -1, 0 });
 			addVec(flags, queue, v + Vec2{ 0, -1 });
 		}
-	}
+	}	
+	return group;
 }
 
 FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSelectedListener listener) {
@@ -58,10 +61,9 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSele
 	sp->setColor(Color3B(color));
 	sp->setPosition(fieldToLocal(position));
 	sp->index = index;
-	addChild(sp);
 	if (listener) {
 		EventListenerTouchOneByOne*e = EventListenerTouchOneByOne::create();
-		e->onTouchBegan = util::isPtInNodeEventCallback;
+		e->onTouchBegan = G::isPtInNodeEventCallback;
 		e->onTouchMoved = [=](Touch*t, Event*e) {			
 			clear();
 		};
@@ -76,7 +78,6 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSele
 	sp->setScale(0);
 	auto targetScale=TileSize / (float)SrcTileSize;
 	sp->runAction(Sequence::create(
-		
 		Spawn::create(
 			FadeTo::create(0.5f,color.a),
 			RotateTo::create(0.5f, 0),
@@ -88,30 +89,36 @@ FieldTile* FieldLayer::createTile(Vec2 position,int index, Color4B color, onSele
 	return sp;
 }
 
-void FieldLayer::clear(float time) {
-	int max = 1;
-	for (Node* e : getChildren()) {
-		FieldTile*sp = dynamic_cast<FieldTile*>(e);
-		if (sp->index > max) max = sp->index;
-	}
-	float es = time / max;
-	for (Node* e : getChildren()) {
-		FieldTile*sp = dynamic_cast<FieldTile*>(e);
-		sp->enable = false;
-		if (sp == nullptr) return;
-		e->runAction(Sequence::create(
-			DelayTime::create(es*sp->index),
-			Spawn::create(
+void FieldLayer::clear(Node*group, float time) {
+	if (group == nullptr) {
+		for (auto e : getChildren()) clear(e, time);
+	} else {
+		int max = 1;
+		for (Node* e : group->getChildren()) {
+			FieldTile*sp = dynamic_cast<FieldTile*>(e);
+			if (sp->index > max) max = sp->index;
+		}
+		float es = time / max;
+		for (Node* e : group->getChildren()) {
+			FieldTile*sp = dynamic_cast<FieldTile*>(e);
+			sp->enable = false;
+			if (sp == nullptr) return;
+			e->runAction(Sequence::create(
+				DelayTime::create(es*sp->index),
+				Spawn::create(
 				FadeOut::create(0.5f),
 				RotateTo::create(0.5f, 90),
 				ScaleTo::create(0.5f, 0),
 				nullptr
 				),
-			CallFunc::create([=]() {e->removeFromParent(); }),
-			nullptr
-		));
+				nullptr
+				));
+		}
+		G::postDelay(this, time + 1, [=]() {
+			if (this->getChildren().find(group)!=this->getChildren().end())
+				group->removeFromParent(); 
+		});
 	}
-	
 }
 
 bool FieldLayer::init()
@@ -119,5 +126,4 @@ bool FieldLayer::init()
 	if (!Node::init()) return false;
 	return true;
 }
-
 

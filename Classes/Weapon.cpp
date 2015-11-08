@@ -2,6 +2,7 @@
 #include "FightScene.h"
 #include "FieldLayer.h"
 #include "Actor.h"
+#include "Cache.h"
 
 namespace S {
 	const char* Torpedo_under_sea = "Torpedo_under_sea";
@@ -11,6 +12,7 @@ namespace S {
 	const char* Bomb = "Bomb";
 
 
+	const char*WeaponName = "anim/Weapon";
 	const char*WeaponJson = "anim/Weapon.json";
 	const char*WeaponAtlas = "anim/Weapon.atlas";
 
@@ -39,21 +41,24 @@ namespace S {
 	const char*	Torpedo_wave_at_sea_by_air = "Torpedo_wave_at_sea_by_air";
 	const char*	Waterlines = "Waterlines";
 
+
+	const char*EffectName = "anim/Effect_All";
 	const char*EffectJson = "anim/Effect_All.json";
 	const char*EffectAtlas = "anim/Effect_All.atlas";
 }
 
 using namespace S;
+
 spine::SkeletonAnimation*createWeapon(const char*type,bool loop,spine::CompleteListener listener) {
-	auto w = spine::SkeletonAnimation::createWithFile(WeaponJson, WeaponAtlas);
-	w->setAnimation(0, type, loop);
+	auto w = G::cache->createSkeletonAnimation(WeaponName);
+	w->setAnimation(0,type,loop);
 	if (listener) w->setCompleteListener(listener);
 	return w;
 
 }
 
 spine::SkeletonAnimation*createEffect(const char*type, bool loop, spine::CompleteListener listener) {
-	auto w = spine::SkeletonAnimation::createWithFile(EffectJson, EffectAtlas);
+	auto w = G::cache->createSkeletonAnimation(EffectName);
 	w->setAnimation(0, type, loop);
 	if (listener) w->setCompleteListener(listener);
 	return w;
@@ -120,7 +125,7 @@ void Weapon::AnimTorpedo() {
 			addChild(e);
 			e->runAction(Sequence::create(
 				MoveTo::create(1.0f, toL),
-				CallFunc::CallFunc::create([=]() {
+				CallFunc::create([=]() {
 					e->removeFromParent();
 					if (aTo != nullptr) {
 						auto e2 = createEffect(S::Small_bang_at_sea, false, nullptr);
